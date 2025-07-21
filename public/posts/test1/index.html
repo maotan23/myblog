@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<html lang="en"
+  x-data
+  :class="$store.darkMode.class()"
+  :data-theme="$store.darkMode.theme()">
+  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>旅者和乌鸦 | CrossRoadSparrows</title>
+
+    
+
+<link rel="canonical" href="http://localhost:1313/posts/test1/" />
+
+
+
+<meta name="author" content="Author Name" />
+<meta name="description" content="旅者带着一件防尘披风，一把剑，一首故乡的歌谣，就这么上路了。
+" />
+
+
+<meta name="keywords" content="Tag1,Tag2">
+
+
+
+<meta name="generator" content="Hugo 0.148.1">
+
+
+<meta property="og:url" content="http://localhost:1313/posts/test1/">
+  <meta property="og:site_name" content="CrossRoadSparrows">
+  <meta property="og:title" content="旅者和乌鸦">
+  <meta property="og:description" content="旅者带着一件防尘披风，一把剑，一首故乡的歌谣，就这么上路了。">
+  <meta property="og:locale" content="en">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2025-07-21T17:09:24+08:00">
+    <meta property="article:modified_time" content="2025-07-21T17:09:24+08:00">
+    <meta property="article:tag" content="Tag1">
+    <meta property="article:tag" content="Tag2">
+
+
+
+
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="旅者和乌鸦">
+  <meta name="twitter:description" content="旅者带着一件防尘披风，一把剑，一首故乡的歌谣，就这么上路了。">
+
+
+
+
+<link rel="stylesheet" href="/css/output.css" />
+
+
+
+
+    
+
+
+<style>
+  pre {
+    padding: 1em;
+    overflow: auto;
+  }
+</style>
+
+
+
+
+
+
+
+
+
+    
+
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+  </head>
+
+  <body x-data="{
+    flip: false,
+  }">
+    
+    <div id="dream-global-bg"></div>
+
+    
+<nav class="mt-4 lg:mt-8 py-4">
+
+  
+  <div class="container flex justify-between px-4">
+  
+    <section class="flex items-center gap-4">
+      <div class="avatar cursor-pointer hover:online" @click="flip = !flip" title="Flip it!">
+        <div class="h-10 rounded-full">
+          <img src="/" alt="标题测试" />
+        </div>
+      </div>
+
+      
+      <div>
+        
+        <a href="http://localhost:1313/" class="text-lg font-semibold cursor-pointer">
+          标题测试
+        </a>
+        
+        
+      </div>
+      
+    </section>
+
+    <div class="dropdown dropdown-end sm:hidden">
+      <div tabindex="0" role="button" class="btn btn-ghost btn-square" aria-label="Select an option">
+        <ion-icon name="menu" class="text-2xl"></ion-icon>
+      </div>
+      <ul tabindex="0" class="dropdown-content menu w-36 bg-base-100 rounded-box z-[1] shadow-md">
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<li>
+  <a class="inline-flex items-center p-2 cursor-pointer" href="/posts" title="Archives">
+    <ion-icon name="archive"></ion-icon>
+    Archives
+  </a>
+</li>
+
+
+
+
+<li>
+  <a class="inline-flex items-center p-2 cursor-pointer" href="/categories" title="All Categories">
+    <ion-icon name="grid"></ion-icon>
+    All Categories
+  </a>
+</li>
+
+
+
+
+<li>
+  <a class="inline-flex items-center p-2 cursor-pointer" href="/tags" title="All Tags">
+    <ion-icon name="pricetags"></ion-icon>
+    All Tags
+  </a>
+</li>
+
+
+
+
+
+
+      </ul>
+    </div>
+    <section class="hidden sm:flex sm:items-center sm:gap-2 md:gap-4">
+      
+
+      
+      
+
+      
+
+      
+      
+
+
+
+
+
+      
+      
+
+
+
+
+
+      
+      
+<a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary" href="/posts" title="Archives">
+  <ion-icon class="group-hover:text-primary-content" name="archive"></ion-icon>
+</a>
+
+
+      
+      
+<a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary" href="/categories" title="All Categories">
+  <ion-icon class="group-hover:text-primary-content" name="grid"></ion-icon>
+</a>
+
+
+
+      
+      
+<a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary" href="/tags" title="All Tags">
+  <ion-icon class="group-hover:text-primary-content" name="pricetags"></ion-icon>
+</a>
+
+
+      
+
+      
+
+      
+    </section>
+  </div>
+</nav>
+
+
+    <div class="flip-container" :class="{ 'flip-it': flip }">
+      <div class="flipper">
+        <div class="front">
+          <div class="container">
+            
+<div class="mt-4 px-4">
+  
+  <div>
+  
+    
+    <article class="mx-auto prose prose-quoteless dark:prose-invert" id="dream-single-post-main" itemscope itemtype="http://schema.org/Article">
+      
+  <meta itemprop="name" content="旅者和乌鸦">
+  <meta itemprop="description" content="旅者带着一件防尘披风，一把剑，一首故乡的歌谣，就这么上路了。">
+  <meta itemprop="datePublished" content="2025-07-21T17:09:24+08:00">
+  <meta itemprop="dateModified" content="2025-07-21T17:09:24+08:00">
+  <meta itemprop="wordCount" content="60">
+  <meta itemprop="keywords" content="Tag1,Tag2">
+
+      <header>
+        <h1 itemprop="headline">旅者和乌鸦</h1>
+        <p class="text-sm">
+          
+            Monday, Jul 21, 2025
+          
+
+          | <span>1 minute read</span>
+
+          
+          | <span>Updated at
+            
+              Monday, Jul 21, 2025
+            </span>
+          
+        </p>
+        <div class="flex justify-between">
+          <div class="flex items-center">
+  
+  <span>@</span>
+  
+
+  <span itemprop="author" itemscope itemtype="https://schema.org/Person">
+  
+    
+      <span itemprop="name">Author Name</span>
+    
+  
+  </span>
+</div>
+
+
+          <div class="flex items-center gap-2">
+  
+  
+
+  
+  
+  
+  
+  
+    <a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary"
+      href="https://x.com/intent/post?text=%e6%97%85%e8%80%85%e5%92%8c%e4%b9%8c%e9%b8%a6&amp;url=http://localhost:1313/posts/test1/" target="_blank" rel="noopener noreferrer"
+      title="Share on X">
+      <ion-icon class="group-hover:text-primary-content" name="logo-x"></ion-icon>
+    </a>
+  
+    <a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary"
+      href="https://facebook.com/sharer/sharer.php?u=http://localhost:1313/posts/test1/" target="_blank" rel="noopener noreferrer"
+      title="Share on Facebook">
+      <ion-icon class="group-hover:text-primary-content" name="logo-facebook"></ion-icon>
+    </a>
+  
+    <a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary"
+      href="https://wa.me/?text=%e6%97%85%e8%80%85%e5%92%8c%e4%b9%8c%e9%b8%a6%20http://localhost:1313/posts/test1/" target="_blank" rel="noopener noreferrer"
+      title="Share on WhatsApp">
+      <ion-icon class="group-hover:text-primary-content" name="logo-whatsapp"></ion-icon>
+    </a>
+  
+
+  
+  
+</div>
+
+        </div>
+      </header>
+
+      
+
+      <p>旅者带着一件防尘披风，一把剑，一首故乡的歌谣，就这么上路了。</p>
+<p>一、旅者</p>
+<p>旅者带着一件防尘披风，一把剑，一首故乡的歌谣，就这么上路了。</p>
+<p>他要去的地方美丽富饶，珠宝多得像一千个鲛人一生流下的泪。那里还有令人着迷的文化、艺术、宗教和爱情观，旅者此行正是要取回这些。</p>
+<p>为此他预备了足以装下一百颗成年狮子心脏的麻袋。他踌躇满志、顾盼神飞地向每一个认识与不认识的人挥手作别，便随着太阳的升起，让西北风急乎乎地将自己吹向异域去了。</p>
+<p>旅者拖着麻袋，走在扑面而来的黄沙和凉如水花的星夜里。</p>
+<p>他已经走了许多天，具体日期早被严重缺水的头脑丢到角落去积灰了；他已经走了许多路，疲惫得似乎随时会吐出体内的魂灵；他也已经体味了足量的悲凉，几乎模糊了死去与活着、混乱与平静、陌生与相知的界限。</p>
+<p>他忘记了故土，忘记了那盛满雪的塔尖和河滩上的星子，忘记了魔术师的讥笑和水田里的风车的啜泣；他没有忘记自己的目的地，即使他风餐露宿、箪食瓢饮，他也没有忘记。</p>
+<p>可他太累了，累得几乎见不到明日的风沙，累得到了极限，再也走不动一步路，他的脚掌陷入了泥沙之中，仰面可见星星的重影。他听见烧灼生命的声音，看见意志力的烟灰渐渐弥散在空气中。他知道再也无法这样下去了。</p>
+<p>旅者咬了咬牙，几乎是下了孤注一掷的决心似的，把自己的心脏剖出来扔在了荒原上。他继续赶路。</p>
+<p>这下，旅者轻松多了。他可以继续前行了。可失去了自己的心，不知道会有什么可怕的后果。</p>
+<p>二、乌鸦</p>
+<p>旅者是在一场风暴结束之际看见乌鸦的。他是先看见乌鸦，再看见乌鸦歇脚的那片破墙烂壁的。这似乎有些奇怪，毕竟那只是一只再普通不过的乌鸦。</p>
+<p>它用粗哑可怕的声音对旅者大声说着话：“哎呀！你来这里做什么！这里如今已经没有人了，你回去吧！”</p>
+<p>“可我还没去到……”话一出口，旅者就被自己吓到了；他的喉咙填满干血和风沙，以致嗓音比乌鸦的更粗哑可怕。</p>
+<p>乌鸦倒是没什么，只不住地说：“你回去吧！回去吧！”</p>
+<p>“唉，你不知道，那地方非去不可……”</p>
+<p>“为什么非去不可？”</p>
+<p>旅者听了，不由得愣了一愣。是啊，为什么呢？他感到五味杂呈，但又无法可想。他已经没有心了。</p>
+<p>还没来得及回答，乌鸦便落在他的肩头，用一对狡猾骇人的黑眼珠直愣愣地瞪视着他。</p>
+<p>“哎呀！你看……”</p>
+<p>“什么？”</p>
+<p>“你看这东西，可是你弄丢的么？”</p>
+<p>旅者转过眼去。他看见了什么？他看见的是——一些灰土，一把沙子，一颗喘息着的伤痕累累的人类心脏——毫无疑问是他的心脏，因为他正罹受巨大的折磨。</p>
+<p>乌鸦说：“你想取回他么？我帮你，只要你答应我一件事。”</p>
+<p>“唉，我早就舍弃它——”</p>
+<p>“只要你答应我一件很小、很小、很简单的事。”</p>
+<p>“我说——”</p>
+<p>“你不觉得好奇么？”</p>
+<p>乌鸦挤弄着两只漆黑的小眼睛，极促狭地笑了起来。</p>
+<p>乌鸦的笑声使他耳根发麻。旅者不知该如何解释清楚这件事，只听得乌鸦接着不由分说地喊道：“唉，别想啦！你就是个笨蛋，你早到了要去的地方啦！”</p>
+<p>“啊！”旅者惊地叫了起来，“可你怎么知道？”</p>
+<p>“唉，我又有什么不知道的呢？”乌鸦像是轻轻叹息了一声，说道，“我在这里待的日子，长到黑曜石山脉的恶龙也没胆量相信。我能有什么不知道的呢？”</p>
+<p>“那么——”</p>
+<p>“你要去的地方，可不是这儿吗。只不过，已经几百年不复繁华了。”</p>
+<p>旅者惊讶地四处张望，只见黄土和呜呜低鸣的消极的风声。他垂下了眼睛，感觉乌鸦的爪趾似乎嵌到了肩膀肉里。</p>
+<p>乌鸦说：“装好你的心，回故乡吧。”</p>
+<p>“可是……”</p>
+<p>“回不去吗？”</p>
+<p>旅者点了点头。</p>
+<p>乌鸦像是早有预料，狡猾地拍起翅膀，大声说：“唉！你大可不必发愁了。同我做个交易，你一定负担得起。”</p>
+<p>三、魔术师</p>
+<p>乌鸦没有立刻谈条件，而是讲起了自己的故事。他就像个真正的商人那样，想借他物吸引顾客的注意，再趁机敲诈一笔呢。旅者想道。</p>
+<p>渐渐变黑的夜色里，乌鸦似乎隐去了身形，只有他的仿佛枯枝的声音，在悄悄打着拍子。</p>
+<p>他说：“你我可不是异乡人。我是你故土上的一个魔术师，也算是一个猎手，因为我通过玩把戏捕获东西。我的猎物很多，有金钱、名利、爱情和嫉妒。这些足以使我的生活五光十色。但有一天我想捕获更宏大的东西了。你猜是什么？”</p>
+<p>他没有等对方回答。“梦。我要去取回这个神仙一样的国度的香料、谷物和奇奇怪怪的信仰。我为此做梦。过了一季的筹备，我带上行囊离开了故乡。唉，就和你一样。”</p>
+<p>他说这话的时候，似乎用温柔的眼神打量了一下旅者。但天太黑，旅者没有看见。</p>
+<p>他就像是在说：我理解你，所以，把灵魂交给我也可以安心。</p>
+<p>旅者很快也知道了，乌鸦的目的便是要他的灵魂。他仿佛透过夜色看见一只贪婪的鸟喙，他曾用它啄食腐肉、啜饮鲜血，现在又要用来吞咽他的灵魂。这使他毛骨悚然，却没有办法。</p>
+<p>乌鸦细致地说：“其实很简单。你把心脏和自己的肉身装进那个麻袋，我吸走你的灵魂，你就可以变成乌鸦飞回家了。”</p>
+<p>“什么意思？我听不明白。如果我被吸走的灵魂进入了你的身体，那你去哪里？”</p>
+<p>乌鸦干笑了几声：“当然是你的肉身了！我别无奢望，只想死。让沙尘把我和你的肉身埋了去，也好安宁安宁。”</p>
+<p>旅者沉默了。他答应了这个请求，默无声息地和那颗破损的心脏一起进了麻袋。他本想用它装遥远国度的财报，没想到却成了自己的棺材。但故事总是戏剧性的，当一只惹人生厌的鸟也没什么大不了。</p>
+<p>四、心</p>
+<p>旅者醒来后，首先看见的是炊烟和温暖的云层。他好像做了一场梦，却没有办法醒来。他发现自己站在一棵枯败的树的顶头。</p>
+<p>他看着自己的黑色翅膀，不由得叹息了一声。连这叹息也是乌鸦那种难听的声音。但不管怎样，他可以回到故土了。</p>
+<p>他看见自己挥手作别的每一个认识和不认识的人。他们在交错的市井里过着自己的生活。旅者扑腾着翅膀，想要加入其中，却被一种无形的力量阻挡着无法进入。</p>
+<p>他想：那乌鸦并不是魔术师，他一定是个欺诈师。</p>
+<p>但旅者无法可想。他回到了熟悉的破墙烂壁之上，默默遥望着无尽的荒原和飞腾的沙子。他好像看见，有个独行的影子自远处而来。那是个年轻的旅者，就像当时的他。</p>
+<p>年轻的旅者穿上披风，在腰间插了一把剑；他立刻消失在风眼里。</p>
+
+      
+    </article>
+  </div>
+
+  
+</div>
+
+
+            
+<footer class="flex justify-between items-center gap-2 px-4 py-12">
+
+  <div>
+  
+  <p>
+    © 2025 CrossRoadSparrows
+  </p>
+  
+
+  
+  <p class="text-sm">
+    🌱
+    <span class="text-base-content/60">
+      Powered by <a class="hover:underline" href="https://gohugo.io/" target="_blank">Hugo</a> with theme
+      <a class="hover:underline" href="https://github.com/g1eny0ung/hugo-theme-dream" target="_blank">Dream</a>.</span
+    >
+  </p>
+  
+</div>
+
+  <div
+  x-data="{ icons: [
+    { name: 'moon', status: 'y' },
+    { name: 'sunny', status: 'n' },
+    { name: 'desktop', status: 'auto' }
+  ] }"
+  class="flex items-center h-[32px] px-2 gap-2 border border-base-content/30 rounded-full"
+>
+  <template x-for="icon in icons">
+    <div
+      role="button"
+      tabindex="0"
+      :aria-label="'Select ' + icon.name + ' mode'"
+      class="group inline-flex justify-center items-center p-1 rounded-full cursor-pointer hover:bg-primary"
+      :class="$store.darkMode.icon() === icon.name && 'bg-primary'"
+      @click="$store.darkMode.toggle(icon.status)"
+    >
+      <ion-icon
+        :name="`${icon.name}-outline`"
+        class="group-hover:text-primary-content"
+        :class="$store.darkMode.icon() === icon.name && 'text-primary-content'"
+      >
+      </ion-icon>
+    </div>
+  </template>
+</div>
+
+</footer>
+
+          </div>
+        </div>
+        <div class="back">
+          <div class="container">
+            
+            <div class="dream-grid dream-grid-about">
+  
+
+  
+
+  
+</div>
+
+            
+
+            
+<footer class="flex justify-between items-center gap-2 px-4 py-12">
+
+  <div>
+  
+  <p>
+    © 2025 CrossRoadSparrows
+  </p>
+  
+
+  
+  <p class="text-sm">
+    🌱
+    <span class="text-base-content/60">
+      Powered by <a class="hover:underline" href="https://gohugo.io/" target="_blank">Hugo</a> with theme
+      <a class="hover:underline" href="https://github.com/g1eny0ung/hugo-theme-dream" target="_blank">Dream</a>.</span
+    >
+  </p>
+  
+</div>
+
+  <div
+  x-data="{ icons: [
+    { name: 'moon', status: 'y' },
+    { name: 'sunny', status: 'n' },
+    { name: 'desktop', status: 'auto' }
+  ] }"
+  class="flex items-center h-[32px] px-2 gap-2 border border-base-content/30 rounded-full"
+>
+  <template x-for="icon in icons">
+    <div
+      role="button"
+      tabindex="0"
+      :aria-label="'Select ' + icon.name + ' mode'"
+      class="group inline-flex justify-center items-center p-1 rounded-full cursor-pointer hover:bg-primary"
+      :class="$store.darkMode.icon() === icon.name && 'bg-primary'"
+      @click="$store.darkMode.toggle(icon.status)"
+    >
+      <ion-icon
+        :name="`${icon.name}-outline`"
+        class="group-hover:text-primary-content"
+        :class="$store.darkMode.icon() === icon.name && 'text-primary-content'"
+      >
+      </ion-icon>
+    </div>
+  </template>
+</div>
+
+</footer>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+  window.lightTheme = "emerald"
+  window.darkTheme = "forest"
+</script>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/imagesloaded@5.0.0/imagesloaded.pkgd.min.js" integrity="sha256-htrLFfZJ6v5udOG+3kNLINIKh2gvoKqwEhHYfTTMICc=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js" integrity="sha256-Nn1q/fx0H7SNLZMQ5Hw5JLaTRZp0yILA/FRexe19VdI=" crossorigin="anonymous"></script>
+
+  
+  
+  <script src="/js/grid.js"></script>
+
+
+
+
+<script src="/js/main.js"></script>
+
+    
+
+
+
+
+
+
+
+    
+
+    
+
+    
+
+    <script type="module" src="https://unpkg.com/ionicons@7.4.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.4.0/dist/ionicons/ionicons.js"></script>
+  </body>
+</html>
