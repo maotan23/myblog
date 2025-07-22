@@ -34,4 +34,4 @@ jobs:
           external_repository: maotan23/maotan23.github.io # 指定目标仓库
           publish_dir: ./public
           publish_branch: main # 指定目标分支
-          #cname: xxx.com # 如果你有自定义域名
+          #cname: xxx.com # 如果你有自定义域名，写点东西证明我真的改了
