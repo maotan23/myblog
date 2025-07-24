@@ -1,0 +1,67 @@
+// Used in layout
+$padding-1: 1px !default;
+$padding-4: 0.25rem !default;
+$padding-8: 0.5rem !default;
+$padding-16: 1rem !default;
+
+$font-size-base: 24px !default;
+$font-size-12: 0.75rem !default;
+$font-size-14: 0.875rem !default;
+$font-size-16: 1rem !default;
+
+$border-radius: $padding-4 !default;
+
+$body-font-weight: normal !default;
+
+$body-min-width: 20rem !default;
+$container-max-width: 45rem !default;
+
+$menu-width: 18rem !default;
+$toc-width: 18rem !default;
+
+$mobile-breakpoint: $menu-width + $body-min-width * 1.2 + $toc-width !default;
+
+
+$hint-colors: (
+  info: #6bf,
+  warning: #fd6,
+  danger: #f66,
+) !default;
+
+// Themes
+@mixin theme-light {
+  --gray-100: #ffffff;
+  --gray-200: #ab3740;
+  --gray-500: #651c23;
+
+  --color-link: #ab3740;
+  --color-visited-link: #000000;
+
+  --body-background: url("https://64.media.tumblr.com/b435c5f4f58a551bc2a04d3baf0966ec/28df75b586705f4b-be/s1280x1920/5212a899bdbd5f65ccc29ed438adbf5c1fb1f3ee.png");
+  --body-font-color: black;
+
+  --icon-filter: none;
+
+  --hint-color-info: #ab3740;
+  --hint-color-warning: #fd6;
+  --hint-color-danger: #f66;
+}
+
+@mixin theme-dark {
+  --gray-100: #494e54;
+  --gray-200: #ab3740;
+  --gray-500: #651c23;
+
+  --color-link: #ab3740;
+  --color-visited-link: #b88dff;
+
+  --body-background: url("https://texturelabs.org/wp-content/uploads/Texturelabs_Paper_355S.jpg");
+  --body-background-fixed: fixed; // 新增固定背景属性
+  --body-font-color: #dadada;
+
+  --icon-filter: brightness(0) invert(1);
+
+  --hint-color-info: #ab3740;
+  --hint-color-warning: #fd6;
+  --hint-color-danger: #f66;
+}
