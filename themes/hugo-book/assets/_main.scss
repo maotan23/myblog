@@ -324,8 +324,10 @@ body[dir="rtl"] .book-menu {
   }
 
   .book-header {
-    display: block;
+    display: none;
   }
+
+
 
   #menu-control:focus ~ main label[for="menu-control"] {
     @include outline;
@@ -343,6 +345,8 @@ body[dir="rtl"] .book-menu {
 
     .book-page {
       opacity: 0.25;
+      font-size: 0.875rem !important;
+      padding: 1rem !important;
     }
     
     .book-menu-overlay {
