@@ -14,10 +14,10 @@ $border-radius: $padding-4 !default;
 $body-font-weight: normal !default;
 
 $body-min-width: 10rem !default;
-$container-max-width: 45rem !default;
+$container-max-width: 48rem !default;
 
-$menu-width: 18rem !default;
-$toc-width: 18rem !default;
+$menu-width: 16rem !default;
+$toc-width: 16rem !default;
 
 $mobile-breakpoint: $menu-width + $body-min-width * 1.2 + $toc-width !default;
 

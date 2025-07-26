@@ -1,0 +1,18 @@
+{{ define "main" }}
+  {{ if in .Params.categories "doc" }}
+    <article class="markdown book-post post-doc">
+      {{/* <h1>{{ partial "docs/title.html" . }}</h1> */}}
+      {{ partial "docs/post-meta" . }}
+      <div class="book-post-content post-content">
+        {{- .Content -}}
+      </div>
+    </article>
+  {{ else }}
+    <article class="post-default">
+      {{/* <h1>{{ .Title }}</h1> */}}
+      <div class="post-content">
+        {{- .Content -}}
+      </div>
+    </article>
+  {{ end }}
+{{ end }}

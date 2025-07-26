@@ -7,35 +7,31 @@ weight: 1
 
 <br/>
 
-### 联系方式
+#### 联系方式
 
-+ 邮箱：peryton23@126.com
-
-<br/>
-
-### 装修日志
-
-+ 2025-07-24 搭建博客。
++ <small>邮箱：peryton23@126.com</small>
 
 <br/>
 
-### 使用工具/素材鸣谢
+#### 装修日志
 
-+ Hugo - 搭建
-+ Github - 托管
-+ Cloudflare - 部署
-+ Hugo-Book - 主题
-+ TextureLabs - 背景图片
++ <small>2025-07-24 搭建博客。</small>
 
 <br/>
 
-### 待办清单
+#### 使用工具/素材鸣谢
 
-+ CSS 美化
-+ 搭建图床
-+ ~~更正文章排序方式~~
-+ 修改局部字体字号
-+ 日间/夜间模式功能
-+ 评论功能和表情
-+ 邮箱订阅功能
-+ 伪春菜？
++ <small>Hugo - 搭建</small>
++ <small>Github - 托管</small>
++ <small>Cloudflare - 部署</small>
++ <small>Hugo-Book - 主题</small>
++ <small>TextureLabs - 背景图片</small>
+
+<br/>
+
+#### 待办清单
+
++ <small>CSS 美化</small>
++ <small>搭建图床</small>
++ <small>评论功能和表情</small>
++ <small>邮箱订阅功能</small>
