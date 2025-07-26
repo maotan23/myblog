@@ -13,7 +13,7 @@ $border-radius: $padding-4 !default;
 
 $body-font-weight: normal !default;
 
-$body-min-width: 20rem !default;
+$body-min-width: 10rem !default;
 $container-max-width: 45rem !default;
 
 $menu-width: 18rem !default;
@@ -37,7 +37,7 @@ $hint-colors: (
   --color-link: #ab3740;
   --color-visited-link: #000000;
 
-  --body-background: url("https://64.media.tumblr.com/b435c5f4f58a551bc2a04d3baf0966ec/28df75b586705f4b-be/s1280x1920/5212a899bdbd5f65ccc29ed438adbf5c1fb1f3ee.png");
+  --body-background: #FFFBDE;
   --body-font-color: black;
 
   --icon-filter: none;
@@ -57,7 +57,7 @@ $hint-colors: (
 
   --body-background: url("https://texturelabs.org/wp-content/uploads/Texturelabs_Paper_355S.jpg");
   --body-background-fixed: fixed; // 新增固定背景属性
-  --body-font-color: #dadada;
+  --body-font-color: #CCCCCC;
 
   --icon-filter: brightness(0) invert(1);
 
