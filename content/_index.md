@@ -3,21 +3,18 @@ title: 主页
 type: docs
 ---
 
-# Example of RTL page
+<br/>
+<br/>
 
-{{% columns %}}
-## Astris ipse furtiva
+{{% columns ratio="1:2" %}}
 
-Est in vagis et Pittheus tu arge accipiter regia iram vocatur nurus. Omnes ut
-olivae sensit **arma sorori** deducit, inesset **crudus**, ego vetuere aliis,
-modo arsit? Utinam rapta fiducia valuere litora _adicit cursu_, ad facies
+# *Holy Caw!*
+## *Somebody help—*
+
+I’ve been <small>*unwittingly, horrifically, and traumatically* </small>transfigured into a **crow!!!**
 
 <--->
 
-## Suis quot vota
-
-Ea _furtique_ risere fratres edidit terrae magis. Colla tam mihi tenebat:
-miseram excita suadent es pecudes iam. Concilio _quam_ velatus posset ait quod
-nunc! Fragosis suae dextra geruntur functus vulgata.
+<img src="https://64.media.tumblr.com/eb61c2e96892a6fd0e03d01f581c08d3/3e6fffa5987b495f-26/s640x960/a728802188be3ae26d28c4bbf68f031809ac4886.png">
 {{% /columns %}}
 
