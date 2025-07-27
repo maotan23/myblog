@@ -30,15 +30,15 @@ $hint-colors: (
 
 // Themes
 @mixin theme-light {
-  --gray-100: #ffffff;
-  --gray-200: #ab3740;
-  --gray-500: #651c23;
+  --gray-100: #EEE7DD;
+  --gray-200: #E4D7C3;
+  --gray-500: #6B4A20;
 
   --color-link: #ab3740;
   --color-visited-link: #000000;
 
-  --body-background: #FFFBDE;
-  --body-font-color: black;
+  --body-background: #F8F5F1;
+  --body-font-color: #432E14;
 
   --icon-filter: none;
 

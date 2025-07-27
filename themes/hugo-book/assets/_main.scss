@@ -25,6 +25,36 @@ body {
   }
 }
 
+
+/* 隐藏这一行的 list marker */
+.theme-toggle-item {
+  list-style: none;
+  margin-top: 2rem;    // 如需与上方菜单项拉开距离
+}
+
+/* 让按钮“看起来就是个菜单项” */
+.theme-toggle-btn {
+  all: unset;          /* 撤销默认按钮样式 */
+  display: block;      /* 充满整个 li */
+  width: 100%;
+  padding: 0;/* 跟其它菜单项内边距一致 */
+  font-size: 0.6rem;       /* 继承菜单字体大小和行高 */
+  color: var(--body-font-color);      /* 继承菜单文字颜色 */
+  cursor: pointer;
+}
+
+// 当 <html> 或 <body> 上有 theme-light class 时，应用白天配色
+.theme-light {
+  @include theme-light;
+}
+
+// 当有 theme-dark class 时，应用夜间配色
+.theme-dark {
+  @include theme-dark;
+}
+
+
+
 // 只对所有文章正文生效
 .post-content {
   // 行高：比如 1.8（1.8 倍字高）
@@ -44,6 +74,12 @@ body {
   font-size: 0.6rem;  /* 整个 footer 文字都变小为 0.8rem */
   margin: 0 auto;
 }
+
+/* 按钮 li 项目不要额外缩进 */
+.theme-toggle-item {
+  padding: 0.5rem 1rem;
+}
+
 
 h1,
 h2,
@@ -156,6 +192,8 @@ a .book-icon {
     width: 0;
     height: 0;
   }
+
+  
 
   a,
   label {

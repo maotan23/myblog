@@ -39,7 +39,7 @@ Suis quot vota#Ea furtique risere fratres edidit terrae magis. Colla tam mihi 
 <link rel="icon" href="/favicon.png" >
 <link rel="manifest" href="/manifest.json">
 <link rel="canonical" href="http://localhost:1313/">
-<link rel="stylesheet" href="/book.min.1a775eaa18354e59472d8ff37f837aba1ed8b03a66d2cda8ec9fce509d78995c.css" integrity="sha256-Gndeqhg1TllHLY/zf4N6uh7YsDpm0s2o7J/OUJ14mVw=" crossorigin="anonymous">
+<link rel="stylesheet" href="/book.min.463c7b0c14767fc809e6cc222c9ce6f0c0d4c171a1681a26bc310322c2ec5a7e.css" integrity="sha256-Rjx7DBR2f8gJ5swiLJzm8MDUwXGhaBomvDEDIsLsWn4=" crossorigin="anonymous">
   <script defer src="/fuse.min.js"></script>
   <script defer src="/zn.search.min.d1cec0613307d895b02f0ad2863c0cc69f6f1d2aa65099e2ef8f5ff36b355c33.js" integrity="sha256-0c7AYTMH2JWwLwrShjwMxp9vHSqmUJni749f82s1XDM=" crossorigin="anonymous"></script>
 
@@ -51,6 +51,9 @@ https://github.com/alex-shpak/hugo-book
 -->
   
 </head>
+
+
+
 <body dir="ltr">
   <input type="checkbox" class="hidden toggle" id="menu-control" />
   <input type="checkbox" class="hidden toggle" id="toc-control" />
@@ -456,6 +459,7 @@ https://github.com/alex-shpak/hugo-book
 
 
 
+
   
 <ul>
   
@@ -470,6 +474,14 @@ https://github.com/alex-shpak/hugo-book
 
 
 
+
+
+
+<li class="theme-toggle-item">
+  <button id="theme-toggle" class="theme-toggle-btn" aria-label="切换日夜模式">
+    🌙 夜间模式
+  </button>
+</li>
 
 
 
@@ -643,6 +655,46 @@ nunc! Fragosis suae dextra geruntur functus vulgata.</p>
   </main>
 
   
+
+  <script>
+document.addEventListener('DOMContentLoaded', () => {
+  const btn  = document.getElementById('theme-toggle');
+  const html = document.documentElement;
+  const body = document.body;
+  if (!btn) return;
+
+  
+  let theme = localStorage.getItem('BookTheme')
+            || (html.classList.contains('theme-dark') || body.classList.contains('theme-dark')
+                ? 'theme-dark'
+                : 'theme-light');
+
+  
+  html.classList.remove('theme-light','theme-dark');
+  body.classList.remove('theme-light','theme-dark');
+  html.classList.add(theme);
+  body.classList.add(theme);
+
+  
+  btn.textContent = theme === 'theme-light' ? '🌙 夜间模式' : '☀️ 日间模式';
+
+  
+  btn.addEventListener('click', () => {
+    theme = (theme === 'theme-dark') ? 'theme-light' : 'theme-dark';
+
+    html.classList.remove('theme-light','theme-dark');
+    body.classList.remove('theme-light','theme-dark');
+    html.classList.add(theme);
+    body.classList.add(theme);
+
+    localStorage.setItem('BookTheme', theme);
+    btn.textContent = theme === 'theme-light' ? '🌙 夜间模式' : '☀️ 日间模式';
+  });
+});
+</script>
+
+
+
 </body>
 </html>
 
