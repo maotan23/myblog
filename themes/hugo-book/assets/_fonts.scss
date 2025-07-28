@@ -38,16 +38,9 @@
   font-style: normal;
   font-weight: normal;
   font-display: fallback;
-  src: url(https://fonts.adobe.com/fonts/lucida-sans-unicode) format('woff2');
+  src: url('/fonts/LucidaStd.woff') format('woff');
 }
 
-@font-face {
-  font-family: 'Typewriter';
-  font-style: normal;
-  font-weight: normal;
-  font-display: fallback;
-  src: url('/fonts/Typewriter.woff') format('woff');
-}
 
 @font-face {
   font-family: 'Baste';
@@ -58,7 +51,7 @@
 }
 
 body {
-  font-family: '正文','Roboto', sans-serif;
+  font-family: 'Lucida','正文','Roboto', sans-serif,'Baste';
 }
 
 code {

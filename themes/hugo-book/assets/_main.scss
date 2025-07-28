@@ -424,12 +424,8 @@ body[dir="rtl"] .book-menu {
       transform: translateX($menu-width);
       box-shadow: 0 0 $padding-8 rgba(0, 0, 0, 0.1);
     }
-
-        
-    .post-content {
-      padding: 0.8rem 0.6rem !important;  // 上下 0.8rem，左右 0.6rem
-    }
-
+    
+    
     .book-menu-overlay {
       display: block;
       position: absolute;
