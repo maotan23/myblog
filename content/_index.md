@@ -6,7 +6,7 @@ type: docs
 
 {{% columns ratio="1:2" %}}
 
-<div style="font-family: 'Baste';">
+<div style="font-family: 'baste';">
 
 # *Holy Caw!*
 ## *Somebody help——*
