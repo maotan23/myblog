@@ -414,8 +414,8 @@ body[dir="rtl"] .book-menu {
   .post-content,   // 主题里最常见的正文 class
   .book-content         // 如果你有这个 wrapper，也一起处理
   {
-    padding-inline-start: 1rem !important;
-    padding-inline-end:   1rem !important;
+    padding-inline-start: 0.8rem !important;
+    padding-inline-end:   0.8rem !important;
   }
 
 
