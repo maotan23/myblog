@@ -26,12 +26,14 @@ weight: 3
 + <small>Cloudflare - 部署</small>
 + <small>Hugo-Book - 主题</small>
 + <small>TextureLabs - 背景图片</small>
++ <small>ImgURL - 图床</small>
 
 <br/>
 
 #### 待办清单
 
 + <small>CSS 美化</small>
-+ <small>搭建图床</small>
-+ <small>评论功能和表情</small>
-+ <small>邮箱订阅功能</small>
++ <small>伪春菜</small>
++ <small>评论和表情</small>
++ <small>邮箱订阅</small>
++ <small>回到顶部</small>
