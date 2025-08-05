@@ -16,7 +16,7 @@ Lorem markdownum insigne...
 {{%/* /details */%}}
 ```
 
-{{% details "Title" %}}
+{{% details "Title" open %}}
 ## Markdown content
 Lorem markdownum insigne...
 {{% /details %}}

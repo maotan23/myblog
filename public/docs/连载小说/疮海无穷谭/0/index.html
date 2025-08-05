@@ -30,9 +30,9 @@
 <link rel="icon" href="/favicon.png" >
 <link rel="manifest" href="/manifest.json">
 <link rel="canonical" href="http://localhost:1313/docs/%E8%BF%9E%E8%BD%BD%E5%B0%8F%E8%AF%B4/%E7%96%AE%E6%B5%B7%E6%97%A0%E7%A9%B7%E8%B0%AD/0/">
-<link rel="stylesheet" href="/book.min.da5314603e003eb6633f9cba979e1b8d30088431fbdca7740a32ee5854a059f9.css" integrity="sha256-2lMUYD4APrZjP5y6l54bjTAIhDH73Kd0CjLuWFSgWfk=" crossorigin="anonymous">
+<link rel="stylesheet" href="/book.min.6222c8f1f6d278a7fa92bc003f516d8f24ee684f9d5788dbd2d5997f73f6c4d2.css" integrity="sha256-YiLI8fbSeKf6krwAP1FtjyTuaE&#43;dV4jb0tWZf3P2xNI=" crossorigin="anonymous">
   <script defer src="/fuse.min.js"></script>
-  <script defer src="/zn.search.min.9748fdc55b80102b3849a6a1f4d8c85199909f4a003b25a99657d4c754ae5faa.js" integrity="sha256-l0j9xVuAECs4Saah9NjIUZmQn0oAOyWpllfUx1SuX6o=" crossorigin="anonymous"></script>
+  <script defer src="/zn.search.min.9c74eba93b79b871e589431626168e040f2c98d3d03dc9bbcdc250f8facac25d.js" integrity="sha256-nHTrqTt5uHHliUMWJhaOBA8smNPQPcm7zcJQ&#43;PrKwl0=" crossorigin="anonymous"></script>
 
   <script defer src="/sw.min.6f6f90fcb8eb1c49ec389838e6b801d0de19430b8e516902f8d75c3c8bd98739.js" integrity="sha256-b2&#43;Q/LjrHEnsOJg45rgB0N4ZQwuOUWkC&#43;NdcPIvZhzk=" crossorigin="anonymous"></script>
 <!--
@@ -40,6 +40,10 @@ Made with Book Theme
 https://github.com/alex-shpak/hugo-book
 -->
   
+  <link
+    rel="stylesheet"
+    href="https://unpkg.com/@waline/client@v3/dist/waline.css"
+  />
 </head>
 
 
@@ -751,6 +755,80 @@ document.addEventListener('DOMContentLoaded', () => {
     btn.textContent = theme === 'theme-light' ? '🌙 夜间模式' : '☀️ 日间模式';
   });
 });
+</script>
+
+<div id="waline"></div>
+<script type="module">
+  import { init } from 'https://unpkg.com/@waline/client@v3/dist/waline.js';
+
+  init({
+    el: '#waline',
+    serverURL: 'https://your-domain.vercel.app',
+  });
+</script>
+
+<style>
+   
+  #waline {
+    max-width: 800px;    
+    padding-left: 3rem;
+    margin: 0 auto;      
+    width: 100%;         
+  }
+
+   
+   
+  .wl-panel textarea.wl-input,
+  .wl-panel input.wl-input {
+    opacity: 0.5 !important;
+  }
+
+   
+  .wl-card { border: 0; }
+  .wl-card .wl-quote { border-inline-start: 0 dashed rgba(237, 237, 237, .5); }
+  .wl-card-item { position: relative; display: flex; padding: .2em; }
+  .wl-addr { display: none !important; color: transparent !important; }
+  .wl-content .vemoji,
+  .wl-content .wl-emoji { display: inline-block; vertical-align: baseline; height: 3.4em !important; margin: -0.125em .25em; }
+  img.wl-emoji, img.vemoji { vertical-align: sub; transition: ease-out .6s; }
+  img.wl-emoji:hover, img.vemoji:hover { transform: scale(1.8) !important; }
+  .wl-header { display: flex; overflow: hidden; padding: 0 4px; border-bottom: 0 dashed var(--waline-border-color); border-top-left-radius: 0; border-top-right-radius: 0; }
+  .wl-btn.primary { border-color: transparent !important; background: #ab3740; color: #fff; }
+  @media (max-width:580px) {
+    .wl-header-item:not(:last-child) { border-bottom: 0 dashed var(--waline-border-color); }
+  }
+  :root {
+    --waline-theme-color: #ab3740;
+    --waline-active-color: #ab3740;
+    --waline-light-grey: unset;
+    --waline-info-color: unset;
+    --waline-border: 0 solid #ab3740;
+  }
+  .wl-editor:focus, .wl-input:focus { background: transparent; }
+  .wl-info .wl-text-number { color: var(--waline-color); font-size: .75em; }
+  .wl-card .wl-delete,
+  .wl-card .wl-like,
+  .wl-card .wl-reply,
+  .wl-card .wl-edit,
+  .wl-card span.wl-nick,
+  .wl-empty, .wl-admin-actions,
+  [data-waline] p { color: unset; }
+
+</style>
+
+<div id="waline"></div>
+<script type="module">
+  import { init } from 'https://unpkg.com/@waline/client@v3/dist/waline.js';
+
+  init({
+    el: '#waline',
+    serverURL: '<YOUR SERVER URL>',
+
+    
+    emoji: [
+      '//unpkg.com/@waline/emojis@1.2.0/tw-emoji',
+    ],
+  });
 </script>
 
 
