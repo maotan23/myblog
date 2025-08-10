@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="zh"><head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+<title>和影子说话</title>
+
+
+
+
+<meta charset="utf-8">
+<meta name="X-UA-Compatible" content="IE=edge">
+<meta name="google-site-verification" content="G-XXXXXXXXXX">
+<meta content="width=device-width, initial-scale=1.0, maximum-scale=5, user-scalable=5" name="viewport">
+<meta content="telephone=no" name="format-detection">
+<meta name="description" content="伸太郎走在日光里，午饭过后的时间，太阳在慢慢倾斜着位置。">
+<meta name="renderer" content="webkit">
+<meta name="theme-color" content="#ffffff">
+
+
+
+<meta property="og:url" content="http://localhost:1313/posts/%E5%90%8C%E4%BA%BA/%E5%92%8C%E5%BD%B1%E5%AD%90%E8%AF%B4%E8%AF%9D/">
+  <meta property="og:site_name" content="Haunted Blog">
+  <meta property="og:title" content="和影子说话">
+  <meta property="og:description" content="伸太郎走在日光里，午饭过后的时间，太阳在慢慢倾斜着位置。">
+  <meta property="og:locale" content="zh">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2015-11-22T00:00:00+00:00">
+    <meta property="article:modified_time" content="2015-11-22T00:00:00+00:00">
+    <meta property="article:tag" content="阳炎Project">
+    <meta property="article:tag" content="如月伸太郎">
+    <meta property="article:tag" content="楯山文乃">
+
+
+
+
+
+
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="和影子说话">
+  <meta name="twitter:description" content="伸太郎走在日光里，午饭过后的时间，太阳在慢慢倾斜着位置。">
+
+
+
+
+
+
+
+      <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+      <script>
+        var doNotTrack = false;
+        if ( false ) {
+          var dnt = (navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack);
+          var doNotTrack = (dnt == "1" || dnt == "yes");
+        }
+        if (!doNotTrack) {
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-XXXXXXXXXX');
+        }
+      </script>
+
+
+
+
+<script type="text/javascript">
+  (function(c,l,a,r,i,t,y){
+      c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+      t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+      y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+  })(window, document, "clarity", "script", "abcdefghzd");
+</script>
+
+
+
+  
+
+
+
+
+
+
+      <script src="/js/toc.js"></script>
+    
+    <link type="text/css" rel="stylesheet" href="/vendor/css/bootstrap.min.css">
+
+<link rel="stylesheet" href="/scss/dark-mode.min.d036a79292c17e8867ff9a5455aa9ff538d5d823ad656cbe935c41d19d0409a6.css" integrity="sha256-0DankpLBfohn/5pUVaqf9TjV2COtZWy&#43;k1xB0Z0ECaY=" media="screen">
+
+
+<link rel="stylesheet"
+          href="https://fonts.googleapis.com/css?family=Material+Icons">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</head>
+<body>
+    	<div id="app"><div class="single-column-drawer-container" id="drawer"
+     v-bind:class="{ 'single-column-drawer-container-active': isDrawerOpen }">
+    <div class="drawer-content">
+        <div class="drawer-menu">
+            
+            
+            
+                
+                
+                
+                    
+                
+                
+                
+                <a class="a-block drawer-menu-item active" href="/posts">
+                    归档 Archive
+                </a>
+                
+            
+                
+                
+                
+                
+                
+                <a class="a-block drawer-menu-item false" href="/categories">
+                    分类 Categories
+                </a>
+                
+            
+                
+                
+                
+                
+                
+                <a class="a-block drawer-menu-item false" href="/tags">
+                    标签 Tags
+                </a>
+                
+            
+            
+            <div class="toc">
+
+
+</div>
+            
+        </div>
+    </div>
+</div>
+<transition name="fade">
+    <div id="drawer-mask" v-bind:class="{ 'single-column-drawer-mask': mounted }" v-if="isDrawerOpen" v-on:click="toggleDrawer"></div>
+</transition>
+<nav id="navBar" class="navbar sticky-top navbar-light single-column-nav-container">
+    <div id="navBackground" class="nav-background"></div>
+    <div class="container container-narrow nav-content">
+        <button id="nav_dropdown_btn" class="nav-dropdown-toggle" type="button" v-on:click="toggleDrawer">
+            <i class="material-icons">
+                menu
+            </i>
+        </button>
+        <a id="navTitle" class="navbar-brand" href="http://localhost:1313/">
+            Haunted Blog
+        </a>
+        
+        <button type="button" class="nav-darkmode-toggle" id="darkModeToggleButton2">
+            <i class="material-icons" id="darkModeToggleIcon2">
+                dark_mode
+            </i>
+        </button>
+        
+    </div>
+</nav>
+<div class="single-column-header-container" id="pageHead"
+     v-bind:style="{ transform: 'translateZ(0px) translateY('+.3*scrollY+'px)', opacity: 1-navOpacity }">
+    <a href="http://localhost:1313/">
+        <div class="single-column-header-title">Haunted Blog</div>
+        
+        <div class="single-column-header-subtitle">目前还没闹鬼。</div>
+        
+
+    </a>
+</div>
+
+            <div id="content">
+                <div id="streamContainer" class="stream-container">
+
+    <div class="post-list-container post-list-container-shadow">
+        <div class="post">
+            
+            
+            
+
+            <div class="post-head-wrapper-text-only"
+                
+            >
+                <div class="post-title">
+                    和影子说话
+                    
+                    <div class="post-subtitle">
+                        伸太郎走在日光里，午饭过后的时间，太阳在慢慢倾斜着位置。
+                    </div>
+                    
+
+                    
+                    <div class="post-meta">
+                        <span class="meta-item meta-date">
+                        
+                            2015-11-22
+                        
+                        </span>
+
+                        
+                        <span class="meta-item meta-categories">
+                            &nbsp; <i class="material-icons" style="">folder</i>
+                            <a href="/categories/%E5%90%8C%E4%BA%BA">同人</a>
+                        </span>
+                        
+
+                        
+                        
+                        <span class="meta-item meta-tags">
+                            &nbsp; <i class="material-icons" style="">label</i>
+                            
+                                <a href="/tags/%E9%98%B3%E7%82%8Eproject">阳炎Project</a>&nbsp;
+                            
+                                <a href="/tags/%E5%A6%82%E6%9C%88%E4%BC%B8%E5%A4%AA%E9%83%8E">如月伸太郎</a>&nbsp;
+                            
+                                <a href="/tags/%E6%A5%AF%E5%B1%B1%E6%96%87%E4%B9%83">楯山文乃</a>&nbsp;
+                            
+                        </span>
+                        
+                        
+
+                        
+                        
+                        
+                        <span class="meta-item meta-chars">
+                            &nbsp;1959字
+                        </span>
+
+                        
+                    </div>
+                </div>
+            </div>
+            
+            <div class="post-body-wrapper">
+                
+                <div class="post-body" v-pre>
+                
+                    <p><br/><br/></p>
+<p>伸太郎走在日光里，午饭过后的时间，太阳在慢慢倾斜着位置，他看着影子逐渐拉长，偏向一个需要扭着脖子才能看见的方向。下午真是热极了，尽管没有达到夏天温度的高峰，在这冬天里已经是很突兀的温度了。伸太郎感到自己的汗液仿佛从毛孔里由内向外挤出，湿润了汗衫，在运动服的内侧滑动然后蒸发；他感到额头和鼻翼都滚动着汗珠，但伸手去擦时才发现什么都没有，什么都是错觉。</p>
+<p>伸太郎走在一条无人经过的温暖小道上。</p>
+<p><br/><br/></p>
+<p>伸太郎路过了一株丝樱，花苞都少得可怜，只有几片积雪未干的枯败的叶子，在残枝烂梗上挂着奄奄一息，正迎着日光缓慢地融化，水滴落在地面上，有些正巧打湿了伸太郎的鞋子，还有一些落在伸太郎的影子上。</p>
+<p>“啊！”</p>
+<p>伸太郎讶然一惊。伸太郎侧过身子，细细倾听，周围却不再有声音。可是方才，他方才明明就听见了某个人的声音；绝不是他自己的，因为那声音纤细一些，柔和一些……就像与他年龄相仿的某某少女。</p>
+<p>“嗨。”伸太郎低声说，“你在哪儿呢？”</p>
+<p>没有人回答。</p>
+<p>伸太郎转过身，他的影子落在了荆棘丛里。</p>
+<p>“啊！”那声音的主人又叫起来。</p>
+<p>“嗨，嗨，”伸太郎叫道，“你好吗——？”</p>
+<p>他忽然听见笑声，他感到有风吹过来了，帮助他消去了一些热气，这笑声混在风里，轻飘飘的，好像空气里的霾，但并没有灌入他的鼻孔，而是钻进了他的耳朵。那声音笑了一阵，终于说：</p>
+<p>“我好吗，我好吗？我并不好呀，伸太郎。”</p>
+<p>伸太郎听着，不由自主愣住了。一种奇异的情感——像被吹起的气球一样——在他身体里膨胀起来。</p>
+<p><br/><br/></p>
+<p>“你不好吗？”伸太郎说，“你是谁呢？你是哪个人，是我曾经认识的人吗？”</p>
+<p>她没有回答，但又笑起来了，笑声很轻，好像气泡在海里砰砰地炸开。</p>
+<p>伸太郎陷入了思考之中。他感到和这个声音的主人如此熟悉；每天都经过的一条路，那条路旁的一株不惹眼的丝樱，丝樱也许被虫蛀烂也许盛开的花瓣，他就好像熟悉这些景物一样熟悉这个声音，然而伸太郎又完全想不起来了，这是谁的声音，从哪里传来，想告诉他什么？</p>
+<p>她问：“伸太郎，我是你熟悉的人吗？”</p>
+<p>伸太郎想了想，说：“我不知道。我好像很熟悉你，可是我确定不了。”</p>
+<p>“那样我很开心。”</p>
+<p>“你很开心吗？为了这个？”</p>
+<p>“当然。”</p>
+<p>“可是我确定不了。”</p>
+<p>“不用，伸太郎。”她说，声音逐渐清晰起来，“你不用确定这些。你不用想起来我的模样，我常戴什么颜色的围巾，我叫什么名字，我数学考试的成绩……都不用。所有和你相关的事，我都记着，所有与我挂钩的事，你都忘记吧。”</p>
+<p>“为什么？”</p>
+<p>“因为人活在世上，是需要人来惦念的，死后便是一个人孤孤单单的旅行。死者在漫无目的地行路时可以挂念生者，活人却不可以被死人绊住了脚步。</p>
+<p>“因为我已经死了。我可以记着你，我会一直记着你。”她说。</p>
+<p><br/><br/></p>
+<p>你是鬼魂一类的东西吗？伸太郎一瞬间想要这样问。他觉得似乎有些不礼貌，于是把话硬塞回来，没有出口。又不禁打了个冷战。他不晓得这声音的主人——这个笑声如气泡的鬼魂，正在何方望着他尴尬的模样。</p>
+<p>她说：我会一直记着你。好恐怖，伸太郎想道。更恐怖的是，那鬼魂好像读懂了他的心思，带着笑意说：“别害怕呀，伸太郎。也不用东张西望。”她顿了顿，说，“我在你的影子里。”</p>
+<p><br/><br/></p>
+<p>伸太郎热得受不了了，找了一个凉亭的石凳坐下。影子在他脚下，几乎要和路边的绿化带的阴影融为一体。伸太郎问：“那么，你会热吗？”</p>
+<p>“你热吗，伸太郎？”她反问道。</p>
+<p>“我觉得很热。”</p>
+<p>“我不热。”她说，“我这里很冷，我们实际上不在同一个地方，尽管我可以感觉到你，我看不见你……你都能看见些什么？”</p>
+<p>伸太郎想到了水滴在影子上、影子落在荆棘丛里时的叫声，觉得她似乎靠谱。</p>
+<p>伸太郎张望四周，他看见草坪，不远处有一个水坑，满载着前几天的积水，还有两只动物在搅动水花，是什么动物呢？好像两只癞蛤蟆，但他不能确认。他看见街道，电瓶车、自行车、公交车、小轿车，水泻一般滑过银色的街道。他看见麻雀，对面楼房的二层有女孩梳理长发，麻雀衔着掉下来的碎发，快快地逃走了。他看见太阳，他不敢用肉眼直视那个火热的光源，于是转过视线看逐渐积累起来的云翳，天色不知觉间暗了不少。他低头看影子，那个影子好像也在不自觉地咕噜噜冒泡，一点点地消失掉。伸太郎体内的感情又膨胀了几分，却还是不知来源。</p>
+<p><br/><br/></p>
+<p>伸太郎说：“我看见天在褪色。”</p>
+<p><br/><br/></p>
+<p>那影子闪动了几下，好像点头一般。</p>
+<p>过了一会，伸太郎反应过来，那就是自己点着头，尽管存在一个女孩的声音，影子实际上还是他的身体轮廓在光线投射下形成的阴翳。</p>
+<p>“再见了，伸太郎。”她说，最后几个字有点听不清楚，好像气泡被提前击碎，只留下几个模糊的气音。她还说了些什么，然而在伸太郎耳中，只是一连串的泡泡声。</p>
+<p>伸太郎下意识地点点头，说：“再见。”</p>
+<p>他站起身，拍了拍衣服，才发现天色完全阴暗了下去。回去的路上再经过那株丝樱，它仍在淌着雪水，只是再也没有一个女孩的声音了。</p>
+
+                    
+                    <HR width="100%" id="EOF">
+		    <p style="color:#777;">最后修改于 2015-11-22</p>
+                    
+                </div>
+            </div>
+            
+            
+            <nav class="post-pagination">
+                
+                <a class="newer-posts" href="/posts/%E5%90%8C%E4%BA%BA/%E9%80%8F%E6%98%8E%E4%BA%BA/">
+			下回<br>透明人
+                </a>
+                
+                
+                
+                <a class="older-posts" href="/posts/%E5%90%8C%E4%BA%BA/%E5%8C%97%E6%9E%81%E5%85%89/">
+			上回<br>北极光
+                </a>
+                
+            </nav>
+            <div class="post-comment-wrapper">
+                
+
+
+
+
+
+
+
+
+
+
+
+
+            </div>
+        </div>
+    </div>
+
+
+                    </div>
+            </div><div id="sideContainer" class="side-container">
+    
+    <a class="a-block nav-head false" href="http://localhost:1313/">
+    
+        <div class="nav-title">
+            Haunted Blog
+        </div>
+        
+        <div class="nav-subtitle">
+            目前还没闹鬼。
+        </div>
+        
+    </a>
+
+    <div class="nav-link-list">
+        
+        
+            
+            
+            
+                
+            
+            
+            
+            <a class="a-block nav-link-item active" href="/posts">
+                归档 Archive
+            </a>
+            
+        
+            
+            
+            
+            
+            
+            <a class="a-block nav-link-item false" href="/categories">
+                分类 Categories
+            </a>
+            
+        
+            
+            
+            
+            
+            
+            <a class="a-block nav-link-item false" href="/tags">
+                标签 Tags
+            </a>
+            
+        
+    </div>
+
+    
+
+    <div class="nav-footer">
+        
+Hugo Theme <a href="https://github.com/amazingrise/hugo-theme-diary">Diary</a> by <a href="https://risehere.net/">Rise</a>
+<br>
+移植自 <a href="https://mak1t0.cc/" target="_blank" rel="noreferrer noopener">Makito</a>'s <a href="https://github.com/SumiMakito/hexo-theme-journal/" target="_blank" rel="noreferrer noopener">Journal.</a> <br>
+<br>
+
+&copy;
+	
+	?-2025 Haunted Blog
+	
+
+    </div>
+    
+</div><div id="extraContainer" class="extra-container">
+    <div class="toc-wrapper">
+        
+
+        
+        <div class="toc">
+
+
+</div>
+        
+    </div>
+    <div class="pagination">
+        <a id="globalBackToTop" class="pagination-action animated-visibility" href="#top"
+            :class="{ invisible: scrollY == 0 }">
+            <i class="material-icons pagination-action-icon">
+                keyboard_arrow_up
+            </i>
+        </a>
+        
+        <a type="button" class="pagination-action" id="darkModeToggleButton">
+            <span class="material-icons pagination-action-icon" id="darkModeToggleIcon">
+                dark_mode
+            </span>
+        </a>
+        
+        
+    </div>
+</div>
+
+<div id="single-column-footer">
+Hugo Theme <a href="https://github.com/amazingrise/hugo-theme-diary">Diary</a> by <a href="https://risehere.net/">Rise</a>
+<br>
+移植自 <a href="https://mak1t0.cc/" target="_blank" rel="noreferrer noopener">Makito</a>'s <a href="https://github.com/SumiMakito/hexo-theme-journal/" target="_blank" rel="noreferrer noopener">Journal.</a> <br>
+<br>
+
+&copy;
+	
+	?-2025 Haunted Blog
+	
+</div>
+            </div>
+    
+    <script src="/js/journal.js"></script></body>
+</html>

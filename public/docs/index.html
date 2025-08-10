@@ -1,752 +1,616 @@
 <!DOCTYPE html>
-<html lang="zn" dir="ltr">
-<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
-  <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<html lang="zh"><head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+<title>Docs</title>
+
+
+
+
+<meta charset="utf-8">
+<meta name="X-UA-Compatible" content="IE=edge">
+<meta name="google-site-verification" content="G-XXXXXXXXXX">
+<meta content="width=device-width, initial-scale=1.0, maximum-scale=5, user-scalable=5" name="viewport">
+<meta content="telephone=no" name="format-detection">
 <meta name="description" content="">
-<meta name="theme-color" media="(prefers-color-scheme: light)" content="#ffffff">
-<meta name="theme-color" media="(prefers-color-scheme: dark)" content="#343a40">
-<meta name="color-scheme" content="light dark"><meta property="og:url" content="http://localhost:1313/docs/">
+<meta name="renderer" content="webkit">
+<meta name="theme-color" content="#ffffff">
+
+
+
+<meta property="og:url" content="http://localhost:1313/docs/">
   <meta property="og:site_name" content="Haunted Blog">
   <meta property="og:title" content="Docs">
-  <meta property="og:locale" content="zn">
+  <meta property="og:description" content="My HomePage Description">
+  <meta property="og:locale" content="zh">
   <meta property="og:type" content="website">
-<title>Docs | Haunted Blog</title>
-<link rel="icon" href="/favicon.png" >
-<link rel="manifest" href="/manifest.json">
-<link rel="canonical" href="http://localhost:1313/docs/">
-<link rel="stylesheet" href="/book.min.6222c8f1f6d278a7fa92bc003f516d8f24ee684f9d5788dbd2d5997f73f6c4d2.css" integrity="sha256-YiLI8fbSeKf6krwAP1FtjyTuaE&#43;dV4jb0tWZf3P2xNI=" crossorigin="anonymous">
-  <script defer src="/fuse.min.js"></script>
-  <script defer src="/zn.search.min.9c74eba93b79b871e589431626168e040f2c98d3d03dc9bbcdc250f8facac25d.js" integrity="sha256-nHTrqTt5uHHliUMWJhaOBA8smNPQPcm7zcJQ&#43;PrKwl0=" crossorigin="anonymous"></script>
 
-  <script defer src="/sw.min.6f6f90fcb8eb1c49ec389838e6b801d0de19430b8e516902f8d75c3c8bd98739.js" integrity="sha256-b2&#43;Q/LjrHEnsOJg45rgB0N4ZQwuOUWkC&#43;NdcPIvZhzk=" crossorigin="anonymous"></script>
-<link rel="alternate" type="application/rss+xml" href="http://localhost:1313/docs/index.xml" title="Haunted Blog" />
-<!--
-Made with Book Theme
-https://github.com/alex-shpak/hugo-book
--->
+
+
+
+
+
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Docs">
+  <meta name="twitter:description" content="My HomePage Description">
+
+
+
+
+
+
+
+      <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+      <script>
+        var doNotTrack = false;
+        if ( false ) {
+          var dnt = (navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack);
+          var doNotTrack = (dnt == "1" || dnt == "yes");
+        }
+        if (!doNotTrack) {
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-XXXXXXXXXX');
+        }
+      </script>
+
+
+
+
+<script type="text/javascript">
+  (function(c,l,a,r,i,t,y){
+      c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+      t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+      y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+  })(window, document, "clarity", "script", "abcdefghzd");
+</script>
+
+
+
   
-  <link
-    rel="stylesheet"
-    href="https://unpkg.com/@waline/client@v3/dist/waline.css"
-  />
+
+
+
+
+
+
+    <link type="text/css" rel="stylesheet" href="/vendor/css/bootstrap.min.css">
+
+<link rel="stylesheet" href="/scss/dark-mode.min.1b73032b68b9a162dfb947ae3d1aeec814d67f5050a5b431ef0cbf24dcd23b7f.css" integrity="sha256-G3MDK2i5oWLfuUeuPRruyBTWf1BQpbQx7wy/JNzSO38=" media="screen">
+
+
+<link rel="stylesheet"
+          href="https://fonts.googleapis.com/css?family=Material+Icons">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 </head>
-
-
-
-<body dir="ltr">
-  <input type="checkbox" class="hidden toggle" id="menu-control" />
-  <input type="checkbox" class="hidden toggle" id="toc-control" />
-  <main class="container flex">
-    <aside class="book-menu">
-      <div class="book-menu-content">
-        
-  <nav>
-<h2 class="book-brand">
-  <a class="flex align-center" href="/"><span>Haunted Blog</span>
-  </a>
-</h2>
-
-
-<div class="book-search hidden">
-  <input type="text" id="book-search-input" placeholder="" aria-label="" maxlength="64" data-hotkeys="s/" />
-  <div class="book-search-spinner hidden"></div>
-  <ul id="book-search-results"></ul>
+<body>
+    	<div id="app"><div class="single-column-drawer-container" id="drawer"
+     v-bind:class="{ 'single-column-drawer-container-active': isDrawerOpen }">
+    <div class="drawer-content">
+        <div class="drawer-menu">
+            
+            
+            
+                
+                
+                
+                
+                
+                <a class="a-block drawer-menu-item false" href="/posts">
+                    归档 Archive
+                </a>
+                
+            
+                
+                
+                
+                
+                
+                <a class="a-block drawer-menu-item false" href="/categories">
+                    分类 Categories
+                </a>
+                
+            
+                
+                
+                
+                
+                
+                <a class="a-block drawer-menu-item false" href="/tags">
+                    标签 Tags
+                </a>
+                
+            
+            
+        </div>
+    </div>
 </div>
-<script>document.querySelector(".book-search").classList.remove("hidden")</script>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  
-  <ul>
-    
-      
-        <li class="book-section-flat" >
-          
-  
-  
-
-  
-    <span>连载小说</span>
-  
-
-          
-  <ul>
-    
-      
-        <li>
-          
-  
-  
-
-  
-    <input type="checkbox" id="section-4b7c225b9c6d581afe9447e42620b059" class="toggle"  />
-    <label for="section-4b7c225b9c6d581afe9447e42620b059" class="flex">
-      <a role="button" class="flex-auto ">疮海无穷谭</a>
-    </label>
-  
-
-          
-  <ul>
-    
-      
-        <li>
-          
-  
-  
-
-  
-    <a href="/docs/%E8%BF%9E%E8%BD%BD%E5%B0%8F%E8%AF%B4/%E7%96%AE%E6%B5%B7%E6%97%A0%E7%A9%B7%E8%B0%AD/0/" class="">故事简介</a>
-  
-
-        </li>
-      
-    
-      
-        <li>
-          
-  
-  
-
-  
-    <a href="/docs/%E8%BF%9E%E8%BD%BD%E5%B0%8F%E8%AF%B4/%E7%96%AE%E6%B5%B7%E6%97%A0%E7%A9%B7%E8%B0%AD/1/" class="">第一章 老鼠</a>
-  
-
-        </li>
-      
-    
-      
-        <li>
-          
-  
-  
-
-  
-    <a href="/docs/%E8%BF%9E%E8%BD%BD%E5%B0%8F%E8%AF%B4/%E7%96%AE%E6%B5%B7%E6%97%A0%E7%A9%B7%E8%B0%AD/2/" class="">第二章 为什么心喋喋不休</a>
-  
-
-        </li>
-      
-    
-      
-        <li>
-          
-  
-  
-
-  
-    <a href="/docs/%E8%BF%9E%E8%BD%BD%E5%B0%8F%E8%AF%B4/%E7%96%AE%E6%B5%B7%E6%97%A0%E7%A9%B7%E8%B0%AD/3/" class="">第三章 海上庭审</a>
-  
-
-        </li>
-      
-    
-      
-        <li>
-          
-  
-  
-
-  
-    <a href="/docs/%E8%BF%9E%E8%BD%BD%E5%B0%8F%E8%AF%B4/%E7%96%AE%E6%B5%B7%E6%97%A0%E7%A9%B7%E8%B0%AD/4/" class="">第四章 永不复焉</a>
-  
-
-        </li>
-      
-    
-  </ul>
-
-        </li>
-      
-    
-  </ul>
-
-        </li>
-      
-    
-      
-        <li class="book-section-flat" >
-          
-  
-  
-
-  
-    <span>短篇小说</span>
-  
-
-          
-  <ul>
-    
-      
-        <li>
-          
-  
-  
-
-  
-    <input type="checkbox" id="section-26188b0f8beebfc3e6c62bb6dd4cd29a" class="toggle"  />
-    <label for="section-26188b0f8beebfc3e6c62bb6dd4cd29a" class="flex">
-      <a role="button" class="flex-auto ">原创小说</a>
-    </label>
-  
-
-          
-  <ul>
-    
-      
-        <li>
-          
-  
-  
-
-  
-    <a href="/docs/%E7%9F%AD%E7%AF%87%E5%B0%8F%E8%AF%B4/%E5%8E%9F%E5%88%9B%E5%B0%8F%E8%AF%B4/%E4%B9%B0%E9%B1%BC/" class="">买鱼</a>
-  
-
-        </li>
-      
-    
-      
-        <li>
-          
-  
-  
-
-  
-    <a href="/docs/%E7%9F%AD%E7%AF%87%E5%B0%8F%E8%AF%B4/%E5%8E%9F%E5%88%9B%E5%B0%8F%E8%AF%B4/%E6%B2%99%E6%BC%A0/" class="">沙漠</a>
-  
-
-        </li>
-      
-    
-      
-        <li>
-          
-  
-  
-
-  
-    <a href="/docs/%E7%9F%AD%E7%AF%87%E5%B0%8F%E8%AF%B4/%E5%8E%9F%E5%88%9B%E5%B0%8F%E8%AF%B4/%E8%AF%97%E7%9A%84%E6%AD%A3%E4%B9%89/" class="">心</a>
-  
-
-        </li>
-      
-    
-      
-        <li>
-          
-  
-  
-
-  
-    <a href="/docs/%E7%9F%AD%E7%AF%87%E5%B0%8F%E8%AF%B4/%E5%8E%9F%E5%88%9B%E5%B0%8F%E8%AF%B4/%E8%90%BD%E9%9B%B7%E4%B9%8B%E5%A4%9C/" class="">落雷</a>
-  
-
-        </li>
-      
-    
-      
-        <li>
-          
-  
-  
-
-  
-    <a href="/docs/%E7%9F%AD%E7%AF%87%E5%B0%8F%E8%AF%B4/%E5%8E%9F%E5%88%9B%E5%B0%8F%E8%AF%B4/violin/" class="">Violin</a>
-  
-
-        </li>
-      
-    
-      
-        <li>
-          
-  
-  
-
-  
-    <a href="/docs/%E7%9F%AD%E7%AF%87%E5%B0%8F%E8%AF%B4/%E5%8E%9F%E5%88%9B%E5%B0%8F%E8%AF%B4/%E5%8E%9F%E9%87%8E-%E6%B2%B3%E6%B5%81-%E5%8E%9F%E9%87%8E/" class="">原野</a>
-  
-
-        </li>
-      
-    
-      
-        <li>
-          
-  
-  
-
-  
-    <a href="/docs/%E7%9F%AD%E7%AF%87%E5%B0%8F%E8%AF%B4/%E5%8E%9F%E5%88%9B%E5%B0%8F%E8%AF%B4/%E5%B9%BD%E7%A6%BD%E5%AF%B9%E6%89%8B/" class="">幽禽</a>
-  
-
-        </li>
-      
-    
-      
-        <li>
-          
-  
-  
-
-  
-    <a href="/docs/%E7%9F%AD%E7%AF%87%E5%B0%8F%E8%AF%B4/%E5%8E%9F%E5%88%9B%E5%B0%8F%E8%AF%B4/%E5%87%B6%E6%9D%80%E6%A1%88/" class="">凶杀案</a>
-  
-
-        </li>
-      
-    
-      
-        <li>
-          
-  
-  
-
-  
-    <a href="/docs/%E7%9F%AD%E7%AF%87%E5%B0%8F%E8%AF%B4/%E5%8E%9F%E5%88%9B%E5%B0%8F%E8%AF%B4/%E6%97%85%E8%80%85%E5%92%8C%E4%B9%8C%E9%B8%A6/" class="">乌鸦</a>
-  
-
-        </li>
-      
-    
-      
-        <li>
-          
-  
-  
-
-  
-    <a href="/docs/%E7%9F%AD%E7%AF%87%E5%B0%8F%E8%AF%B4/%E5%8E%9F%E5%88%9B%E5%B0%8F%E8%AF%B4/%E6%9D%82%E9%9F%B3/" class="">杂音</a>
-  
-
-        </li>
-      
-    
-  </ul>
-
-        </li>
-      
-    
-      
-        <li>
-          
-  
-  
-
-  
-    <input type="checkbox" id="section-8089206da0d8b7dff19c191f55261594" class="toggle"  />
-    <label for="section-8089206da0d8b7dff19c191f55261594" class="flex">
-      <a role="button" class="flex-auto ">跑团衍生</a>
-    </label>
-  
-
-          
-  <ul>
-    
-      
-        <li>
-          
-  
-  
-
-  
-    <a href="/docs/%E7%9F%AD%E7%AF%87%E5%B0%8F%E8%AF%B4/%E8%B7%91%E5%9B%A2%E8%A1%8D%E7%94%9F/%E6%89%AB%E9%99%A4%E6%97%A5/" class="">扫除日</a>
-  
-
-        </li>
-      
-    
-      
-        <li>
-          
-  
-  
-
-  
-    <a href="/docs/%E7%9F%AD%E7%AF%87%E5%B0%8F%E8%AF%B4/%E8%B7%91%E5%9B%A2%E8%A1%8D%E7%94%9F/%E8%8E%AB%E6%B6%85%E5%A1%94/" class="">莫涅塔</a>
-  
-
-        </li>
-      
-    
-      
-        <li>
-          
-  
-  
-
-  
-    <a href="/docs/%E7%9F%AD%E7%AF%87%E5%B0%8F%E8%AF%B4/%E8%B7%91%E5%9B%A2%E8%A1%8D%E7%94%9F/%E4%BE%BF%E8%BD%A6/" class="">便车</a>
-  
-
-        </li>
-      
-    
-  </ul>
-
-        </li>
-      
-    
-  </ul>
-
-        </li>
-      
-    
-      
-        <li class="book-section-flat" >
-          
-  
-  
-
-  
-    <a href="/docs/about/" class="">About</a>
-  
-
-          
-  <ul>
-    
-  </ul>
-
-        </li>
-      
-    
-      
-        <li class="book-section-flat" >
-          
-  
-  
-
-  
-    <a href="/docs/%E5%8F%8B%E6%83%85%E9%93%BE%E6%8E%A5/" class="">友情链接</a>
-  
-
-          
-  <ul>
-    
-  </ul>
-
-        </li>
-      
-    
-  </ul>
-
-
-
-
-
-
-
-
-
-
-
-  
-<ul>
-  
-  <li>
-    <a href="https://neodb.social/users/Leto/"  target="_blank" rel="noopener">
-        NeoDB
-      </a>
-  </li>
-  
-</ul>
-
-
-
-
-
-
-
-<li class="theme-toggle-item">
-  <button id="theme-toggle" class="theme-toggle-btn" aria-label="切换日夜模式">
-    🌙 夜间模式
-  </button>
-</li>
-
-
-
-
+<transition name="fade">
+    <div id="drawer-mask" v-bind:class="{ 'single-column-drawer-mask': mounted }" v-if="isDrawerOpen" v-on:click="toggleDrawer"></div>
+</transition>
+<nav id="navBar" class="navbar sticky-top navbar-light single-column-nav-container">
+    <div id="navBackground" class="nav-background"></div>
+    <div class="container container-narrow nav-content">
+        <button id="nav_dropdown_btn" class="nav-dropdown-toggle" type="button" v-on:click="toggleDrawer">
+            <i class="material-icons">
+                menu
+            </i>
+        </button>
+        <a id="navTitle" class="navbar-brand" href="http://localhost:1313/">
+            Haunted Blog
+        </a>
+        
+        <button type="button" class="nav-darkmode-toggle" id="darkModeToggleButton2">
+            <i class="material-icons" id="darkModeToggleIcon2">
+                dark_mode
+            </i>
+        </button>
+        
+    </div>
 </nav>
-
-
-
-
-  <script>(function(){var e=document.querySelector("aside .book-menu-content");addEventListener("beforeunload",function(){localStorage.setItem("menu.scrollTop",e.scrollTop)}),e.scrollTop=localStorage.getItem("menu.scrollTop")})()</script>
-
-
- 
-      </div>
-    </aside>
-
-    <div class="book-page">
-      <header class="book-header">
+<div class="single-column-header-container" id="pageHead"
+     v-bind:style="{ transform: 'translateZ(0px) translateY('+.3*scrollY+'px)', opacity: 1-navOpacity }">
+    <a href="http://localhost:1313/">
+        <div class="single-column-header-title">Haunted Blog</div>
         
-  <div class="flex align-center justify-between">
-  <label for="menu-control">
-    <img src="/svg/menu.svg" class="book-icon" alt="Menu" />
-  </label>
+        <div class="single-column-header-subtitle">目前还没闹鬼。</div>
+        
 
-  <h3>Docs</h3>
-
-  <label for="toc-control">
-    
-  </label>
+    </a>
 </div>
 
-<meta name="viewport" content="width=device-width, initial-scale=1">
+            <div id="content">
+                <div id="streamContainer" class="stream-container">
 
-
-
-  
- 
-      </header>
-
-      
-      
-  <article class="markdown book-article"></article>
- 
-      
-
-      <footer class="book-footer">
+    <div class="post-list-container post-list-container-shadow">
         
-  <div class="flex flex-wrap justify-between">
-
-
-
-
-
+            <a class="a-block">
+                <div class="post-item-wrapper post-item-wrapper-no-hover">
+                    <div class="post-item post-item-no-gaps">
+                        <div class="post-item-info-wrapper">
+                            <div class="post-item-title post-item-title-small year">
+                                2025
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </a>
+            
+            <a href="/docs/%E7%96%AE%E6%B5%B7%E6%97%A0%E7%A9%B7%E8%B0%AD/4/" class="a-block">
+                <div class="post-item-wrapper">
+                    <div class="post-item post-item-no-gaps">
+                        <div class="post-item-info-wrapper">
+                            <div class="post-item-title">
+                                第四章 永不复焉
+                            </div>
+                            <div class="post-item-meta">
+    2025-05-24
+    &emsp;
+    
+    
+    
+    &emsp;
+    
 </div>
 
-
-
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-
-<footer class="site-footer">
-  <section class="copyright">
-     &copy; 2025 - 2025
-      <a href="/"> Haunted Blog </a> · <i class="fas fa-bell"> </i>
-      <a id="days">0</a> Days<br>
-    <br/>
-
+                        </div>
+                    </div>
+                </div>
+            </a>
+            
+            <a href="/docs/%E7%96%AE%E6%B5%B7%E6%97%A0%E7%A9%B7%E8%B0%AD/3/" class="a-block">
+                <div class="post-item-wrapper">
+                    <div class="post-item post-item-no-gaps">
+                        <div class="post-item-info-wrapper">
+                            <div class="post-item-title">
+                                第三章 海上庭审
+                            </div>
+                            <div class="post-item-meta">
+    2025-05-01
+    &emsp;
     
     
     
-      
+    &emsp;
     
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-    
-    
-    
-    存有 69.5k 字 · 共 18 篇文章
-  </section>
-
-  
-  <script>
-    var s1 = '2025-07-24';  
-    var start = new Date(s1.replace(/-/g, '/'));
-    var now = new Date();
-    var days = Math.floor((now - start) / (1000 * 60 * 60 * 24));
-    document.getElementById('days').innerText = days;
-  </script>
-</footer>
-
 </div>
 
+                        </div>
+                    </div>
+                </div>
+            </a>
+            
+            <a href="/docs/%E5%90%8C%E4%BA%BA/%E5%90%B8%E8%A1%80%E9%AC%BC/" class="a-block">
+                <div class="post-item-wrapper">
+                    <div class="post-item post-item-no-gaps">
+                        <div class="post-item-info-wrapper">
+                            <div class="post-item-title">
+                                现代吸血鬼生活流水账
+                            </div>
+                            <div class="post-item-meta">
+    2025-04-19
+    &emsp;
+    
+    
+    
+    &emsp;
+    
+</div>
 
+                        </div>
+                    </div>
+                </div>
+            </a>
+            
+            <a href="/docs/%E7%96%AE%E6%B5%B7%E6%97%A0%E7%A9%B7%E8%B0%AD/2/" class="a-block">
+                <div class="post-item-wrapper">
+                    <div class="post-item post-item-no-gaps">
+                        <div class="post-item-info-wrapper">
+                            <div class="post-item-title">
+                                第二章 为什么心喋喋不休
+                            </div>
+                            <div class="post-item-meta">
+    2025-03-29
+    &emsp;
+    
+    
+    
+    &emsp;
+    
+</div>
 
-  <script>(function(){function e(e){const t=window.getSelection(),n=document.createRange();n.selectNodeContents(e),t.removeAllRanges(),t.addRange(n)}document.querySelectorAll("pre code").forEach(t=>{t.addEventListener("click",function(){if(window.getSelection().toString())return;e(t.parentElement),navigator.clipboard&&navigator.clipboard.writeText(t.parentElement.textContent)})})})()</script>
+                        </div>
+                    </div>
+                </div>
+            </a>
+            
+            <a href="/docs/%E7%96%AE%E6%B5%B7%E6%97%A0%E7%A9%B7%E8%B0%AD/1/" class="a-block">
+                <div class="post-item-wrapper">
+                    <div class="post-item post-item-no-gaps">
+                        <div class="post-item-info-wrapper">
+                            <div class="post-item-title">
+                                第一章 老鼠
+                            </div>
+                            <div class="post-item-meta">
+    2025-03-23
+    &emsp;
+    
+    
+    
+    &emsp;
+    
+</div>
 
+                        </div>
+                    </div>
+                </div>
+            </a>
+            
+            <a href="/docs/%E7%96%AE%E6%B5%B7%E6%97%A0%E7%A9%B7%E8%B0%AD/0/" class="a-block">
+                <div class="post-item-wrapper">
+                    <div class="post-item post-item-no-gaps">
+                        <div class="post-item-info-wrapper">
+                            <div class="post-item-title">
+                                故事简介
+                            </div>
+                            <div class="post-item-meta">
+    2025-01-01
+    &emsp;
+    
+    
+    
+    &emsp;
+    
+</div>
 
- 
+                        </div>
+                    </div>
+                </div>
+            </a>
+            
         
-      </footer>
+            <a class="a-block">
+                <div class="post-item-wrapper post-item-wrapper-no-hover">
+                    <div class="post-item post-item-no-gaps">
+                        <div class="post-item-info-wrapper">
+                            <div class="post-item-title post-item-title-small year">
+                                2024
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </a>
+            
+            <a href="/docs/%E5%8E%9F%E5%88%9B%E7%9F%AD%E7%AF%87/%E6%B0%B4%E8%9A%81%E5%AD%A3/" class="a-block">
+                <div class="post-item-wrapper">
+                    <div class="post-item post-item-no-gaps">
+                        <div class="post-item-info-wrapper">
+                            <div class="post-item-title">
+                                水蚁季
+                            </div>
+                            <div class="post-item-meta">
+    2024-01-09
+    &emsp;
+    
+    
+    
+    &emsp;
+    
+</div>
 
-      
-  
- 
+                        </div>
+                    </div>
+                </div>
+            </a>
+            
+            <a href="/docs/%E5%8E%9F%E5%88%9B%E7%9F%AD%E7%AF%87/%E4%B9%B0%E9%B1%BC/" class="a-block">
+                <div class="post-item-wrapper">
+                    <div class="post-item post-item-no-gaps">
+                        <div class="post-item-info-wrapper">
+                            <div class="post-item-title">
+                                买鱼
+                            </div>
+                            <div class="post-item-meta">
+    2024-01-01
+    &emsp;
+    
+    
+    
+    &emsp;
+    
+</div>
 
-      <label for="menu-control" class="hidden book-menu-overlay"></label>
+                        </div>
+                    </div>
+                </div>
+            </a>
+            
+        
+            <a class="a-block">
+                <div class="post-item-wrapper post-item-wrapper-no-hover">
+                    <div class="post-item post-item-no-gaps">
+                        <div class="post-item-info-wrapper">
+                            <div class="post-item-title post-item-title-small year">
+                                2023
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </a>
+            
+            <a href="/docs/%E8%B7%91%E5%9B%A2%E8%A1%8D%E7%94%9F/%E6%89%AB%E9%99%A4%E6%97%A5/" class="a-block">
+                <div class="post-item-wrapper">
+                    <div class="post-item post-item-no-gaps">
+                        <div class="post-item-info-wrapper">
+                            <div class="post-item-title">
+                                扫除日
+                            </div>
+                            <div class="post-item-meta">
+    2023-12-04
+    &emsp;
+    
+    
+    
+    &emsp;
+    
+</div>
+
+                        </div>
+                    </div>
+                </div>
+            </a>
+            
+        
+            <a class="a-block">
+                <div class="post-item-wrapper post-item-wrapper-no-hover">
+                    <div class="post-item post-item-no-gaps">
+                        <div class="post-item-info-wrapper">
+                            <div class="post-item-title post-item-title-small year">
+                                2022
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </a>
+            
+            <a href="/docs/%E5%8E%9F%E5%88%9B%E7%9F%AD%E7%AF%87/%E6%B2%99%E6%BC%A0/" class="a-block">
+                <div class="post-item-wrapper">
+                    <div class="post-item post-item-no-gaps">
+                        <div class="post-item-info-wrapper">
+                            <div class="post-item-title">
+                                沙漠
+                            </div>
+                            <div class="post-item-meta">
+    2022-08-01
+    &emsp;
+    
+    
+    
+    &emsp;
+    
+</div>
+
+                        </div>
+                    </div>
+                </div>
+            </a>
+            
+        
+    </div>
+
+
+
+                    </div>
+            </div><div id="sideContainer" class="side-container">
+    
+    <a class="a-block nav-head false" href="http://localhost:1313/">
+    
+        <div class="nav-title">
+            Haunted Blog
+        </div>
+        
+        <div class="nav-subtitle">
+            目前还没闹鬼。
+        </div>
+        
+    </a>
+
+    <div class="nav-link-list">
+        
+        
+            
+            
+            
+            
+            
+            <a class="a-block nav-link-item false" href="/posts">
+                归档 Archive
+            </a>
+            
+        
+            
+            
+            
+            
+            
+            <a class="a-block nav-link-item false" href="/categories">
+                分类 Categories
+            </a>
+            
+        
+            
+            
+            
+            
+            
+            <a class="a-block nav-link-item false" href="/tags">
+                标签 Tags
+            </a>
+            
+        
     </div>
 
     
-  </main>
 
-  
+    <div class="nav-footer">
+        
+Hugo Theme <a href="https://github.com/amazingrise/hugo-theme-diary">Diary</a> by <a href="https://risehere.net/">Rise</a>
+<br>
+移植自 <a href="https://mak1t0.cc/" target="_blank" rel="noreferrer noopener">Makito</a>'s <a href="https://github.com/SumiMakito/hexo-theme-journal/" target="_blank" rel="noreferrer noopener">Journal.</a> <br>
+<br>
 
-  <script>
-document.addEventListener('DOMContentLoaded', () => {
-  const btn  = document.getElementById('theme-toggle');
-  const html = document.documentElement;
-  const body = document.body;
-  if (!btn) return;
+&copy;
+	
+	?-2025 Haunted Blog
+	
 
-  
-  let theme = localStorage.getItem('BookTheme')
-            || (html.classList.contains('theme-dark') || body.classList.contains('theme-dark')
-                ? 'theme-dark'
-                : 'theme-light');
-
-  
-  html.classList.remove('theme-light','theme-dark');
-  body.classList.remove('theme-light','theme-dark');
-  html.classList.add(theme);
-  body.classList.add(theme);
-
-  
-  btn.textContent = theme === 'theme-light' ? '🌙 夜间模式' : '☀️ 日间模式';
-
-  
-  btn.addEventListener('click', () => {
-    theme = (theme === 'theme-dark') ? 'theme-light' : 'theme-dark';
-
-    html.classList.remove('theme-light','theme-dark');
-    body.classList.remove('theme-light','theme-dark');
-    html.classList.add(theme);
-    body.classList.add(theme);
-
-    localStorage.setItem('BookTheme', theme);
-    btn.textContent = theme === 'theme-light' ? '🌙 夜间模式' : '☀️ 日间模式';
-  });
-});
-</script>
-
-<div id="waline"></div>
-<script type="module">
-  import { init } from 'https://unpkg.com/@waline/client@v3/dist/waline.js';
-
-  init({
-    el: '#waline',
-    serverURL: 'https://your-domain.vercel.app',
-  });
-</script>
-
-<style>
-   
-  #waline {
-    max-width: 800px;    
-    padding-left: 3rem;
-    margin: 0 auto;      
-    width: 100%;         
-  }
-
-   
-   
-  .wl-panel textarea.wl-input,
-  .wl-panel input.wl-input {
-    opacity: 0.5 !important;
-  }
-
-   
-  .wl-card { border: 0; }
-  .wl-card .wl-quote { border-inline-start: 0 dashed rgba(237, 237, 237, .5); }
-  .wl-card-item { position: relative; display: flex; padding: .2em; }
-  .wl-addr { display: none !important; color: transparent !important; }
-  .wl-content .vemoji,
-  .wl-content .wl-emoji { display: inline-block; vertical-align: baseline; height: 3.4em !important; margin: -0.125em .25em; }
-  img.wl-emoji, img.vemoji { vertical-align: sub; transition: ease-out .6s; }
-  img.wl-emoji:hover, img.vemoji:hover { transform: scale(1.8) !important; }
-  .wl-header { display: flex; overflow: hidden; padding: 0 4px; border-bottom: 0 dashed var(--waline-border-color); border-top-left-radius: 0; border-top-right-radius: 0; }
-  .wl-btn.primary { border-color: transparent !important; background: #ab3740; color: #fff; }
-  @media (max-width:580px) {
-    .wl-header-item:not(:last-child) { border-bottom: 0 dashed var(--waline-border-color); }
-  }
-  :root {
-    --waline-theme-color: #ab3740;
-    --waline-active-color: #ab3740;
-    --waline-light-grey: unset;
-    --waline-info-color: unset;
-    --waline-border: 0 solid #ab3740;
-  }
-  .wl-editor:focus, .wl-input:focus { background: transparent; }
-  .wl-info .wl-text-number { color: var(--waline-color); font-size: .75em; }
-  .wl-card .wl-delete,
-  .wl-card .wl-like,
-  .wl-card .wl-reply,
-  .wl-card .wl-edit,
-  .wl-card span.wl-nick,
-  .wl-empty, .wl-admin-actions,
-  [data-waline] p { color: unset; }
-
-</style>
-
-<div id="waline"></div>
-<script type="module">
-  import { init } from 'https://unpkg.com/@waline/client@v3/dist/waline.js';
-
-  init({
-    el: '#waline',
-    serverURL: '<YOUR SERVER URL>',
-
+    </div>
     
-    emoji: [
-      '//unpkg.com/@waline/emojis@1.2.0/tw-emoji',
-    ],
-  });
-</script>
+</div><div id="extraContainer" class="extra-container">
+    <div class="toc-wrapper">
+        
+
+        
+    </div>
+    <div class="pagination">
+        <a id="globalBackToTop" class="pagination-action animated-visibility" href="#top"
+            :class="{ invisible: scrollY == 0 }">
+            <i class="material-icons pagination-action-icon">
+                keyboard_arrow_up
+            </i>
+        </a>
+        
+        <a type="button" class="pagination-action" id="darkModeToggleButton">
+            <span class="material-icons pagination-action-icon" id="darkModeToggleIcon">
+                dark_mode
+            </span>
+        </a>
+        
+        
+        
+
+        <a class="pagination-action" 
+            style="visibility:hidden">
+            
+            <i class="material-icons pagination-action-icon">
+                chevron_left
+            </i>
+        </a>
+
+        <div class="pagination-indicator">
+            <span style="text-align: center">
+                1<br>
+                <div style="display: inline-block; transform: rotate(-28deg)">-</div><br>5
+            </span>
+        </div>
+
+
+        <a class="pagination-action"  href="/docs/page/2/">
+            
+            <i class="material-icons pagination-action-icon">
+                chevron_right
+            </i>
+        </a>
+        
+        
+    </div>
+</div>
+
+
+<div class="pagination">
+    
+    <a class="pagination-action" style="opacity:0">
+    
+        <i class="material-icons pagination-action-icon">
+            chevron_left
+        </i>
+    </a>
+
+        <div class="pagination-indicator">
+            <span>1/5</span>
+        </div>
+
+        
+        <a class="pagination-action" href="/docs/page/2/"
+           style="opacity:1">
+        
+                <i class="material-icons pagination-action-icon">
+                    chevron_right
+                </i>
+            </a>
+</div>
 
 
 
-</body>
+<div id="single-column-footer">
+Hugo Theme <a href="https://github.com/amazingrise/hugo-theme-diary">Diary</a> by <a href="https://risehere.net/">Rise</a>
+<br>
+移植自 <a href="https://mak1t0.cc/" target="_blank" rel="noreferrer noopener">Makito</a>'s <a href="https://github.com/SumiMakito/hexo-theme-journal/" target="_blank" rel="noreferrer noopener">Journal.</a> <br>
+<br>
+
+&copy;
+	
+	?-2025 Haunted Blog
+	
+</div>
+            </div>
+    
+    <script src="/js/journal.js"></script></body>
 </html>
-
-
-
-
-
-
-
-
-
-
-
-

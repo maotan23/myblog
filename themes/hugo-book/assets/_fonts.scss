@@ -26,11 +26,11 @@
 }
 
 @font-face {
-  font-family: '正文';
+  font-family: 'FZPingXianYaSong';
   src: url('/fonts/FZPingXianYaSong.woff') format('woff');
   font-weight: normal;
   font-style: normal;
-  font-display: swap;               /* 优先显示系统字体，再替换为 MyFont */
+  font-display: fallback;               /* 优先显示系统字体，再替换为 MyFont */
 }
 
 @font-face {
@@ -51,7 +51,7 @@
 }
 
 body {
-  font-family: 'Lucida','正文','baste','Roboto', sans-serif;
+  font-family: 'Lucida','FZPingXianYaSong','baste','Roboto', sans-serif;
 }
 
 code {

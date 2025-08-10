@@ -5,7 +5,8 @@
     <link>http://localhost:1313/docs/%E7%9F%AD%E7%AF%87%E5%B0%8F%E8%AF%B4/</link>
     <description>Recent content on Haunted Blog</description>
     <generator>Hugo</generator>
-    <language>zn</language>
+    <language>en-us</language>
+    <copyright>This is a customized copyright.</copyright>
     <lastBuildDate></lastBuildDate>
     <atom:link href="http://localhost:1313/docs/%E7%9F%AD%E7%AF%87%E5%B0%8F%E8%AF%B4/index.xml" rel="self" type="application/rss+xml" />
   </channel>

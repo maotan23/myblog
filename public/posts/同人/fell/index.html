@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="zh"><head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+<title>Fell</title>
+
+
+
+
+<meta charset="utf-8">
+<meta name="X-UA-Compatible" content="IE=edge">
+<meta name="google-site-verification" content="G-XXXXXXXXXX">
+<meta content="width=device-width, initial-scale=1.0, maximum-scale=5, user-scalable=5" name="viewport">
+<meta content="telephone=no" name="format-detection">
+<meta name="description" content="Sans醒来的时候，发现自己躺在一滩血里。">
+<meta name="renderer" content="webkit">
+<meta name="theme-color" content="#ffffff">
+
+
+
+<meta property="og:url" content="http://localhost:1313/posts/%E5%90%8C%E4%BA%BA/fell/">
+  <meta property="og:site_name" content="Haunted Blog">
+  <meta property="og:title" content="Fell">
+  <meta property="og:description" content="Sans醒来的时候，发现自己躺在一滩血里。">
+  <meta property="og:locale" content="zh">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2016-07-30T00:00:00+00:00">
+    <meta property="article:modified_time" content="2016-07-30T00:00:00+00:00">
+    <meta property="article:tag" content="Undertale">
+    <meta property="article:tag" content="Underfell">
+
+
+
+
+
+
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Fell">
+  <meta name="twitter:description" content="Sans醒来的时候，发现自己躺在一滩血里。">
+
+
+
+
+
+
+
+      <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+      <script>
+        var doNotTrack = false;
+        if ( false ) {
+          var dnt = (navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack);
+          var doNotTrack = (dnt == "1" || dnt == "yes");
+        }
+        if (!doNotTrack) {
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-XXXXXXXXXX');
+        }
+      </script>
+
+
+
+
+<script type="text/javascript">
+  (function(c,l,a,r,i,t,y){
+      c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+      t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+      y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+  })(window, document, "clarity", "script", "abcdefghzd");
+</script>
+
+
+
+  
+
+
+
+
+
+
+      <script src="/js/toc.js"></script>
+    
+    <link type="text/css" rel="stylesheet" href="/vendor/css/bootstrap.min.css">
+
+<link rel="stylesheet" href="/scss/dark-mode.min.d036a79292c17e8867ff9a5455aa9ff538d5d823ad656cbe935c41d19d0409a6.css" integrity="sha256-0DankpLBfohn/5pUVaqf9TjV2COtZWy&#43;k1xB0Z0ECaY=" media="screen">
+
+
+<link rel="stylesheet"
+          href="https://fonts.googleapis.com/css?family=Material+Icons">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</head>
+<body>
+    	<div id="app"><div class="single-column-drawer-container" id="drawer"
+     v-bind:class="{ 'single-column-drawer-container-active': isDrawerOpen }">
+    <div class="drawer-content">
+        <div class="drawer-menu">
+            
+            
+            
+                
+                
+                
+                    
+                
+                
+                
+                <a class="a-block drawer-menu-item active" href="/posts">
+                    归档 Archive
+                </a>
+                
+            
+                
+                
+                
+                
+                
+                <a class="a-block drawer-menu-item false" href="/categories">
+                    分类 Categories
+                </a>
+                
+            
+                
+                
+                
+                
+                
+                <a class="a-block drawer-menu-item false" href="/tags">
+                    标签 Tags
+                </a>
+                
+            
+            
+            <div class="toc">
+
+
+</div>
+            
+        </div>
+    </div>
+</div>
+<transition name="fade">
+    <div id="drawer-mask" v-bind:class="{ 'single-column-drawer-mask': mounted }" v-if="isDrawerOpen" v-on:click="toggleDrawer"></div>
+</transition>
+<nav id="navBar" class="navbar sticky-top navbar-light single-column-nav-container">
+    <div id="navBackground" class="nav-background"></div>
+    <div class="container container-narrow nav-content">
+        <button id="nav_dropdown_btn" class="nav-dropdown-toggle" type="button" v-on:click="toggleDrawer">
+            <i class="material-icons">
+                menu
+            </i>
+        </button>
+        <a id="navTitle" class="navbar-brand" href="http://localhost:1313/">
+            Haunted Blog
+        </a>
+        
+        <button type="button" class="nav-darkmode-toggle" id="darkModeToggleButton2">
+            <i class="material-icons" id="darkModeToggleIcon2">
+                dark_mode
+            </i>
+        </button>
+        
+    </div>
+</nav>
+<div class="single-column-header-container" id="pageHead"
+     v-bind:style="{ transform: 'translateZ(0px) translateY('+.3*scrollY+'px)', opacity: 1-navOpacity }">
+    <a href="http://localhost:1313/">
+        <div class="single-column-header-title">Haunted Blog</div>
+        
+        <div class="single-column-header-subtitle">目前还没闹鬼。</div>
+        
+
+    </a>
+</div>
+
+            <div id="content">
+                <div id="streamContainer" class="stream-container">
+
+    <div class="post-list-container post-list-container-shadow">
+        <div class="post">
+            
+            
+            
+
+            <div class="post-head-wrapper-text-only"
+                
+            >
+                <div class="post-title">
+                    Fell
+                    
+                    <div class="post-subtitle">
+                        Sans醒来的时候，发现自己躺在一滩血里。
+                    </div>
+                    
+
+                    
+                    <div class="post-meta">
+                        <span class="meta-item meta-date">
+                        
+                            2016-07-30
+                        
+                        </span>
+
+                        
+                        <span class="meta-item meta-categories">
+                            &nbsp; <i class="material-icons" style="">folder</i>
+                            <a href="/categories/%E5%90%8C%E4%BA%BA">同人</a>
+                        </span>
+                        
+
+                        
+                        
+                        <span class="meta-item meta-tags">
+                            &nbsp; <i class="material-icons" style="">label</i>
+                            
+                                <a href="/tags/undertale">Undertale</a>&nbsp;
+                            
+                                <a href="/tags/underfell">Underfell</a>&nbsp;
+                            
+                        </span>
+                        
+                        
+
+                        
+                        
+                        
+                        <span class="meta-item meta-chars">
+                            &nbsp;2069字
+                        </span>
+
+                        
+                    </div>
+                </div>
+            </div>
+            
+            <div class="post-body-wrapper">
+                
+                <div class="post-body" v-pre>
+                
+                    <p><br/><br/></p>
+<p>Sans醒来的时候，发现自己躺在一滩血里。血已经凉了，还黏在扑满灰尘的地上。他的头颅沉而重，他的意志又格外昏沉。他闭上眼睛，感到自己的灵魂已经具象化，被什么东西扯离了身体；组成他身体的魔法不再盈盈发着光，而是饱和度直线下降，几乎成了一滩像素状的灰色眼泪。</p>
+<p>这时，Sans听见了一声呼喊：有人在叫他的名字，并且是一连叫了好几声，接着一拳打在了他的颧骨上。Sans吃痛地叫了一声，在血泊里翻了身；他这才发现那是自己的血。</p>
+<p>他的眼睛被血糊住了，眼周和眼瞳成了同一种颜色；那个声音的主人又对着他的肋软骨来了一下。Sans已经没什么可吐的了；他的血好像流干了，他的魔法在烟雾一样的空气里沉默地蒸发着，他浑身撕裂一样痛。但他还活着。</p>
+<p>他为什么他妈的还活着？Sans在一片混沌中睁开了眼睛，他的兄弟——一个骄傲的皇家禁卫军——正咬牙切齿地看着他，那样子就好像他要把他扔到地狱里燃烧一样。</p>
+<p>过了一会，Papyrus似乎冷静了一些，恢复到往常的样子。他像往常一样尖刻而愤怒，他说：“你这个婊子养的怎么会在这里？”</p>
+<p>“……啊，呃……boss……”</p>
+<p>“你他妈的项圈呢？！”</p>
+<p>“好像……断了。”Sans低声说，他的嗓子不太好使。其中一半项圈的尖刺穿过了他骨骼的空隙。Papyrus把他拉了起来。</p>
+<p>“别总想着躺着，”Papyrus想了想又说，“哪怕你要死了也别！”</p>
+<p>Sans小心地靠在他兄弟身上。他舒展开自己头颅上深嵌的两个大窟窿；他看见被染成红色的Snowtown，以及一条又脏又臭的河流，河里飘着尸体。Sans圆睁着眼睛，喊道：“靠！……这画面美得像坨狗屎。”</p>
+<p>他焦躁了起来。“嗨，boss……怎么说的来着？”他想了一下，说，“请问这是，怎么一回事啊？”</p>
+<p><br/><br/></p>
+<p>“有人把一切都毁了。有个‘人’。我不知道她干嘛要这样做，但是……”Papyrus说道，“虽然以前的生活像狗屎一样糟，未来的估计也不会好过，但那家伙的行为真是他妈的惹人烦啊！”</p>
+<p>Sans的体内有什么东西神经质地乱蹦乱跳起来；他常常这样，今天也毫不例外。</p>
+<p>“……哦……‘人’？……boss，你在说sweetheart？”</p>
+<p>“你还这么叫她？我的天哪。”Papyrus提高了音调，“你以为自己这幅该死的狼狈样子是托我的福吗？”</p>
+<p>Sans此时还在流着血，他不知道自己怎么还没死。当他开始好好打量自己的身体时，才发现他破损的毛领里有一些食物残渣，“Boss……”Sans试探地问道，“你给了我一个派？”</p>
+<p>Papyrus好像没听见。他快步向前走着，Sans只好跟在后面。</p>
+<p>“不像你……”</p>
+<p>“够了，够了！操你妈的，闭嘴！”Papyrus对他大吼大叫，“别摆出那副懒样子！调整你的背姿！”</p>
+<p>Sans的心情缓和了一些，以一副窘迫的神色跟在皇家禁卫军的身后。那些富有冲击力的景色，那些散发出气味的事物，已经没有什么能真正困住他的脚步了。Sans走在这高饱和度的鲜红的Snowtown，感到自己的心也在高声叫着。</p>
+<p>他想到了一个孩子，一个与这里极其不相配的孩子；他渴望她拿那根树枝去刺他的眼部凹陷，但她每次都逃走了；他觉得她害怕的脸真他妈的可爱。但现在站在眼前的她就像Sans自己一样不可爱了。她是带着屠城的意念来的；而不仅仅满足于对个体的折磨。</p>
+<p><br/><br/></p>
+<p>“我们走捷径。”Sans忽然提议道。</p>
+<p>“听着，Sans，我现在可不……！”</p>
+<p>但Sans一把抓住了他。</p>
+<p>“哦不……我在帮你。”Sans把手从他的腕骨挪开，“你看起来不太对劲呀，sweetheart……你能把那玩意给我吗？”</p>
+<p>那个人类，那个持刀的、穿条纹毛衣的小孩，正盯着他们。Sans与她对视了一会，多少有点感叹。现在，他是没有打招呼的力气，也没有讲笑话的心情了。他只摆了摆手，示意地说：“Sweetheart，你看起来不大一样了。我是说……哎！”他及时地躲闪了。</p>
+<p>“你是有毛病吗？！”Papyrus叫了起来，“我是说你，Sans！尤其是你！伟大的皇家禁卫军自己会守护他的荣耀，你只要跟着我跑！”</p>
+<p>“可你看看她，看看这个小怪物。”Sans恰如其分地落着重音，“简直和这个世界相配极了！”</p>
+<p>Chara抬起了眼睛，伸直了手臂。Papyrus躲过了她的一波攻击，这才看清楚她手里拿的是什么。“一把真刀！”他说，“是哪个混账给你的？他们把你那寒碜的树枝弄到哪里去了？”</p>
+<p>Chara没有回答他；当然了，她当然不会回答他。取而代之的，Chara举起了那把没有丝毫的锈迹、连轮廓都十分果断的刀子。</p>
+<p>“好了，小鬼。”Papyrus说，“别想再伤我们了。你会吃苦头的！蠢货。”他以一种憎恶的形式说道，好像把牙齿嚼碎吞下去了似的；假如他有的话。</p>
+<p>Sans轻声慢步地走进了屋檐投下来的影子；去中和一些爬上他脊椎骨的焦躁感。“但是放心，sweetheart，我一定杀了你。”他悄悄地看着说，“就算和我兄弟……我的boss大吵一架，也不要紧。我会杀了你。我会成为那个杀手。”他捂着自己胸腔中还没干净的鲜血。他是以一种近乎神经质的语气说出来的。这时河边流过一具尸体，死人的脸面朝着他，恍惚间像在呼喊什么一样。</p>
+
+                    
+                    <HR width="100%" id="EOF">
+		    <p style="color:#777;">最后修改于 2016-07-30</p>
+                    
+                </div>
+            </div>
+            
+            
+            <nav class="post-pagination">
+                
+                <a class="newer-posts" href="/posts/%E5%90%8C%E4%BA%BA/%E5%81%87%E6%83%B3%E6%95%8C/">
+			下回<br>假想敌
+                </a>
+                
+                
+                
+                <a class="older-posts" href="/posts/%E5%90%8C%E4%BA%BA/%E7%81%AF%E7%81%AB%E4%B8%8E%E8%BD%A6%E7%AB%99/">
+			上回<br>灯火与车站
+                </a>
+                
+            </nav>
+            <div class="post-comment-wrapper">
+                
+
+
+
+
+
+
+
+
+
+
+
+
+            </div>
+        </div>
+    </div>
+
+
+                    </div>
+            </div><div id="sideContainer" class="side-container">
+    
+    <a class="a-block nav-head false" href="http://localhost:1313/">
+    
+        <div class="nav-title">
+            Haunted Blog
+        </div>
+        
+        <div class="nav-subtitle">
+            目前还没闹鬼。
+        </div>
+        
+    </a>
+
+    <div class="nav-link-list">
+        
+        
+            
+            
+            
+                
+            
+            
+            
+            <a class="a-block nav-link-item active" href="/posts">
+                归档 Archive
+            </a>
+            
+        
+            
+            
+            
+            
+            
+            <a class="a-block nav-link-item false" href="/categories">
+                分类 Categories
+            </a>
+            
+        
+            
+            
+            
+            
+            
+            <a class="a-block nav-link-item false" href="/tags">
+                标签 Tags
+            </a>
+            
+        
+    </div>
+
+    
+
+    <div class="nav-footer">
+        
+Hugo Theme <a href="https://github.com/amazingrise/hugo-theme-diary">Diary</a> by <a href="https://risehere.net/">Rise</a>
+<br>
+移植自 <a href="https://mak1t0.cc/" target="_blank" rel="noreferrer noopener">Makito</a>'s <a href="https://github.com/SumiMakito/hexo-theme-journal/" target="_blank" rel="noreferrer noopener">Journal.</a> <br>
+<br>
+
+&copy;
+	
+	?-2025 Haunted Blog
+	
+
+    </div>
+    
+</div><div id="extraContainer" class="extra-container">
+    <div class="toc-wrapper">
+        
+
+        
+        <div class="toc">
+
+
+</div>
+        
+    </div>
+    <div class="pagination">
+        <a id="globalBackToTop" class="pagination-action animated-visibility" href="#top"
+            :class="{ invisible: scrollY == 0 }">
+            <i class="material-icons pagination-action-icon">
+                keyboard_arrow_up
+            </i>
+        </a>
+        
+        <a type="button" class="pagination-action" id="darkModeToggleButton">
+            <span class="material-icons pagination-action-icon" id="darkModeToggleIcon">
+                dark_mode
+            </span>
+        </a>
+        
+        
+    </div>
+</div>
+
+<div id="single-column-footer">
+Hugo Theme <a href="https://github.com/amazingrise/hugo-theme-diary">Diary</a> by <a href="https://risehere.net/">Rise</a>
+<br>
+移植自 <a href="https://mak1t0.cc/" target="_blank" rel="noreferrer noopener">Makito</a>'s <a href="https://github.com/SumiMakito/hexo-theme-journal/" target="_blank" rel="noreferrer noopener">Journal.</a> <br>
+<br>
+
+&copy;
+	
+	?-2025 Haunted Blog
+	
+</div>
+            </div>
+    
+    <script src="/js/journal.js"></script></body>
+</html>

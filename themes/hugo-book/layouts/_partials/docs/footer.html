@@ -1,28 +1,5 @@
 <div class="flex flex-wrap justify-between">
 
-{{ if and .GitInfo .Site.Params.BookRepo }}
-  <div>
-    {{- $date := partial "docs/date" (dict "Date" .GitInfo.AuthorDate.Local "Format" .Site.Params.BookDateFormat) -}}
-    <a class="flex align-center" href="{{ partial "docs/links/commit" . }}" title='{{ i18n "Last modified by" }} {{ .GitInfo.AuthorName }} | {{ $date }}' target="_blank" rel="noopener">
-      <img src="{{ "svg/calendar.svg" | relURL }}" class="book-icon" alt="" />
-      <span>{{ $date }}</span>
-    </a>
-  </div>
-{{ end }}
-
-{{ if and .File .Site.Params.BookRepo .Site.Params.BookEditPath }}
-  <div>
-    <a class="flex align-center" href="{{ partial "docs/links/edit" . }}" target="_blank" rel="noopener">
-      <img src="{{ "svg/edit.svg" | relURL }}" class="book-icon" alt="" />
-      <span>{{ i18n "Edit this page" }}</span>
-    </a>
-  </div>
-{{ end }}
-
-</div>
-
-
-
 <br/>
 <br/>
 <br/>
@@ -36,17 +13,6 @@
       <a id="days">0</a> Days<br>
     <br/>
 
-    {{/* 全站总字数（千字）和文章数 */}}
-    {{ $scratch := newScratch }}
-    {{ range .Site.RegularPages }}
-      {{ $scratch.Add "total" .WordCount }}
-    {{ end }}
-    {{ $total := $scratch.Get "total" }}
-    {{/* 四舍五入到千字 */}}
-    {{ $kWords := div (math.Ceil (div $total 100.0)) 10.0 }}
-    存有 {{ $kWords }}k 字 · 共 {{ len (where .Site.RegularPages "Section" "docs") }} 篇文章
-  </section>
-
   <!-- 计算网站运行天数 -->
   <script>
     var s1 = '2025-07-24';  // 填写你的建站日期
@@ -56,82 +22,6 @@
     document.getElementById('days').innerText = days;
   </script>
 </footer>
-
-<div id="waline"></div>
-<script type="module">
-  import { init } from 'https://unpkg.com/@waline/client@v3/dist/waline.js';
-
-  init({
-    el: '#waline',
-    serverURL: 'https://your-domain.vercel.app',
-  });
-</script>
-
-<style>
-  /* 1. 让评论区整体宽度和文章宽度一致 */
-  #waline {
-    max-width: 800px;   /* 改为你的文章最大宽度 */
-    padding-left: 3rem;
-    margin: 0 auto;     /* 居中 */
-    width: 100%;        /* 保证在窄屏下也能自适应 */
-  }
-
-  /* 2. 输入框 50% 透明 */
-  /* 这里针对 textarea（多行）和 input（单行）都做了处理 */
-  .wl-panel textarea.wl-input,
-  .wl-panel input.wl-input {
-    opacity: 0.5 !important;
-  }
-
-  /* 3. 保留你原先其他样式 */
-  .wl-card { border: 0; }
-  .wl-card .wl-quote { border-inline-start: 0 dashed rgba(237, 237, 237, .5); }
-  .wl-card-item { position: relative; display: flex; padding: .2em; }
-  .wl-addr { display: none !important; color: transparent !important; }
-  .wl-content .vemoji,
-  .wl-content .wl-emoji { display: inline-block; vertical-align: baseline; height: 3.4em !important; margin: -0.125em .25em; }
-  img.wl-emoji, img.vemoji { vertical-align: sub; transition: ease-out .6s; }
-  img.wl-emoji:hover, img.vemoji:hover { transform: scale(1.8) !important; }
-  .wl-header { display: flex; overflow: hidden; padding: 0 4px; border-bottom: 0 dashed var(--waline-border-color); border-top-left-radius: 0; border-top-right-radius: 0; }
-  .wl-btn.primary { border-color: transparent !important; background: #ab3740; color: #fff; }
-  @media (max-width:580px) {
-    .wl-header-item:not(:last-child) { border-bottom: 0 dashed var(--waline-border-color); }
-  }
-  :root {
-    --waline-theme-color: #ab3740;
-    --waline-active-color: #ab3740;
-    --waline-light-grey: unset;
-    --waline-info-color: unset;
-    --waline-border: 0 solid #ab3740;
-  }
-  .wl-editor:focus, .wl-input:focus { background: transparent; }
-  .wl-info .wl-text-number { color: var(--waline-color); font-size: .75em; }
-  .wl-card .wl-delete,
-  .wl-card .wl-like,
-  .wl-card .wl-reply,
-  .wl-card .wl-edit,
-  .wl-card span.wl-nick,
-  .wl-empty, .wl-admin-actions,
-  [data-waline] p { color: unset; }
-
-</style>
-
-<div id="waline"></div>
-<script type="module">
-  import { init } from 'https://unpkg.com/@waline/client@v3/dist/waline.js';
-
-  init({
-    el: '#waline',
-    serverURL: '<YOUR SERVER URL>',
-
-    // 设置 emoji 为微博与哔哩小黄脸
-    emoji: [
-      '//unpkg.com/@waline/emojis@1.2.0/tw-emoji',
-    ],
-  });
-</script>
-
-
 
 </div>
 
