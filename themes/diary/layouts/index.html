@@ -1,0 +1,107 @@
+{{ define "main" }}
+
+    <style>
+    /* meta 行的布局：在有空间时横排显示，空间不够时换行，项之间有间距 */
+    .post-item-meta {
+        display: flex;
+        flex-wrap: wrap;      /* 允许换行，避免溢出 */
+        gap: 0.4rem;          /* 项间距，可根据需要调整 */
+        align-items: center;
+        font-size: 0.9rem;
+        color: #666;
+    }
+    .post-item-meta .meta-item {
+        display: inline-flex;
+        align-items: center;
+        white-space: normal; /* 允许换行在单个项目内（避免长链接强制撑宽） */
+    }
+    .post-item-meta a {
+        text-decoration: none;
+    }
+    </style>
+
+    <div class="post-list-container post-list-container-no-background">
+        {{ $paginator := .Paginate (where .Site.RegularPages "Params.hidden" "!=" true) }}
+        {{ range $paginator.Pages }}
+            {{ $p := . }}
+            <a href="{{ $p.RelPermalink }}" class="a-block">
+                <div class="post-item-wrapper">
+                    <div class="post-item post-item-no-divider">
+                        <div class="post-item-info-wrapper">
+                            <div class="post-item-title">
+                                {{ $p.Title }}
+                            </div>
+                            <div class="post-item-summary">
+                                {{ if $p.Description }}
+                                    {{ $p.Description }}
+                                {{ else }}
+                                    {{ $p.Summary }}
+                                {{ end }}
+                            </div>
+
+                            <!-- 修改：用 plainify 去掉 HTML，再用 strings.RuneCount 计字符（适合中文） -->
+                            <div class="post-item-meta">
+                                <!-- 日期：仅 YYYY-MM-DD -->
+                                <span class="meta-item meta-date">
+                                    {{ if not $p.Date.IsZero }}
+                                        {{ $p.Date.Format "2006-01-02" }}
+                                    {{ else if not $p.PublishDate.IsZero }}
+                                        {{ $p.PublishDate.Format "2006-01-02" }}
+                                    {{ end }}
+                                </span>
+
+                                <!-- 分类（categories），若为空则不显示 -->
+                                {{ with $p.Params.categories }}
+                                    {{ if ne . "" }}
+                                    <span class="meta-item meta-categories">
+                                        <i class="material-icons" style="font-size:16px;line-height:1;">folder</i>
+                                        <a href="{{ "/categories/" | relLangURL }}{{ . | urlize }}">{{ . }}</a>
+                                    </span>
+                                    {{ end }}
+                                {{ end }}
+
+                                <!-- 标签（tags），若为空或长度为0则不显示 -->
+                                {{ with $p.Params.tags }}
+                                    {{ $tags := . }}
+                                    {{ if gt (len $tags) 0 }}
+                                    <span class="meta-item meta-tags">
+                                        <i class="material-icons" style="font-size:16px;line-height:1;">label</i>
+                                        &nbsp;
+                                        {{ range $i, $t := $tags }}
+                                            <a href="{{ "/tags/" | relLangURL }}{{ $t | urlize }}">{{ $t }}</a>{{ if lt (add $i 1) (len $tags) }}&nbsp;{{ end }}
+                                        {{ end }}
+                                    </span>
+                                    {{ end }}
+                                {{ end }}
+
+                                <!-- 字数统计：按实际字符（runes）计数 -->
+                                {{ $plain := plainify $p.Content }}
+                                {{ $chars := $plain | strings.RuneCount }}
+                                <span class="meta-item meta-chars">
+                                    {{ $chars }}字
+                                </span>
+                            </div>
+                            <!-- / meta -->
+                        </div>
+
+                        {{ $featured_image := $p.Params.featured_image }}
+                        {{ if $featured_image }}
+                            {{ $image := $p.Resources.GetMatch ($p.Params.featured_image) }}
+                            <div class="post-item-image-wrapper">
+                                <div class="post-item-image"
+                                    {{ if $image }}
+                                        {{ $thumbnail := $image.Resize "690x360" }}
+                                        style="background-image: url('{{ $thumbnail.RelPermalink }}')"
+                                    {{ else }}
+                                        style="background-image: url('{{ $featured_image | absURL }}')"
+                                    {{ end }}
+                                ></div>
+                            </div>
+                        {{ end }}
+                    </div>
+                </div>
+            </a>
+        {{ end }}
+    </div>
+
+{{ end }}
