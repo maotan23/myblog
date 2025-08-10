@@ -1,4 +1,4 @@
-baseURL = "http://example.org/"
+baseURL = "https://hauntedblog.pages.dev/"
 DefaultContentLanguage = "zh" # Theme's display language, supports: en, fr, zh, zh-hant
 languageCode = "zh"
 title = "Haunted Blog"
