@@ -1,7 +1,7 @@
 baseURL = "https://hauntedblog.pages.dev/"
 DefaultContentLanguage = "zh" # Theme's display language, supports: en, fr, zh, zh-hant
 languageCode = "zh"
-title = "Haunted Blog"
+title = "皮裂魂奔"
 copyright = "?-2025 Haunted Blog"
 theme = "diary"
 
@@ -32,9 +32,12 @@ theme = "diary"
       unsafe = true
 
 [params]
-subtitle = "目前还没闹鬼。"
+subtitle = ""
 enableGitalk = false
 enableGiscus = false
+favicon = true
+
+waline_server_url = "https://waline-pwd1df5ms-maotan23s-projects.vercel.app"
 
 # Microsoft Clarity (https://clarity.microsoft.com/) is a free user behavior recording and analytics tool
 clarity = "abcdefghzd"

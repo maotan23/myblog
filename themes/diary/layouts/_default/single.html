@@ -122,7 +122,111 @@
                 {{- partial "comment.html" . -}}
                 {{ end }}
             </div>
-        </div>
-    </div>
+            
+            <link
+                rel="stylesheet"
+                href="https://unpkg.com/@waline/client@v3/dist/waline.css"
+            />
 
+
+
+            <!-- 自定义 Waline 样式与 CSS 变量（只保留一份） -->
+            <style>
+            /* ===== Waline 自定义变量（保留并合并） ===== */
+            :root {
+            --waline-font-size: 16px;
+            --waline-white: #fff;
+            --waline-light-grey: #999;
+            --waline-dark-grey: #666;
+            --waline-theme-color:#ab3740;
+            --waline-active-color:#ab3740;
+            --waline-color: #000000;
+            --waline-bg-color: rgb(247, 240, 240);
+            --waline-bg-color-light: #f8f8f8;
+            --waline-bg-color-hover: #f0f0f0;
+            --waline-border-color: transparent;
+            --waline-disable-bg-color: #f8f8f8;
+            --waline-disable-color: #bbb;
+            --waline-code-bg-color: #282c34;
+            --waline-bq-color: #f0f0f0;
+            --waline-avatar-size: 3.25rem;
+            --waline-m-avatar-size: calc(var(--waline-avatar-size) * 9 / 13);
+            --waline-badge-color:var(--waline-active-color);
+            --waline-badge-font-size: 0.775em;
+            --waline-info-bg-color: #f8f8f8;
+            --waline-info-color: #999;
+            --waline-info-font-size: 0.625em;
+            --waline-border: 1px solid var(--waline-border-color);
+            --waline-avatar-radius: 50%;
+            --waline-box-shadow: none;
+            }
+
+            /* 根据用户设置（夜间） */
+            html.night {
+            --waline-white: #000;
+            --waline-light-grey: #666;
+            --waline-dark-grey: #999;
+            --waline-color: #888;
+            --waline-bg-color: #1e1e1e;
+            --waline-bg-color-light: #272727;
+            --waline-border-color: #333;
+            --waline-disable-bg-color: #444;
+            --waline-disable-color: #272727;
+            --waline-bq-color: #272727;
+            --waline-info-bg-color: #272727;
+            --waline-info-color: #666;
+            }
+
+            /* 你原有的局部样式（保留并放在变量之后） */
+            .wl-editor:focus, .wl-input:focus { background: transparent; }
+            .wl-info .wl-text-number { color: var(--waline-color); font-size: .75em; }
+            .wl-card .wl-delete,
+            .wl-card .wl-like,
+            .wl-card .wl-reply,
+            .wl-card .wl-edit,
+            .wl-card span.wl-nick,
+            .wl-empty, .wl-admin-actions,
+            [data-waline] p { color: unset; }
+
+            /* 其它展示样式（保留） */
+            #waline {
+            max-width: unset;
+            margin: 0 auto;
+            width: 90%;
+            }
+            .wl-card { border: 0; }
+            .wl-card .wl-quote { border-inline-start: 0 dashed rgba(237, 237, 237, .5); }
+            .wl-card-item { position: relative; display: flex; padding: .2em; }
+            .wl-addr { display: none !important; color: transparent !important; }
+            .wl-content .vemoji,
+            .wl-content .wl-emoji { display: inline-block; vertical-align: baseline; height: 3.4em !important; margin: -0.125em .25em; }
+            img.wl-emoji, img.vemoji { vertical-align: sub; transition: ease-out .6s; }
+            img.wl-emoji:hover, img.vemoji:hover { transform: scale(1.8) !important; }
+            .wl-header { display: flex; overflow: hidden; padding: 0 4px; border-bottom: 0 dashed var(--waline-border-color); border-top-left-radius: 0; border-top-right-radius: 0; }
+            .wl-btn.primary { border-color: transparent !important; background: #ab3740; color: #fff; }
+            @media (max-width:580px) {
+            .wl-header-item:not(:last-child) { border-bottom: 0 dashed var(--waline-border-color); }
+            }
+            </style>
+
+            <!-- Waline 容器（**页面上只保留这一个**） -->
+            <div id="waline"></div>
+
+            <!-- Waline 初始化脚本（只执行一次） -->
+            <script type="module">
+            import { init } from 'https://unpkg.com/@waline/client@v3/dist/waline.js';
+
+            init({
+                el: '#waline',
+                serverURL: 'https://waline-pwd1df5ms-maotan23s-projects.vercel.app',
+                dark: 'html.night, body.night', // ← 改这里：同时监听 html 与 body 的 night class
+                emoji: [
+                    '//unpkg.com/@waline/emojis@1.2.0/tw-emoji',
+                ],
+            });
+
+            </script>
+
+  </div>
+</div>
 {{ end }}

@@ -1,4 +1,4 @@
-$color-accent: #ab3740;
+$color-accent: #961010;
 //$color-accent: #330000;
 $back-container-background: #fcfcfc;
 $front-container-background: #ffffff;
@@ -31,7 +31,17 @@ $front-container-background: #ffffff;
 
 @font-face {
   font-family: 'FZPingXianYaSong';
-  src: url('/fonts/FZPingXianYaSong.woff') format('woff');
+  src: 
+    url('/fonts/FZPingXianYaSong.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: fallback;
+}
+
+@font-face {
+  font-family: 'FZPingXianYaSong';
+  src: 
+    url('/fonts/FZPingXianYaSong.woff2') format('woff2');
   font-weight: normal;
   font-style: normal;
   font-display: fallback;
@@ -58,7 +68,7 @@ $extra-container-width: 25%;
 $extra-container-pagination-width: 64px;
 $stream-container-max-width: 1620px;
 
-$nav-title-size: 30px;
+$nav-title-size: 28px;
 $nav-subtitle-size: 16px;
 $nav-link-size: 18px;
 $nav-footer-size: 12px;
@@ -67,7 +77,7 @@ $post-subtitle-size: 14px;
 $post-summary-size: 14px;
 $post-body-size: 16px;
 $post-meta-size: 14px;
-$tag-category-title-size: 22px;
+$tag-category-title-size: 18px;
 $toc-size: 16px;
 
 $dark-accent: darken($color-accent, 10%);
@@ -687,7 +697,7 @@ a {
               padding: 15px 20px;
             }
             .post-item-title {
-              font-size: $post-title-size;
+              font-size: 20px;
               font-weight: 500;
               font-style: normal;
               margin-bottom: 10px;

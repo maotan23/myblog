@@ -17,7 +17,7 @@
 
 
 <meta property="og:url" content="http://localhost:1313/posts/%E5%8E%9F%E5%88%9B%E7%9F%AD%E7%AF%87/violin/">
-  <meta property="og:site_name" content="Haunted Blog">
+  <meta property="og:site_name" content="皮裂魂奔">
   <meta property="og:title" content="Violin">
   <meta property="og:description" content="在医院门口，一条狗向我狂吠，我等待着我的朋友。">
   <meta property="og:locale" content="zh">
@@ -25,7 +25,6 @@
     <meta property="article:section" content="posts">
     <meta property="article:published_time" content="2019-09-10T00:00:00+00:00">
     <meta property="article:modified_time" content="2019-09-10T00:00:00+00:00">
-    <meta property="article:tag" content="原创">
 
 
 
@@ -75,13 +74,16 @@
 
 
 
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+
 
 
       <script src="/js/toc.js"></script>
     
     <link type="text/css" rel="stylesheet" href="/vendor/css/bootstrap.min.css">
 
-<link rel="stylesheet" href="/scss/dark-mode.min.d036a79292c17e8867ff9a5455aa9ff538d5d823ad656cbe935c41d19d0409a6.css" integrity="sha256-0DankpLBfohn/5pUVaqf9TjV2COtZWy&#43;k1xB0Z0ECaY=" media="screen">
+<link rel="stylesheet" href="/scss/dark-mode.min.d8888b515b4cb237b802f9f94c894e66646c363a9d43ffc334e4eaf158de6682.css" integrity="sha256-2IiLUVtMsje4Avn5TIlOZmRsNjqdQ//DNOTq8VjeZoI=" media="screen">
 
 
 <link rel="stylesheet"
@@ -106,7 +108,11 @@
 
 
 </head>
-<body>
+<head>
+        <link rel="stylesheet" href="https://unpkg.com/@waline/client@v3/dist/waline.css" />
+
+    </head>
+    <body>
     	<div id="app"><div class="single-column-drawer-container" id="drawer"
      v-bind:class="{ 'single-column-drawer-container-active': isDrawerOpen }">
     <div class="drawer-content">
@@ -306,7 +312,7 @@
             </i>
         </button>
         <a id="navTitle" class="navbar-brand" href="http://localhost:1313/">
-            Haunted Blog
+            皮裂魂奔
         </a>
         
         <button type="button" class="nav-darkmode-toggle" id="darkModeToggleButton2">
@@ -320,9 +326,7 @@
 <div class="single-column-header-container" id="pageHead"
      v-bind:style="{ transform: 'translateZ(0px) translateY('+.3*scrollY+'px)', opacity: 1-navOpacity }">
     <a href="http://localhost:1313/">
-        <div class="single-column-header-title">Haunted Blog</div>
-        
-        <div class="single-column-header-subtitle">目前还没闹鬼。</div>
+        <div class="single-column-header-title">皮裂魂奔</div>
         
 
     </a>
@@ -363,15 +367,6 @@
                         </span>
                         
 
-                        
-                        
-                        <span class="meta-item meta-tags">
-                            &nbsp; <i class="material-icons" style="">label</i>
-                            
-                                <a href="/tags/%E5%8E%9F%E5%88%9B">原创</a>&nbsp;
-                            
-                        </span>
-                        
                         
 
                         
@@ -578,9 +573,113 @@
 
 
             </div>
-        </div>
-    </div>
+            
+            <link
+                rel="stylesheet"
+                href="https://unpkg.com/@waline/client@v3/dist/waline.css"
+            />
 
+
+
+            
+            <style>
+             
+            :root {
+            --waline-font-size: 16px;
+            --waline-white: #fff;
+            --waline-light-grey: #999;
+            --waline-dark-grey: #666;
+            --waline-theme-color:#ab3740;
+            --waline-active-color:#ab3740;
+            --waline-color: #000000;
+            --waline-bg-color: rgb(247, 240, 240);
+            --waline-bg-color-light: #f8f8f8;
+            --waline-bg-color-hover: #f0f0f0;
+            --waline-border-color: transparent;
+            --waline-disable-bg-color: #f8f8f8;
+            --waline-disable-color: #bbb;
+            --waline-code-bg-color: #282c34;
+            --waline-bq-color: #f0f0f0;
+            --waline-avatar-size: 3.25rem;
+            --waline-m-avatar-size: calc(var(--waline-avatar-size) * 9 / 13);
+            --waline-badge-color:var(--waline-active-color);
+            --waline-badge-font-size: 0.775em;
+            --waline-info-bg-color: #f8f8f8;
+            --waline-info-color: #999;
+            --waline-info-font-size: 0.625em;
+            --waline-border: 1px solid var(--waline-border-color);
+            --waline-avatar-radius: 50%;
+            --waline-box-shadow: none;
+            }
+
+             
+            html.night {
+            --waline-white: #000;
+            --waline-light-grey: #666;
+            --waline-dark-grey: #999;
+            --waline-color: #888;
+            --waline-bg-color: #1e1e1e;
+            --waline-bg-color-light: #272727;
+            --waline-border-color: #333;
+            --waline-disable-bg-color: #444;
+            --waline-disable-color: #272727;
+            --waline-bq-color: #272727;
+            --waline-info-bg-color: #272727;
+            --waline-info-color: #666;
+            }
+
+             
+            .wl-editor:focus, .wl-input:focus { background: transparent; }
+            .wl-info .wl-text-number { color: var(--waline-color); font-size: .75em; }
+            .wl-card .wl-delete,
+            .wl-card .wl-like,
+            .wl-card .wl-reply,
+            .wl-card .wl-edit,
+            .wl-card span.wl-nick,
+            .wl-empty, .wl-admin-actions,
+            [data-waline] p { color: unset; }
+
+             
+            #waline {
+            max-width: unset;
+            margin: 0 auto;
+            width: 90%;
+            }
+            .wl-card { border: 0; }
+            .wl-card .wl-quote { border-inline-start: 0 dashed rgba(237, 237, 237, .5); }
+            .wl-card-item { position: relative; display: flex; padding: .2em; }
+            .wl-addr { display: none !important; color: transparent !important; }
+            .wl-content .vemoji,
+            .wl-content .wl-emoji { display: inline-block; vertical-align: baseline; height: 3.4em !important; margin: -0.125em .25em; }
+            img.wl-emoji, img.vemoji { vertical-align: sub; transition: ease-out .6s; }
+            img.wl-emoji:hover, img.vemoji:hover { transform: scale(1.8) !important; }
+            .wl-header { display: flex; overflow: hidden; padding: 0 4px; border-bottom: 0 dashed var(--waline-border-color); border-top-left-radius: 0; border-top-right-radius: 0; }
+            .wl-btn.primary { border-color: transparent !important; background: #ab3740; color: #fff; }
+            @media (max-width:580px) {
+            .wl-header-item:not(:last-child) { border-bottom: 0 dashed var(--waline-border-color); }
+            }
+            </style>
+
+            
+            <div id="waline"></div>
+
+            
+            <script type="module">
+            import { init } from 'https://unpkg.com/@waline/client@v3/dist/waline.js';
+
+            init({
+                el: '#waline',
+                serverURL: 'https://waline-pwd1df5ms-maotan23s-projects.vercel.app',
+                dark: 'html.night, body.night', 
+                emoji: [
+                    '//unpkg.com/@waline/emojis@1.2.0/tw-emoji',
+                ],
+            });
+
+            </script>
+
+  </div>
+</div>
 
                     </div>
             </div><div id="sideContainer" class="side-container">
@@ -588,11 +687,7 @@
     <a class="a-block nav-head false" href="http://localhost:1313/">
     
         <div class="nav-title">
-            Haunted Blog
-        </div>
-        
-        <div class="nav-subtitle">
-            目前还没闹鬼。
+            皮裂魂奔
         </div>
         
     </a>
