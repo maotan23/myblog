@@ -25,7 +25,7 @@ QQ：1494843825
 
 <br/>
 
-本站由<a href="https://gohugo.io/" target="_blank">Hugo</a>搭建，<a href="https://www.cloudflare.com/zh-cn/developer-platform/products/pages/" target="_blank">Cloudflare Pages</a>部署，<a href="https://www.imgurl.org/" target="_blank">ImgURL</a>提供图床，<a href="https://waline.js.org/" target="_blank">Waline</a>提供评论功能（修复中），使用<a href="https://github.com/amazingrise/hugo-theme-diary" target="_blank">Diary</a>主题。
+本站由<a href="https://gohugo.io/" target="_blank">Hugo</a>搭建，<a href="https://www.cloudflare.com/zh-cn/developer-platform/products/pages/" target="_blank">Cloudflare Pages</a>部署，<a href="https://www.imgurl.org/" target="_blank">ImgURL</a>提供图床，<a href="https://waline.js.org/" target="_blank">Waline</a>提供评论功能（修复中），<a href="https://aplayer.js.org/" target="_blank">APlayer</a>提供音乐播放器，使用<a href="https://github.com/amazingrise/hugo-theme-diary" target="_blank">Diary</a>主题。
 
 <br/>
 

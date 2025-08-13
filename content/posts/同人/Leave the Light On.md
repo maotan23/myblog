@@ -6,6 +6,8 @@ tags: ["Happy Tree Friends","Giggles","Petunia"]
 categories: "同人"
 ---
 
+<iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/track/6R63ujc0R1FWlEdTnHt3Pi?utm_source=generator" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+
 <br/><br/>
 
 来自黄昏的沉沉的歌声和轻和的日光落在Giggles闭合的眼睑上。她把自己扔在格纹沙发里。歌从CD里抖落出来，慢的像是从指缝里滑出的颗粒状的砂糖。

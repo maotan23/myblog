@@ -86,7 +86,7 @@
     
     <link type="text/css" rel="stylesheet" href="/vendor/css/bootstrap.min.css">
 
-<link rel="stylesheet" href="/scss/dark-mode.min.d8888b515b4cb237b802f9f94c894e66646c363a9d43ffc334e4eaf158de6682.css" integrity="sha256-2IiLUVtMsje4Avn5TIlOZmRsNjqdQ//DNOTq8VjeZoI=" media="screen">
+<link rel="stylesheet" href="/scss/dark-mode.min.2ff26abd2cced19576ca9c3b6824319fb006f10f42a0d272bca2127f897a2e35.css" integrity="sha256-L/JqvSzO0ZV2ypw7aCQxn7AG8Q9CoNJyvKISf4l6LjU=" media="screen">
 
 
 <link rel="stylesheet"
@@ -109,13 +109,10 @@
 
 
 
+<link rel="stylesheet" href="https://unpkg.com/@waline/client@v3/dist/waline.css" />
 
 </head>
-<head>
-        <link rel="stylesheet" href="https://unpkg.com/@waline/client@v3/dist/waline.css" />
-
-    </head>
-    <body>
+<body>
     	<div id="app"><div class="single-column-drawer-container" id="drawer"
      v-bind:class="{ 'single-column-drawer-container-active': isDrawerOpen }">
     <div class="drawer-content">
@@ -272,7 +269,8 @@
                 
                 <div class="post-body" v-pre>
                 
-                    <p><br/><br/></p>
+                    <iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/track/6R63ujc0R1FWlEdTnHt3Pi?utm_source=generator" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+<p><br/><br/></p>
 <p>来自黄昏的沉沉的歌声和轻和的日光落在Giggles闭合的眼睑上。她把自己扔在格纹沙发里。歌从CD里抖落出来，慢的像是从指缝里滑出的颗粒状的砂糖。</p>
 <p>但暮色还没有真正地合拢。Petunia透过隔门的窗户瞥见Giggles的轮廓，她像要睡着了，随着模糊的音乐声那团模糊的影子也在缓慢地摇晃；Petunia思量着，把灶台又重抹了一遍，拉开抽屉抓了两颗裹着鲜亮糖衣的小家伙。这时一些黄色的油污分别溅上了她的食指指腹和中指指甲壳。</p>
 <p>Petunia怒不可遏，Petunia即将暴跳如雷。但她还是遏住了怒火，及时地，她听见友人的酣睡的声音漫步着从门缝里溜了进来。</p>
@@ -572,5 +570,103 @@ Hugo Theme <a href="https://github.com/amazingrise/hugo-theme-diary">Diary</a> b
 </div>
             </div>
     
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.css">
+<div id="aplayer"></div>
+
+<script src="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.js"></script>
+<script>
+const staticDir = "http://localhost:1313/"
+const ap = new APlayer({
+    container: document.getElementById('aplayer'),
+    fixed: true,
+    autoplay: false,
+    theme: '#961010',
+    loop: 'all',
+    order: 'list',
+    preload: 'metadata',
+    volume: 0.5,
+  audio: [
+        {
+            title: 'Army Dreamers in 29edo',
+            author: 'Kate Bush/Deister Orchestra',
+            url: 'https://music.163.com/song/media/outer/url?id=2165388420.mp3',
+            cover: 'https://s3.bmp.ovh/imgs/2025/08/13/cd630c6249f394c5.jpg',
+            lrc: '',
+        },
+
+        {
+            title: 'リズと青い鳥 第三楽章「愛ゆえの決断」',
+            author: '松田彬人',
+            url: staticDir + 'music/bluebird.mp3',
+            cover: 'https://s3.bmp.ovh/imgs/2025/08/13/fb43e14e9e98a0e6.jpg',
+            lrc: '',
+        },
+
+        {
+            title: 'Pagan Poetry',
+            author: 'Bjork',
+            url: staticDir + 'music/PaganPoetry.mp3',
+            cover: 'https://s3.bmp.ovh/imgs/2025/08/13/abf7b56aee2c0254.jpg',
+            lrc:'',
+        },
+
+        {
+            title: 'The Haunted Palace',
+            author: 'Sopor Aeternus & the Ensemble of Shadows',
+            url: 'https://music.163.com/song/media/outer/url?id=27725392.mp3',
+            cover: 'https://s3.bmp.ovh/imgs/2025/08/13/3d8c8e717de1fd1c.jpg',
+            lrc: '',
+        },
+
+        {
+            title: 'Empty Warehouse',
+            author: 'Alias Conrad Coldwood',
+            url: 'https://music.163.com/song/media/outer/url?id=439915037.mp3',
+            cover: 'https://s3.bmp.ovh/imgs/2025/08/13/44df2c27a9b397c3.jpg',
+            lrc: '',
+        },
+        
+        {
+            title: 'Enchanters',
+            author: 'Raney Shockne/Elizaveta/Nick Stoubis',
+            url: 'https://music.163.com/song/media/outer/url?id=31529024.mp3',
+            cover: 'https://s3.bmp.ovh/imgs/2025/08/13/b63a40a6cede0a0c.jpg',
+            lrc: '',
+        },
+    ]
+});
+
+    window.onbeforeunload = () => {
+        
+        const playInfo = {
+            index: ap.list.index,
+            currentTime: ap.audio.currentTime,
+            paused: ap.paused
+        };
+        localStorage.setItem("playInfo", JSON.stringify(playInfo));
+    };
+
+    
+
+    window.onload = () => {
+        
+        const playInfo = JSON.parse(localStorage.getItem("playInfo"));
+        if (!playInfo) {
+            return;
+        }
+        
+        ap.list.switch(playInfo.index);
+        
+        setTimeout(() => {
+            
+            ap.seek(playInfo.currentTime);
+            
+            if (!playInfo.paused) {
+                ap.play()
+            }
+        }, 500);
+    };
+</script>
+
     <script src="/js/journal.js"></script></body>
 </html>
