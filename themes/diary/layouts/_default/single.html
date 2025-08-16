@@ -54,12 +54,7 @@
                         {{ end }}
                         {{ end }}
 
-                        {{/* 用 plainify 去掉 HTML，再用 RuneCount 计字符 */}}
-                        {{ $plain := plainify .Content }}
-                        {{ $chars := $plain | strings.RuneCount }}
-                        <span class="meta-item meta-chars">
-                            &nbsp;{{ $chars }}字
-                        </span>
+                       
 
                         {{ if .Site.Params.enableReadingTime }}
                             <i class="material-icons" style="">schedule</i>

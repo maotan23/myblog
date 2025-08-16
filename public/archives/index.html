@@ -1,0 +1,935 @@
+<!DOCTYPE html>
+<html lang="zh"><head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+<title>Archives</title>
+
+
+
+
+<meta charset="utf-8">
+<meta name="X-UA-Compatible" content="IE=edge">
+<meta name="google-site-verification" content="G-XXXXXXXXXX">
+<meta content="width=device-width, initial-scale=1.0, maximum-scale=5, user-scalable=5" name="viewport">
+<meta content="telephone=no" name="format-detection">
+<meta name="description" content="">
+<meta name="renderer" content="webkit">
+<meta name="theme-color" content="#ffffff">
+
+
+
+<meta property="og:url" content="http://localhost:1313/archives/">
+  <meta property="og:site_name" content="皮裂魂奔">
+  <meta property="og:title" content="Archives">
+  <meta property="og:description" content="历史文章按照年月归档">
+  <meta property="og:locale" content="zh">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+
+
+
+
+
+
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Archives">
+  <meta name="twitter:description" content="历史文章按照年月归档">
+
+
+
+
+
+
+
+      <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+      <script>
+        var doNotTrack = false;
+        if ( false ) {
+          var dnt = (navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack);
+          var doNotTrack = (dnt == "1" || dnt == "yes");
+        }
+        if (!doNotTrack) {
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-XXXXXXXXXX');
+        }
+      </script>
+
+
+
+
+<script type="text/javascript">
+  (function(c,l,a,r,i,t,y){
+      c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+      t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+      y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+  })(window, document, "clarity", "script", "abcdefghzd");
+</script>
+
+
+
+  
+
+
+
+
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+
+
+
+      <script src="/js/toc.js"></script>
+    
+    <link type="text/css" rel="stylesheet" href="/vendor/css/bootstrap.min.css">
+
+<link rel="stylesheet" href="/scss/dark-mode.min.2ff26abd2cced19576ca9c3b6824319fb006f10f42a0d272bca2127f897a2e35.css" integrity="sha256-L/JqvSzO0ZV2ypw7aCQxn7AG8Q9CoNJyvKISf4l6LjU=" media="screen">
+
+
+<link rel="stylesheet"
+          href="https://fonts.googleapis.com/css?family=Material+Icons">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<link rel="stylesheet" href="https://unpkg.com/@waline/client@v3/dist/waline.css" />
+
+</head>
+<body>
+    	<div id="app"><div class="single-column-drawer-container" id="drawer"
+     v-bind:class="{ 'single-column-drawer-container-active': isDrawerOpen }">
+    <div class="drawer-content">
+        <div class="drawer-menu">
+            
+            
+            
+                
+                
+                
+                    
+                
+                
+                
+                <a class="a-block drawer-menu-item active" href="/archives">
+                    归档 Archive
+                </a>
+                
+            
+                
+                
+                
+                
+                
+                <a class="a-block drawer-menu-item false" href="/posts/about">
+                    关于 About
+                </a>
+                
+            
+                
+                
+                
+                
+                
+                <a class="a-block drawer-menu-item false" href="/posts/friends">
+                    友链 Friends
+                </a>
+                
+            
+            
+            <div class="toc">
+
+
+</div>
+            
+        </div>
+    </div>
+</div>
+<transition name="fade">
+    <div id="drawer-mask" v-bind:class="{ 'single-column-drawer-mask': mounted }" v-if="isDrawerOpen" v-on:click="toggleDrawer"></div>
+</transition>
+<nav id="navBar" class="navbar sticky-top navbar-light single-column-nav-container">
+    <div id="navBackground" class="nav-background"></div>
+    <div class="container container-narrow nav-content">
+        <button id="nav_dropdown_btn" class="nav-dropdown-toggle" type="button" v-on:click="toggleDrawer">
+            <i class="material-icons">
+                menu
+            </i>
+        </button>
+        <a id="navTitle" class="navbar-brand" href="http://localhost:1313/">
+            皮裂魂奔
+        </a>
+        
+        <button type="button" class="nav-darkmode-toggle" id="darkModeToggleButton2">
+            <i class="material-icons" id="darkModeToggleIcon2">
+                dark_mode
+            </i>
+        </button>
+        
+    </div>
+</nav>
+<div class="single-column-header-container" id="pageHead"
+     v-bind:style="{ transform: 'translateZ(0px) translateY('+.3*scrollY+'px)', opacity: 1-navOpacity }">
+    <a href="http://localhost:1313/">
+        <div class="single-column-header-title">皮裂魂奔</div>
+        
+
+    </a>
+</div>
+
+            <div id="content">
+                <div id="streamContainer" class="stream-container">
+
+    <div class="post-list-container post-list-container-shadow">
+        <div class="post">
+            
+            
+            
+
+            <div class="post-head-wrapper-text-only"
+                
+            >
+                <div class="post-title">
+                    Archives
+                    
+
+                    
+                    <div class="post-meta">
+                        <span class="meta-item meta-date">
+                        
+                        </span>
+
+                        
+
+                        
+
+                       
+
+                        
+                    </div>
+                </div>
+            </div>
+            
+            <div class="post-body-wrapper">
+                
+                <div class="post-body" v-pre>
+                
+                    
+                        <h1>2025</h1>
+                            <ul class="archive-list">
+                            
+                                <li>
+                                05-24
+                                &nbsp;
+                                <a href="/posts/%E7%96%AE%E6%B5%B7%E6%97%A0%E7%A9%B7%E8%B0%AD/4/" target="_blank">第四章 永不复焉</a>
+                                </li>
+                            
+                                <li>
+                                05-01
+                                &nbsp;
+                                <a href="/posts/%E7%96%AE%E6%B5%B7%E6%97%A0%E7%A9%B7%E8%B0%AD/3/" target="_blank">第三章 海上庭审</a>
+                                </li>
+                            
+                                <li>
+                                04-19
+                                &nbsp;
+                                <a href="/posts/%E5%90%8C%E4%BA%BA/%E5%90%B8%E8%A1%80%E9%AC%BC/" target="_blank">现代吸血鬼生活流水账</a>
+                                </li>
+                            
+                                <li>
+                                03-29
+                                &nbsp;
+                                <a href="/posts/%E7%96%AE%E6%B5%B7%E6%97%A0%E7%A9%B7%E8%B0%AD/2/" target="_blank">第二章 为什么心喋喋不休</a>
+                                </li>
+                            
+                                <li>
+                                03-23
+                                &nbsp;
+                                <a href="/posts/%E7%96%AE%E6%B5%B7%E6%97%A0%E7%A9%B7%E8%B0%AD/1/" target="_blank">第一章 老鼠</a>
+                                </li>
+                            
+                                <li>
+                                01-01
+                                &nbsp;
+                                <a href="/posts/%E7%96%AE%E6%B5%B7%E6%97%A0%E7%A9%B7%E8%B0%AD/0/" target="_blank">故事简介</a>
+                                </li>
+                            
+                        </ul>
+                    
+                        <h1>2024</h1>
+                            <ul class="archive-list">
+                            
+                                <li>
+                                01-09
+                                &nbsp;
+                                <a href="/posts/%E5%8E%9F%E5%88%9B%E7%9F%AD%E7%AF%87/%E6%B0%B4%E8%9A%81%E5%AD%A3/" target="_blank">水蚁季</a>
+                                </li>
+                            
+                                <li>
+                                01-01
+                                &nbsp;
+                                <a href="/posts/%E5%8E%9F%E5%88%9B%E7%9F%AD%E7%AF%87/%E4%B9%B0%E9%B1%BC/" target="_blank">买鱼</a>
+                                </li>
+                            
+                        </ul>
+                    
+                        <h1>2023</h1>
+                            <ul class="archive-list">
+                            
+                                <li>
+                                12-04
+                                &nbsp;
+                                <a href="/posts/%E8%B7%91%E5%9B%A2%E8%A1%8D%E7%94%9F/%E6%89%AB%E9%99%A4%E6%97%A5/" target="_blank">扫除日</a>
+                                </li>
+                            
+                        </ul>
+                    
+                        <h1>2022</h1>
+                            <ul class="archive-list">
+                            
+                                <li>
+                                08-01
+                                &nbsp;
+                                <a href="/posts/%E5%8E%9F%E5%88%9B%E7%9F%AD%E7%AF%87/%E6%B2%99%E6%BC%A0/" target="_blank">沙漠</a>
+                                </li>
+                            
+                                <li>
+                                06-04
+                                &nbsp;
+                                <a href="/posts/%E8%B7%91%E5%9B%A2%E8%A1%8D%E7%94%9F/%E8%8E%AB%E6%B6%85%E5%A1%94/" target="_blank">驻莫涅塔哨兵调查日志</a>
+                                </li>
+                            
+                                <li>
+                                03-09
+                                &nbsp;
+                                <a href="/posts/%E8%B7%91%E5%9B%A2%E8%A1%8D%E7%94%9F/%E4%BE%BF%E8%BD%A6/" target="_blank">顺风车</a>
+                                </li>
+                            
+                        </ul>
+                    
+                        <h1>2021</h1>
+                            <ul class="archive-list">
+                            
+                                <li>
+                                08-01
+                                &nbsp;
+                                <a href="/posts/%E5%8E%9F%E5%88%9B%E7%9F%AD%E7%AF%87/%E8%AF%97%E7%9A%84%E6%AD%A3%E4%B9%89/" target="_blank">诗的正义</a>
+                                </li>
+                            
+                                <li>
+                                07-01
+                                &nbsp;
+                                <a href="/posts/%E5%8E%9F%E5%88%9B%E7%9F%AD%E7%AF%87/%E8%90%BD%E9%9B%B7%E4%B9%8B%E5%A4%9C/" target="_blank">落雷之夜</a>
+                                </li>
+                            
+                        </ul>
+                    
+                        <h1>2019</h1>
+                            <ul class="archive-list">
+                            
+                                <li>
+                                09-10
+                                &nbsp;
+                                <a href="/posts/%E5%8E%9F%E5%88%9B%E7%9F%AD%E7%AF%87/violin/" target="_blank">Violin</a>
+                                </li>
+                            
+                                <li>
+                                03-23
+                                &nbsp;
+                                <a href="/posts/%E5%8E%9F%E5%88%9B%E7%9F%AD%E7%AF%87/%E5%8E%9F%E9%87%8E-%E6%B2%B3%E6%B5%81-%E5%8E%9F%E9%87%8E/" target="_blank">原野 河流 原野</a>
+                                </li>
+                            
+                                <li>
+                                02-13
+                                &nbsp;
+                                <a href="/posts/%E5%90%8C%E4%BA%BA/%E8%8C%B8%E7%B1%B3/" target="_blank">一次交谈</a>
+                                </li>
+                            
+                        </ul>
+                    
+                        <h1>2018</h1>
+                            <ul class="archive-list">
+                            
+                                <li>
+                                12-01
+                                &nbsp;
+                                <a href="/posts/%E5%8E%9F%E5%88%9B%E7%9F%AD%E7%AF%87/%E6%96%B0%E5%B9%B4%E5%A4%9C/" target="_blank">新年夜</a>
+                                </li>
+                            
+                                <li>
+                                08-31
+                                &nbsp;
+                                <a href="/posts/%E5%8E%9F%E5%88%9B%E7%9F%AD%E7%AF%87/%E6%B0%B4%E9%B8%9F/" target="_blank">水鸟</a>
+                                </li>
+                            
+                                <li>
+                                08-11
+                                &nbsp;
+                                <a href="/posts/%E5%8E%9F%E5%88%9B%E7%9F%AD%E7%AF%87/%E5%B9%BD%E7%A6%BD%E5%AF%B9%E6%89%8B/" target="_blank">幽禽对手</a>
+                                </li>
+                            
+                                <li>
+                                08-03
+                                &nbsp;
+                                <a href="/posts/%E5%8E%9F%E5%88%9B%E7%9F%AD%E7%AF%87/%E5%87%B6%E6%9D%80%E6%A1%88/" target="_blank">凶杀案</a>
+                                </li>
+                            
+                                <li>
+                                07-21
+                                &nbsp;
+                                <a href="/posts/%E5%90%8C%E4%BA%BA/%E4%B8%80%E4%B8%AA%E6%81%B6%E6%A2%A6/" target="_blank">一个恶梦</a>
+                                </li>
+                            
+                        </ul>
+                    
+                        <h1>2017</h1>
+                            <ul class="archive-list">
+                            
+                                <li>
+                                11-01
+                                &nbsp;
+                                <a href="/posts/%E5%90%8C%E4%BA%BA/%E6%9C%88%E4%BA%AE%E6%B2%B3/" target="_blank">月亮河</a>
+                                </li>
+                            
+                                <li>
+                                08-13
+                                &nbsp;
+                                <a href="/posts/%E5%90%8C%E4%BA%BA/%E9%87%8E%E5%85%BD%E4%B8%8E%E9%95%BF%E6%98%8E%E7%81%AF/" target="_blank">野兽与长明灯</a>
+                                </li>
+                            
+                                <li>
+                                08-09
+                                &nbsp;
+                                <a href="/posts/%E5%90%8C%E4%BA%BA/%E5%A4%9C%E8%AF%9D/" target="_blank">夜话</a>
+                                </li>
+                            
+                                <li>
+                                08-03
+                                &nbsp;
+                                <a href="/posts/%E5%8E%9F%E5%88%9B%E7%9F%AD%E7%AF%87/%E9%95%BF%E6%B1%9F/" target="_blank">长江</a>
+                                </li>
+                            
+                        </ul>
+                    
+                        <h1>2016</h1>
+                            <ul class="archive-list">
+                            
+                                <li>
+                                12-01
+                                &nbsp;
+                                <a href="/posts/%E5%90%8C%E4%BA%BA/%E5%81%87%E6%83%B3%E6%95%8C/" target="_blank">假想敌</a>
+                                </li>
+                            
+                                <li>
+                                09-16
+                                &nbsp;
+                                <a href="/posts/%E5%90%8C%E4%BA%BA/%E7%82%B8%E9%B8%A1%E5%95%A4%E9%85%92/" target="_blank">炸鸡啤酒</a>
+                                </li>
+                            
+                                <li>
+                                07-30
+                                &nbsp;
+                                <a href="/posts/%E5%90%8C%E4%BA%BA/fell/" target="_blank">Fell</a>
+                                </li>
+                            
+                                <li>
+                                07-08
+                                &nbsp;
+                                <a href="/posts/%E5%90%8C%E4%BA%BA/%E7%81%AF%E7%81%AB%E4%B8%8E%E8%BD%A6%E7%AB%99/" target="_blank">灯火与车站</a>
+                                </li>
+                            
+                                <li>
+                                04-10
+                                &nbsp;
+                                <a href="/posts/%E5%90%8C%E4%BA%BA/%E6%97%A7%E6%A2%A6/" target="_blank">旧梦</a>
+                                </li>
+                            
+                                <li>
+                                03-20
+                                &nbsp;
+                                <a href="/posts/%E5%8E%9F%E5%88%9B%E7%9F%AD%E7%AF%87/%E6%97%85%E8%80%85%E5%92%8C%E4%B9%8C%E9%B8%A6/" target="_blank">旅者和乌鸦</a>
+                                </li>
+                            
+                                <li>
+                                03-06
+                                &nbsp;
+                                <a href="/posts/%E5%90%8C%E4%BA%BA/%E5%A6%82%E4%BD%95%E5%88%86%E8%BE%A8%E7%A3%B7%E5%85%89%E5%92%8C%E6%98%9F%E6%98%9F/" target="_blank">如何分辨磷光和星星</a>
+                                </li>
+                            
+                                <li>
+                                02-12
+                                &nbsp;
+                                <a href="/posts/%E5%90%8C%E4%BA%BA/%E8%8A%B1%E5%90%90%E3%81%8D%E7%97%85/" target="_blank">花吐き病</a>
+                                </li>
+                            
+                                <li>
+                                02-05
+                                &nbsp;
+                                <a href="/posts/%E5%90%8C%E4%BA%BA/%E5%A0%95%E5%85%A5%E5%99%A9%E6%A2%A6%E7%9A%84%E7%A5%9E%E6%98%8E/" target="_blank">堕入噩梦的神明</a>
+                                </li>
+                            
+                                <li>
+                                01-09
+                                &nbsp;
+                                <a href="/posts/%E5%90%8C%E4%BA%BA/%E9%80%8F%E6%98%8E%E4%BA%BA/" target="_blank">透明人</a>
+                                </li>
+                            
+                        </ul>
+                    
+                        <h1>2015</h1>
+                            <ul class="archive-list">
+                            
+                                <li>
+                                11-22
+                                &nbsp;
+                                <a href="/posts/%E5%90%8C%E4%BA%BA/%E5%92%8C%E5%BD%B1%E5%AD%90%E8%AF%B4%E8%AF%9D/" target="_blank">和影子说话</a>
+                                </li>
+                            
+                                <li>
+                                11-08
+                                &nbsp;
+                                <a href="/posts/%E5%90%8C%E4%BA%BA/%E5%8C%97%E6%9E%81%E5%85%89/" target="_blank">北极光</a>
+                                </li>
+                            
+                                <li>
+                                03-07
+                                &nbsp;
+                                <a href="/posts/%E5%90%8C%E4%BA%BA/%E8%93%9D%E7%BF%85/" target="_blank">蓝翅</a>
+                                </li>
+                            
+                        </ul>
+                    
+                        <h1>2014</h1>
+                            <ul class="archive-list">
+                            
+                                <li>
+                                12-01
+                                &nbsp;
+                                <a href="/posts/%E5%90%8C%E4%BA%BA/%E6%9E%9D%E8%94%93/" target="_blank">枝蔓</a>
+                                </li>
+                            
+                                <li>
+                                11-01
+                                &nbsp;
+                                <a href="/posts/%E5%90%8C%E4%BA%BA/leave-the-light-on/" target="_blank">Leave the Light On</a>
+                                </li>
+                            
+                                <li>
+                                05-30
+                                &nbsp;
+                                <a href="/posts/%E5%8E%9F%E5%88%9B%E7%9F%AD%E7%AF%87/%E6%9D%82%E9%9F%B3/" target="_blank">杂音</a>
+                                </li>
+                            
+                                <li>
+                                01-01
+                                &nbsp;
+                                <a href="/posts/%E5%8E%9F%E5%88%9B%E7%9F%AD%E7%AF%87/%E7%9D%A1%E5%89%8D%E6%95%85%E4%BA%8B/" target="_blank">睡前故事</a>
+                                </li>
+                            
+                        </ul>
+                    
+                        <h1>0001</h1>
+                            <ul class="archive-list">
+                            
+                                <li>
+                                01-01
+                                &nbsp;
+                                <a href="/archives/" target="_blank">Archives</a>
+                                </li>
+                            
+                                <li>
+                                01-01
+                                &nbsp;
+                                <a href="/posts/friends/" target="_blank"></a>
+                                </li>
+                            
+                                <li>
+                                01-01
+                                &nbsp;
+                                <a href="/posts/about/" target="_blank"></a>
+                                </li>
+                            
+                        </ul>
+                    
+                    
+                </div>
+            </div>
+            
+            
+            <nav class="post-pagination">
+                
+                <a class="newer-posts" href="/posts/friends/">
+			下回<br>
+                </a>
+                
+                
+                
+                <a class="older-posts">
+			上回<br>这是最旧的文章了。
+                </a>
+                
+            </nav>
+            <div class="post-comment-wrapper">
+                
+
+
+
+
+
+
+
+
+
+
+
+
+            </div>
+
+            
+            <style>
+                .post-body-wrapper .archive-list {
+                    list-style: none !important;       
+                    margin: 0 !important;              
+                    line-height: 1.5 !important;       
+                }
+
+                
+                .post-body-wrapper .archive-list li {
+                    margin: 0.4em 0;                  
+                    padding-left: 0;                 
+                }
+
+                 
+                .post-body-wrapper .archive-list li::marker,
+                .post-body-wrapper .archive-list li::before,
+                .post-body-wrapper .archive-list li::after {
+                    content: none !important;
+                    display: none !important;
+                }
+            </style>
+
+            
+            <link
+                rel="stylesheet"
+                href="https://unpkg.com/@waline/client@v3/dist/waline.css"
+            />
+
+
+
+            
+            <style>
+             
+            :root {
+            --waline-font-size: 16px;
+            --waline-white: #fff;
+            --waline-light-grey: #999;
+            --waline-dark-grey: #666;
+            --waline-theme-color:#ab3740;
+            --waline-active-color:#ab3740;
+            --waline-color: #000000;
+            --waline-bg-color: rgb(247, 240, 240);
+            --waline-bg-color-light: #f8f8f8;
+            --waline-bg-color-hover: #f0f0f0;
+            --waline-border-color: transparent;
+            --waline-disable-bg-color: #f8f8f8;
+            --waline-disable-color: #bbb;
+            --waline-code-bg-color: #282c34;
+            --waline-bq-color: #f0f0f0;
+            --waline-avatar-size: 3.25rem;
+            --waline-m-avatar-size: calc(var(--waline-avatar-size) * 9 / 13);
+            --waline-badge-color:var(--waline-active-color);
+            --waline-badge-font-size: 0.775em;
+            --waline-info-bg-color: #f8f8f8;
+            --waline-info-color: #999;
+            --waline-info-font-size: 0.625em;
+            --waline-border: 1px solid var(--waline-border-color);
+            --waline-avatar-radius: 50%;
+            --waline-box-shadow: none;
+            }
+
+             
+            html.night {
+            --waline-white: #000;
+            --waline-light-grey: #666;
+            --waline-dark-grey: #999;
+            --waline-color: #888;
+            --waline-bg-color: #1e1e1e;
+            --waline-bg-color-light: #272727;
+            --waline-border-color: #333;
+            --waline-disable-bg-color: #444;
+            --waline-disable-color: #272727;
+            --waline-bq-color: #272727;
+            --waline-info-bg-color: #272727;
+            --waline-info-color: #666;
+            }
+
+             
+            .wl-editor:focus, .wl-input:focus { background: transparent; }
+            .wl-info .wl-text-number { color: var(--waline-color); font-size: .75em; }
+            .wl-card .wl-delete,
+            .wl-card .wl-like,
+            .wl-card .wl-reply,
+            .wl-card .wl-edit,
+            .wl-card span.wl-nick,
+            .wl-empty, .wl-admin-actions,
+            [data-waline] p { color: unset; }
+
+             
+            #waline {
+            max-width: unset;
+            margin: 0 auto;
+            width: 90%;
+            }
+            .wl-card { border: 0; }
+            .wl-card .wl-quote { border-inline-start: 0 dashed rgba(237, 237, 237, .5); }
+            .wl-card-item { position: relative; display: flex; padding: .2em; }
+            .wl-addr { display: none !important; color: transparent !important; }
+            .wl-content .vemoji,
+            .wl-content .wl-emoji { display: inline-block; vertical-align: baseline; height: 3.4em !important; margin: -0.125em .25em; }
+            img.wl-emoji, img.vemoji { vertical-align: sub; transition: ease-out .6s; }
+            img.wl-emoji:hover, img.vemoji:hover { transform: scale(1.8) !important; }
+            .wl-header { display: flex; overflow: hidden; padding: 0 4px; border-bottom: 0 dashed var(--waline-border-color); border-top-left-radius: 0; border-top-right-radius: 0; }
+            .wl-btn.primary { border-color: transparent !important; background: #ab3740; color: #fff; }
+            @media (max-width:580px) {
+            .wl-header-item:not(:last-child) { border-bottom: 0 dashed var(--waline-border-color); }
+            }
+            </style>
+
+            
+            <div id="waline"></div>
+
+            
+            <script type="module">
+            import { init } from 'https://unpkg.com/@waline/client@v3/dist/waline.js';
+
+            init({
+                el: '#waline',
+                serverURL: 'https://waline-pwd1df5ms-maotan23s-projects.vercel.app',
+                dark: 'html.night, body.night', 
+                emoji: [
+                    '//unpkg.com/@waline/emojis@1.2.0/tw-emoji',
+                ],
+            });
+
+            </script>
+
+  </div>
+</div>
+
+                    </div>
+            </div><div id="sideContainer" class="side-container">
+    
+    <a class="a-block nav-head false" href="http://localhost:1313/">
+    
+        <div class="nav-title">
+            皮裂魂奔
+        </div>
+        
+    </a>
+
+    <div class="nav-link-list">
+        
+        
+            
+            
+            
+                
+            
+            
+            
+            <a class="a-block nav-link-item active" href="/archives">
+                归档 Archive
+            </a>
+            
+        
+            
+            
+            
+            
+            
+            <a class="a-block nav-link-item false" href="/posts/about">
+                关于 About
+            </a>
+            
+        
+            
+            
+            
+            
+            
+            <a class="a-block nav-link-item false" href="/posts/friends">
+                友链 Friends
+            </a>
+            
+        
+    </div>
+
+    
+
+    <div class="nav-footer">
+        
+Hugo Theme <a href="https://github.com/amazingrise/hugo-theme-diary">Diary</a> by <a href="https://risehere.net/">Rise</a>
+<br>
+移植自 <a href="https://mak1t0.cc/" target="_blank" rel="noreferrer noopener">Makito</a>'s <a href="https://github.com/SumiMakito/hexo-theme-journal/" target="_blank" rel="noreferrer noopener">Journal.</a> <br>
+<br>
+
+&copy;
+	
+	?-2025 Haunted Blog
+	
+
+    </div>
+    
+</div><div id="extraContainer" class="extra-container">
+    <div class="toc-wrapper">
+        
+
+        
+        <div class="toc">
+
+
+</div>
+        
+    </div>
+    <div class="pagination">
+        <a id="globalBackToTop" class="pagination-action animated-visibility" href="#top"
+            :class="{ invisible: scrollY == 0 }">
+            <i class="material-icons pagination-action-icon">
+                keyboard_arrow_up
+            </i>
+        </a>
+        
+        <a type="button" class="pagination-action" id="darkModeToggleButton">
+            <span class="material-icons pagination-action-icon" id="darkModeToggleIcon">
+                dark_mode
+            </span>
+        </a>
+        
+        
+    </div>
+</div>
+
+<div id="single-column-footer">
+Hugo Theme <a href="https://github.com/amazingrise/hugo-theme-diary">Diary</a> by <a href="https://risehere.net/">Rise</a>
+<br>
+移植自 <a href="https://mak1t0.cc/" target="_blank" rel="noreferrer noopener">Makito</a>'s <a href="https://github.com/SumiMakito/hexo-theme-journal/" target="_blank" rel="noreferrer noopener">Journal.</a> <br>
+<br>
+
+&copy;
+	
+	?-2025 Haunted Blog
+	
+</div>
+            </div>
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.css">
+<div id="aplayer"></div>
+
+<script src="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.js"></script>
+<script>
+const staticDir = "http://localhost:1313/"
+const ap = new APlayer({
+    container: document.getElementById('aplayer'),
+    fixed: true,
+    autoplay: false,
+    theme: '#961010',
+    loop: 'all',
+    order: 'list',
+    preload: 'metadata',
+    volume: 0.5,
+  audio: [
+        {
+            title: 'Army Dreamers in 29edo',
+            author: 'Kate Bush/Deister Orchestra',
+            url: 'https://music.163.com/song/media/outer/url?id=2165388420.mp3',
+            cover: 'https://s3.bmp.ovh/imgs/2025/08/13/cd630c6249f394c5.jpg',
+            lrc: '',
+        },
+
+        {
+            title: 'リズと青い鳥 第三楽章「愛ゆえの決断」',
+            author: '松田彬人',
+            url: staticDir + 'music/bluebird.mp3',
+            cover: 'https://s3.bmp.ovh/imgs/2025/08/13/fb43e14e9e98a0e6.jpg',
+            lrc: '',
+        },
+
+        {
+            title: 'Pagan Poetry',
+            author: 'Bjork',
+            url: staticDir + 'music/PaganPoetry.mp3',
+            cover: 'https://s3.bmp.ovh/imgs/2025/08/13/abf7b56aee2c0254.jpg',
+            lrc:'',
+        },
+
+        {
+            title: 'The Haunted Palace',
+            author: 'Sopor Aeternus & the Ensemble of Shadows',
+            url: 'https://music.163.com/song/media/outer/url?id=27725392.mp3',
+            cover: 'https://s3.bmp.ovh/imgs/2025/08/13/3d8c8e717de1fd1c.jpg',
+            lrc: '',
+        },
+
+        {
+            title: 'Empty Warehouse',
+            author: 'Alias Conrad Coldwood',
+            url: 'https://music.163.com/song/media/outer/url?id=439915037.mp3',
+            cover: 'https://s3.bmp.ovh/imgs/2025/08/13/44df2c27a9b397c3.jpg',
+            lrc: '',
+        },
+        
+        {
+            title: 'Enchanters',
+            author: 'Raney Shockne/Elizaveta/Nick Stoubis',
+            url: 'https://music.163.com/song/media/outer/url?id=31529024.mp3',
+            cover: 'https://s3.bmp.ovh/imgs/2025/08/13/b63a40a6cede0a0c.jpg',
+            lrc: '',
+        },
+    ]
+});
+
+    window.onbeforeunload = () => {
+        
+        const playInfo = {
+            index: ap.list.index,
+            currentTime: ap.audio.currentTime,
+            paused: ap.paused
+        };
+        localStorage.setItem("playInfo", JSON.stringify(playInfo));
+    };
+
+    
+
+    window.onload = () => {
+        
+        const playInfo = JSON.parse(localStorage.getItem("playInfo"));
+        if (!playInfo) {
+            return;
+        }
+        
+        ap.list.switch(playInfo.index);
+        
+        setTimeout(() => {
+            
+            ap.seek(playInfo.currentTime);
+            
+            if (!playInfo.paused) {
+                ap.play()
+            }
+        }, 500);
+    };
+</script>
+
+    <script src="/js/journal.js"></script></body>
+</html>

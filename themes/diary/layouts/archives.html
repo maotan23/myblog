@@ -1,0 +1,262 @@
+{{ define "main" }}
+
+    <div class="post-list-container post-list-container-shadow">
+        <div class="post">
+            {{ $post_class := "post-head-wrapper-text-only"}}
+            {{ $featured_image := .Params.featured_image }}
+            {{ if $featured_image }}
+                {{ $post_class = "post-head-wrapper"}}
+            {{ end }}
+
+            <div class="{{$post_class}}"
+                {{ if $featured_image }}
+                    {{ $image := .Resources.GetMatch (.Params.featured_image) }}
+                    {{ if $image }}
+                    style="background-image: url('{{$image.RelPermalink }}')"
+                    {{ else }}
+                    style="background-image: url('{{ $featured_image | absURL}}')"
+                    {{ end }}
+                {{ end }}
+            >
+                <div class="post-title">
+                    {{ .Title }}
+                    {{ if .Params.description }}
+                    <div class="post-subtitle">
+                        {{ .Params.description }}
+                    </div>
+                    {{ end }}
+
+                    <!-- meta 行 -->
+                    <div class="post-meta">
+                        <span class="meta-item meta-date">
+                        {{ if not .Date.IsZero }}
+                            {{ .Date.Format "2006-01-02" }}
+                        {{ else if not .PublishDate.IsZero }}
+                            {{ .PublishDate.Format "2006-01-02" }}
+                        {{ end }}
+                        </span>
+
+                        {{ if .Params.categories }}
+                        <span class="meta-item meta-categories">
+                            &nbsp; <i class="material-icons" style="">folder</i>
+                            <a href="{{ "/categories/" | relLangURL }}{{ .Params.categories | urlize }}">{{ .Params.categories }}</a>
+                        </span>
+                        {{ end }}
+
+                        {{ with .Params.tags }}
+                        {{ if gt (len .) 0 }}
+                        <span class="meta-item meta-tags">
+                            &nbsp; <i class="material-icons" style="">label</i>
+                            {{ range $i, $t := . }}
+                                <a href="{{ "/tags/" | relLangURL }}{{ $t | urlize }}">{{ $t }}</a>{{ if lt (add $i 1) (len .) }}&nbsp;{{ end }}
+                            {{ end }}
+                        </span>
+                        {{ end }}
+                        {{ end }}
+
+                       
+
+                        {{ if .Site.Params.enableReadingTime }}
+                            <i class="material-icons" style="">schedule</i>
+                            {{ $readTime := mul (div (countwords .Content) 220.0) 60 }}
+
+                            {{ $minutes := math.Floor (div $readTime 60) }}
+                            {{ $seconds := mod $readTime 60 }}
+
+                            {{ if gt $minutes 0}}
+                            {{ $minutes }} {{ cond (eq $minutes 1) "minute" "min" }}
+                            {{ end }}
+                            {{ $seconds }} {{ cond (eq $seconds 1) "second" "s" }}.
+                        {{ end }}
+                    </div>
+                </div>
+            </div>
+            
+            <div class="post-body-wrapper">
+                {{ if .Params.enableVue }}
+                <div class="post-body">
+                {{ else }}
+                <div class="post-body" v-pre>
+                {{ end }}
+                    {{ range (.Site.RegularPages.GroupByDate "2006") }}
+                        <h1>{{ .Key }}</h1>
+                            <ul class="archive-list">
+                            {{ range (where .Pages "Type" "posts") }}
+                                <li>
+                                {{ .PublishDate.Format "01-02" }}
+                                &nbsp;
+                                <a href="{{ .RelPermalink }}" target="_blank">{{ .Title }}</a>
+                                </li>
+                            {{ end }}
+                        </ul>
+                    {{ end }}
+                    {{ if not .Lastmod.IsZero }}
+                    <HR width="100%" id="EOF">
+		    <p style="color:#777;">{{ i18n "last_mod_on" .Page.Lastmod }}</p>
+                    {{ end }}
+                </div>
+            </div>
+            
+            
+            <nav class="post-pagination">
+                {{if .Next}}
+                <a class="newer-posts" href="{{.Next.RelPermalink}}">
+			{{ i18n "next_link" }}<br>{{.Next.Title}}
+                </a>
+                {{else}}
+                <a class="newer-posts">
+			{{ i18n "next_link" }}<br>{{ i18n "no_newer_posts"}}
+                </a>
+                {{end}}
+                
+                {{if .Prev}}
+                <a class="older-posts" href="{{.Prev.RelPermalink}}">
+			{{ i18n "prev_link" }}<br>{{.Prev.Title}}
+                </a>
+                {{else}}
+                <a class="older-posts">
+			{{ i18n "prev_link" }}<br>{{ i18n "no_older_posts" }}
+                </a>
+                {{end}}
+            </nav>
+            <div class="post-comment-wrapper">
+                {{ if eq .Params.comment false }}
+                <p style="opacity: 0.6" align="center">
+                    <small>{{ i18n "comments_disabled" }}</small>
+                </p>
+                {{ else }}
+                {{- partial "comment.html" . -}}
+                {{ end }}
+            </div>
+
+            
+            <style>
+                .post-body-wrapper .archive-list {
+                    list-style: none !important;      /* 取消默认圆点 */
+                    margin: 0 !important;             /* 取消默认外边距，根据需要调整 */
+                    line-height: 1.5 !important;      /* 1.5 倍行距 */
+                }
+
+                
+                .post-body-wrapper .archive-list li {
+                    margin: 0.4em 0;                  
+                    padding-left: 0;                 
+                }
+
+                /* 屏蔽所有可能用来显示序号/标记的伪元素（更稳妥） */
+                .post-body-wrapper .archive-list li::marker,
+                .post-body-wrapper .archive-list li::before,
+                .post-body-wrapper .archive-list li::after {
+                    content: none !important;
+                    display: none !important;
+                }
+            </style>
+
+            
+            <link
+                rel="stylesheet"
+                href="https://unpkg.com/@waline/client@v3/dist/waline.css"
+            />
+
+
+
+            <!-- 自定义 Waline 样式与 CSS 变量（只保留一份） -->
+            <style>
+            /* ===== Waline 自定义变量（保留并合并） ===== */
+            :root {
+            --waline-font-size: 16px;
+            --waline-white: #fff;
+            --waline-light-grey: #999;
+            --waline-dark-grey: #666;
+            --waline-theme-color:#ab3740;
+            --waline-active-color:#ab3740;
+            --waline-color: #000000;
+            --waline-bg-color: rgb(247, 240, 240);
+            --waline-bg-color-light: #f8f8f8;
+            --waline-bg-color-hover: #f0f0f0;
+            --waline-border-color: transparent;
+            --waline-disable-bg-color: #f8f8f8;
+            --waline-disable-color: #bbb;
+            --waline-code-bg-color: #282c34;
+            --waline-bq-color: #f0f0f0;
+            --waline-avatar-size: 3.25rem;
+            --waline-m-avatar-size: calc(var(--waline-avatar-size) * 9 / 13);
+            --waline-badge-color:var(--waline-active-color);
+            --waline-badge-font-size: 0.775em;
+            --waline-info-bg-color: #f8f8f8;
+            --waline-info-color: #999;
+            --waline-info-font-size: 0.625em;
+            --waline-border: 1px solid var(--waline-border-color);
+            --waline-avatar-radius: 50%;
+            --waline-box-shadow: none;
+            }
+
+            /* 根据用户设置（夜间） */
+            html.night {
+            --waline-white: #000;
+            --waline-light-grey: #666;
+            --waline-dark-grey: #999;
+            --waline-color: #888;
+            --waline-bg-color: #1e1e1e;
+            --waline-bg-color-light: #272727;
+            --waline-border-color: #333;
+            --waline-disable-bg-color: #444;
+            --waline-disable-color: #272727;
+            --waline-bq-color: #272727;
+            --waline-info-bg-color: #272727;
+            --waline-info-color: #666;
+            }
+
+            /* 你原有的局部样式（保留并放在变量之后） */
+            .wl-editor:focus, .wl-input:focus { background: transparent; }
+            .wl-info .wl-text-number { color: var(--waline-color); font-size: .75em; }
+            .wl-card .wl-delete,
+            .wl-card .wl-like,
+            .wl-card .wl-reply,
+            .wl-card .wl-edit,
+            .wl-card span.wl-nick,
+            .wl-empty, .wl-admin-actions,
+            [data-waline] p { color: unset; }
+
+            /* 其它展示样式（保留） */
+            #waline {
+            max-width: unset;
+            margin: 0 auto;
+            width: 90%;
+            }
+            .wl-card { border: 0; }
+            .wl-card .wl-quote { border-inline-start: 0 dashed rgba(237, 237, 237, .5); }
+            .wl-card-item { position: relative; display: flex; padding: .2em; }
+            .wl-addr { display: none !important; color: transparent !important; }
+            .wl-content .vemoji,
+            .wl-content .wl-emoji { display: inline-block; vertical-align: baseline; height: 3.4em !important; margin: -0.125em .25em; }
+            img.wl-emoji, img.vemoji { vertical-align: sub; transition: ease-out .6s; }
+            img.wl-emoji:hover, img.vemoji:hover { transform: scale(1.8) !important; }
+            .wl-header { display: flex; overflow: hidden; padding: 0 4px; border-bottom: 0 dashed var(--waline-border-color); border-top-left-radius: 0; border-top-right-radius: 0; }
+            .wl-btn.primary { border-color: transparent !important; background: #ab3740; color: #fff; }
+            @media (max-width:580px) {
+            .wl-header-item:not(:last-child) { border-bottom: 0 dashed var(--waline-border-color); }
+            }
+            </style>
+
+            <!-- Waline 容器（**页面上只保留这一个**） -->
+            <div id="waline"></div>
+
+            <!-- Waline 初始化脚本（只执行一次） -->
+            <script type="module">
+            import { init } from 'https://unpkg.com/@waline/client@v3/dist/waline.js';
+
+            init({
+                el: '#waline',
+                serverURL: 'https://waline-pwd1df5ms-maotan23s-projects.vercel.app',
+                dark: 'html.night, body.night', // ← 改这里：同时监听 html 与 body 的 night class
+                emoji: [
+                    '//unpkg.com/@waline/emojis@1.2.0/tw-emoji',
+                ],
+            });
+
+            </script>
+
+  </div>
+</div>
+{{ end }}

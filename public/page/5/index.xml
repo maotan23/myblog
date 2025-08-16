@@ -389,41 +389,9 @@
     
     
     
-        <item>
-        <title>root</title>
-        <link>http://localhost:1313/posts/about/</link>
-        <pubDate>Sat, 01 Jan 2000 00:00:00 +0000</pubDate>
-        
-        <guid>http://localhost:1313/posts/about/</guid>
-        <description>皮裂魂奔 http://localhost:1313/posts/about/ -&lt;center&gt;&lt;img src=&#34;https://s3.bmp.ovh/imgs/2025/08/12/46d026b396bb06e3.png&#34;&gt;&lt;/center&gt;
-&lt;br/&gt;
-&lt;p&gt;您好，欢迎来到Haunted Blog，这是一个私人的博客网站。&lt;/p&gt;
-&lt;br/&gt;
-&lt;p&gt;您可以通过以下渠道联系到我&lt;small&gt;（虽然不知道为什么要联系）&lt;/small&gt;：&lt;/p&gt;
-&lt;p&gt;QQ：1494843825&lt;/p&gt;
-&lt;p&gt;邮箱：peryton23@126.com&lt;/p&gt;
-&lt;p&gt;&lt;a href=&#34;https://neodb.social/users/Leto/&#34; target=&#34;_blank&#34;&gt;NeoDB（书影游记录网站）&lt;/a&gt;&lt;/p&gt;
-&lt;br/&gt;
-&lt;p&gt;本站由&lt;a href=&#34;https://gohugo.io/&#34; target=&#34;_blank&#34;&gt;Hugo&lt;/a&gt;搭建，&lt;a href=&#34;https://www.cloudflare.com/zh-cn/developer-platform/products/pages/&#34; target=&#34;_blank&#34;&gt;Cloudflare Pages&lt;/a&gt;部署，&lt;a href=&#34;https://www.imgurl.org/&#34; target=&#34;_blank&#34;&gt;ImgURL&lt;/a&gt;提供图床，&lt;a href=&#34;https://waline.js.org/&#34; target=&#34;_blank&#34;&gt;Waline&lt;/a&gt;提供评论功能（修复中），&lt;a href=&#34;https://aplayer.js.org/&#34; target=&#34;_blank&#34;&gt;APlayer&lt;/a&gt;提供音乐播放器，使用&lt;a href=&#34;https://github.com/amazingrise/hugo-theme-diary&#34; target=&#34;_blank&#34;&gt;Diary&lt;/a&gt;主题。&lt;/p&gt;
-&lt;br/&gt;
-&lt;center&gt;&lt;img src=&#34;https://s3.bmp.ovh/imgs/2025/08/05/261797d37b64eb9a.png&#34;&gt;&lt;/center&gt;
-&lt;p&gt;&lt;br/&gt;我喜欢：&lt;/p&gt;
-&lt;p&gt;史云梅耶，阿涅斯·瓦尔达&lt;/p&gt;
-&lt;p&gt;《纳尔齐斯与歌尔德蒙》&lt;/p&gt;
-&lt;p&gt;《银河铁道之夜》&lt;/p&gt;
-&lt;p&gt;《裴伽纳的诸神》&lt;/p&gt;
-&lt;p&gt;焦糖一样的暹罗猫&lt;/p&gt;
-&lt;p&gt;&lt;br/&gt;想尝试：&lt;/p&gt;
-&lt;p&gt;搓个OC伪春菜&lt;/p&gt;
-&lt;p&gt;布艺手作&lt;/p&gt;
-&lt;p&gt;给手臂纹身&lt;/p&gt;
-&lt;p&gt;看看废墟&lt;/p&gt;
-&lt;p&gt;总有一天能把游戏做了的&lt;/p&gt;
-&lt;p&gt;&lt;br/&gt;不喜欢：&lt;/p&gt;
-&lt;p&gt;对私人表达和兴趣爱好说三道四的人，叉出去&lt;/p&gt;
-&lt;br/&gt;
-&lt;center&gt;&lt;img src=&#34;https://s3.bmp.ovh/imgs/2025/08/12/cbe633b4effa64f2.png&#34;&gt;&lt;/center&gt;- http://localhost:1313/posts/about/ - ?-2025 Haunted Blog</description>
-        </item>
+    
+    
+    
     
     
   </channel>
