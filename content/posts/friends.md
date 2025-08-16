@@ -6,7 +6,7 @@ hidden: true
 
 # 友链
 
-**<a href="https://s3.bmp.ovh/imgs/2025/08/17/d44ea05957a17b5e.png" target="_blank">AWAY!</a>**
+**<a href="https://atlantic-wildebeest-a4c.notion.site/AWAY-251ee229cc7d8045a902e0a2ff63a5a1" target="_blank">AWAY!</a>**
 
 <br/>
 
