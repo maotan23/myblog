@@ -14,7 +14,6 @@ $front-container-background: #ffffff;
     line-height: 1.8;
   }
 
-  /* 不希望缩进的元素：blockquote/code/figure/list 等内部段落取消缩进 */
   blockquote, pre, figure, ul, ol, dl {
     p { text-indent: 0; }
   }
@@ -27,7 +26,7 @@ $front-container-background: #ffffff;
   margin-bottom: 3em;
 }
 
-
+@import "friend";
 
 @font-face {
   font-family: 'FZPingXianYaSong';

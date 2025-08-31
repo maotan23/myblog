@@ -4,25 +4,23 @@ hidden: true
 
 <center><img src="https://s3.bmp.ovh/imgs/2025/08/12/46d026b396bb06e3.png"></center>
 
-# 友链
+# 朋友家
 
-**<a href="https://atlantic-wildebeest-a4c.notion.site/AWAY-251ee229cc7d8045a902e0a2ff63a5a1" target="_blank">AWAY!</a>**
+<div class="flink" id="article-container">
+<div class="friend-list-div" >
 
-<br/>
+{{< friend name="AWAY!!" url="https://atlantic-wildebeest-a4c.notion.site/AWAY-251ee229cc7d8045a902e0a2ff63a5a1" logo="https://s3.bmp.ovh/imgs/2025/08/19/d357a987bbc32486.jpg" word="" >}}
 
-<center><img src="https://s3.bmp.ovh/imgs/2025/08/17/d44ea05957a17b5e.png" width="400"></center>
-
-<br/>
-
-<small>我想把友链做成带头像的小卡片，但还没搞懂怎么弄……</small>
+</div>
+</div>
 
 <br/><br/>
 
-# info
+# 交换用信息
 
 标题：皮裂魂奔
 
-简介：花园是病魔的大敌
+简介（如需）：花园是病魔的大敌
 
 链接：https://hauntedblog.pages.dev/
 

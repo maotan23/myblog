@@ -4,15 +4,9 @@ hidden: true
 
 <center><img src="https://s3.bmp.ovh/imgs/2025/08/12/46d026b396bb06e3.png"></center>
 
-<blockquote>您好，欢迎来到Haunted Blog，这是一个私人的博客网站。</blockquote>
-
-<br/>
-
 # 简介
 
-此处（拟）存放：OC / 写文 / 黑历史留档 / 日常唠叨 / 月度小结
-
-立志于：克服羞耻，随便乱写。
+您好，欢迎来到Haunted Blog，这是一个私人的博客网站，用于堆放OC/小说/随笔/月记等内容。
 
 <br/>
 
@@ -22,11 +16,9 @@ hidden: true
 
 QQ：1494843825
 
-邮箱：peryton23@126.com
+邮箱：Zgougou23@outlook.com
 
 长毛象：<a href="https://wxw.moe/@Oroboros" target="_blank">传送门在此</a>
-
-NeoDB：<a href="https://neodb.social/users/Leto/" target="_blank">传送门在此</a>
 
 <br/>
 
@@ -36,43 +28,9 @@ NeoDB：<a href="https://neodb.social/users/Leto/" target="_blank">传送门在�
 
 <br/>
 
-左下角挂件——播放音乐
+左下角悬浮挂件——播放音乐
 
-文章右侧底部按钮——切换夜间模式
-
-<br/>
-
-<center><img src="https://s3.bmp.ovh/imgs/2025/08/05/261797d37b64eb9a.png"></center>
-
-# 叽里呱啦
-
-<br/>我喜欢：
-
-史云梅耶，阿涅斯·瓦尔达
-
-《纳尔齐斯与歌尔德蒙》
-
-《银河铁道之夜》
-
-《裴伽纳的诸神》
-
-焦糖一样的暹罗猫
-
-<br/>想尝试：
-
-搓个OC伪春菜
-
-布艺手作
-
-给手臂纹身
-
-看看废墟
-
-总有一天能把游戏做了的
-
-<br/>不喜欢：
-
-对私人表达和兴趣爱好说三道四的人，叉出去
+右侧月亮按钮——切换夜间模式
 
 <br/>
 

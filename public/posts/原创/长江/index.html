@@ -1,0 +1,613 @@
+<!DOCTYPE html>
+<html lang="zh"><head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+<title>长江</title>
+
+
+
+
+<meta charset="utf-8">
+<meta name="X-UA-Compatible" content="IE=edge">
+<meta name="google-site-verification" content="G-XXXXXXXXXX">
+<meta content="width=device-width, initial-scale=1.0, maximum-scale=5, user-scalable=5" name="viewport">
+<meta content="telephone=no" name="format-detection">
+<meta name="description" content="如果你碰巧路过M市，务必到长江边上的碎石滩去。">
+<meta name="renderer" content="webkit">
+<meta name="theme-color" content="#ffffff">
+
+
+
+<meta property="og:url" content="http://localhost:1313/posts/%E5%8E%9F%E5%88%9B/%E9%95%BF%E6%B1%9F/">
+  <meta property="og:site_name" content="皮裂魂奔">
+  <meta property="og:title" content="长江">
+  <meta property="og:description" content="如果你碰巧路过M市，务必到长江边上的碎石滩去。">
+  <meta property="og:locale" content="zh">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2017-08-03T00:00:00+00:00">
+    <meta property="article:modified_time" content="2017-08-03T00:00:00+00:00">
+
+
+
+
+
+
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="长江">
+  <meta name="twitter:description" content="如果你碰巧路过M市，务必到长江边上的碎石滩去。">
+
+
+
+
+
+
+
+      <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+      <script>
+        var doNotTrack = false;
+        if ( false ) {
+          var dnt = (navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack);
+          var doNotTrack = (dnt == "1" || dnt == "yes");
+        }
+        if (!doNotTrack) {
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-XXXXXXXXXX');
+        }
+      </script>
+
+
+
+
+<script type="text/javascript">
+  (function(c,l,a,r,i,t,y){
+      c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+      t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+      y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+  })(window, document, "clarity", "script", "abcdefghzd");
+</script>
+
+
+
+  
+
+
+
+
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+
+
+
+      <script src="/js/toc.js"></script>
+    
+    <link type="text/css" rel="stylesheet" href="/vendor/css/bootstrap.min.css">
+
+<link rel="stylesheet" href="/scss/dark-mode.min.f06db849abd227fa7530d69a5b6784ce57b77c2278f9eee37820b5ba0c51079b.css" integrity="sha256-8G24SavSJ/p1MNaaW2eEzle3fCJ4&#43;e7jeCC1ugxRB5s=" media="screen">
+
+
+<link rel="stylesheet"
+          href="https://fonts.googleapis.com/css?family=Material+Icons">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<link rel="stylesheet" href="https://unpkg.com/@waline/client@v3/dist/waline.css" />
+
+
+<script defer src="https://cloud.umami.is/script.js" data-website-id="7702f9d4-077b-4b77-b168-abe5f78d43b9"></script>
+
+</head>
+<body>
+    	<div id="app"><div class="single-column-drawer-container" id="drawer"
+     v-bind:class="{ 'single-column-drawer-container-active': isDrawerOpen }">
+    <div class="drawer-content">
+        <div class="drawer-menu">
+            
+            
+            
+                
+                
+                
+                
+                
+                <a class="a-block drawer-menu-item false" href="/archives">
+                    归档 Archives
+                </a>
+                
+            
+                
+                
+                
+                
+                
+                <a class="a-block drawer-menu-item false" href="/posts/about">
+                    关于 About
+                </a>
+                
+            
+                
+                
+                
+                
+                
+                <a class="a-block drawer-menu-item false" href="/posts/friends">
+                    友链 Friends
+                </a>
+                
+            
+            
+            <div class="toc">
+
+
+</div>
+            
+        </div>
+    </div>
+</div>
+<transition name="fade">
+    <div id="drawer-mask" v-bind:class="{ 'single-column-drawer-mask': mounted }" v-if="isDrawerOpen" v-on:click="toggleDrawer"></div>
+</transition>
+<nav id="navBar" class="navbar sticky-top navbar-light single-column-nav-container">
+    <div id="navBackground" class="nav-background"></div>
+    <div class="container container-narrow nav-content">
+        <button id="nav_dropdown_btn" class="nav-dropdown-toggle" type="button" v-on:click="toggleDrawer">
+            <i class="material-icons">
+                menu
+            </i>
+        </button>
+        <a id="navTitle" class="navbar-brand" href="http://localhost:1313/">
+            皮裂魂奔
+        </a>
+        
+        <button type="button" class="nav-darkmode-toggle" id="darkModeToggleButton2">
+            <i class="material-icons" id="darkModeToggleIcon2">
+                dark_mode
+            </i>
+        </button>
+        
+    </div>
+</nav>
+<div class="single-column-header-container" id="pageHead"
+     v-bind:style="{ transform: 'translateZ(0px) translateY('+.3*scrollY+'px)', opacity: 1-navOpacity }">
+    <a href="http://localhost:1313/">
+        <div class="single-column-header-title">皮裂魂奔</div>
+        
+
+    </a>
+</div>
+
+            <div id="content">
+                <div id="streamContainer" class="stream-container">
+
+    <div class="post-list-container post-list-container-shadow">
+        <div class="post">
+            
+            
+            
+
+            <div class="post-head-wrapper-text-only"
+                
+            >
+                <div class="post-title">
+                    长江
+                    
+                    <div class="post-subtitle">
+                        如果你碰巧路过M市，务必到长江边上的碎石滩去。
+                    </div>
+                    
+
+                    
+                    <div class="post-meta">
+                        <span class="meta-item meta-date">
+                        
+                            2017-08-03
+                        
+                        </span>
+
+                        
+                        <span class="meta-item meta-categories">
+                            &nbsp; <i class="material-icons" style="">folder</i>
+                            <a href="/categories/%E7%9F%AD%E7%AF%87%E5%B0%8F%E8%AF%B4">短篇小说</a>
+                        </span>
+                        
+
+                        
+
+                       
+
+                        
+                    </div>
+                </div>
+            </div>
+            
+            <div class="post-body-wrapper">
+                
+                <div class="post-body" v-pre>
+                
+                    <p><br/><br/></p>
+<p>如果你碰巧路过M市，务必到长江边上的碎石滩去。如果适逢涨潮时节，你只能看见一江淡橘色的水；但如果潮已经落下，你还能看见一些钓鱼的竿、一对拍婚纱照的人、一只洗澡的狗。在主人的喝令下，狗还会一个扎猛子，游远了，去捡一个矿泉水瓶子。</p>
+<p>如果你已经站在碎石滩上，就请你用最尊敬的眼光看一看那岸边的碎石，白的便白如象牙，灰的又灰如烟尘。那是因为某年某日在这水里淹死过一个人。</p>
+<p><br/><br/></p>
+<p>小时候我们常听得猴子到水里捞月亮，长大后我们知道自己本是猴子，那么我们能在水里得到些什么呢？水有点像时间，由于它过分勤奋，许多人被逼的悲哀得想哭；所以它是既温柔，又残忍。被钝刀指着胸口，总有人要受不了的；虽然刀并没有真的剖开人的胸膛，但这狞笑的面目已经触响了警铃，要把神经捏断了才肯停。当一个人受不了折磨，就要逃跑，可是逃到哪个地方去？要从现实生活中逃得不留行迹，自然会想到梦世界去。想回到母亲的子宫，宇宙的起点，缥缈的时间的狭缝里去，要什么都不留，要离乡万里，像一颗星，只遥望地球。</p>
+<p>我的朋友N是这样，许多人是这样。我和N一起去长江边上，她总要亲手摸一摸淡橘色的江水。涨潮了，水面把下面的台阶淹过，她就偷偷把脚泡进去，也不管脏不脏。我们靠在石头做的栏杆上，肉做的N便尽力向前伸，一双眼睛定在江上。有时货轮慢慢地过去，巨大的躯体，货物码成好几排，盖上了白布，简直像是两百个死人团购了海葬服务。这时N的面色就有点发灰，眼睛也比平时更黑，更大了。</p>
+<p>我想，N可能是一条中华鲟。</p>
+<p>但我错了。我以为N在看江水，其实，她只是找一面镜子；一面能照出星星的镜子，不需要太清楚，只要有一点影子。她能够从中找到星星的影子，并用目光去捞起来；她伸出手捧起水，却不能真正将星星收入囊中。因此，星星虽然很近，但永远是自由的。</p>
+<p><br/><br/></p>
+<p>我为什么会如此理解N？也许是N曾给我看过她的一组画。她用小学时买的蜡笔，几张打印纸，画出了这组画。她一定是沉默着画的，因为当N投入于什么时，她总抽不出时间说话。</p>
+<p>那些画告诉我N的沉静和热情。我庆幸自己及时地看到了它，而不是在一段时间后，否则，依附于图画的倾诉欲便越过了保质期，我将失去理解她的能力。</p>
+<p>那些画的其中一幅，恰好是我们初次会面的场景，同样是淡橘色的江水，昏沉的天色，我把一只半满的塑料水瓶放在耳边晃荡，水声使我感到舒适和遥远。有时我在江边行走，或者在任何地方行走，我并不打算走向哪里，也不打算停在某处，虽然我的双脚在草坪边的小径，身旁走过活生生的人群，但我并不在这里。我不在这里，也不在那里，我不在任何地方。我所生活的空间是一个抽象世界，一只容纳思想、意识和一丁点物质的微小容器，任何物质都被压缩至小于一立方米，我是一颗花粉微粒，没有目的，亦没有体积。谁也不该过多地关注我，因为这存在实在不值一提。</p>
+<p>也正是出于这种逃避现实的念头，我虽然离江水不过五十米的距离，却为了塑料瓶中的水声感到兴奋。没过多久，事情就那样发生了；在抖落的树叶下，新春初长的草坪边，一片窄长的阴影中，N的形象逐层浮现。</p>
+<p><br/><br/></p>
+<p>我与N熟络起来之后，她引导我去做一些现实的事。也许那算不上多么现实，而只是真实可感。在早春的江边，野草坪发出湿润的香气，N弯下腰去，捡起一块石头。石头有她的半只手掌大小，灰白中透出赭色，缝隙填满了沙砾。</p>
+<p>N把石块放在我掌心，交由我保管。我不明白石头有什么值得保管的，也不肯问她为什么不自己来。但在这之后，直到N死后，我都一直把石头放在盒子里，好好地保管着。</p>
+<p>盒子，半只手掌大小，有棱有角，恰好能容纳一块粗糙的石头。和石头一样，盒子也是野生的，是我从沙滩上刨出来的。我本想找一些贝壳，却找到了盒子；的确，我也用盒子装过贝壳。</p>
+<p>N教给我的第二件事，便是送礼物。我们在教师节实施，但那对于我有些突然，零钱没能及时装进口袋，我无法买一束塑料康乃馨。</p>
+<p>“也就是说，你把贝壳送给了老师？”</p>
+<p>N说得不假。下课之后，我就追出教室，颇为诚恳地把祝福和贝壳放在老师手中。</p>
+<p>“是的。”我回答道，“她看起来有些惊讶，但是很开心。”</p>
+<p>“你怎么会想在教师节送贝壳呢？”N大笑起来。</p>
+<p>我不明白她的意思。也许N确实比我更具备常识。是的，教师节应该送花，因为在九月十日的早晨，学校周边的文具店门口摆满了花；在教室内，每张课桌上都摆着亟待送出的花。在教师节送花——这是常识。但常识究竟是什么？我不明白这些，就像我不明白N。在这时，她支起身体，尽力向窗外望去，一道篮球的弧线以筐为终点；可她并不是望着篮球，也不是整片操场，更不会是天空。她这双眼睛到底盯着什么呢？</p>
+
+                    
+                    <HR width="100%" id="EOF">
+		    <p style="color:#777;">最后修改于 2017-08-03</p>
+                    
+                </div>
+            </div>
+            
+            
+            <nav class="post-pagination">
+                
+                <a class="newer-posts" href="/posts/%E5%90%8C%E4%BA%BA/%E5%A4%9C%E8%AF%9D/">
+			下回<br>夜话
+                </a>
+                
+                
+                
+                <a class="older-posts" href="/posts/%E5%90%8C%E4%BA%BA/%E5%81%87%E6%83%B3%E6%95%8C/">
+			上回<br>假想敌
+                </a>
+                
+            </nav>
+            <div class="post-comment-wrapper">
+                
+
+
+
+
+
+
+
+
+
+
+
+
+            </div>
+            
+            <link
+                rel="stylesheet"
+                href="https://unpkg.com/@waline/client@v3/dist/waline.css"
+            />
+
+
+
+            
+            <style>
+             
+            :root {
+            --waline-font-size: 16px;
+            --waline-white: #fff;
+            --waline-light-grey: #999;
+            --waline-dark-grey: #666;
+            --waline-theme-color:#ab3740;
+            --waline-active-color:#ab3740;
+            --waline-color: #000000;
+            --waline-bg-color: rgb(247, 240, 240);
+            --waline-bg-color-light: #f8f8f8;
+            --waline-bg-color-hover: #f0f0f0;
+            --waline-border-color: transparent;
+            --waline-disable-bg-color: #f8f8f8;
+            --waline-disable-color: #bbb;
+            --waline-code-bg-color: #282c34;
+            --waline-bq-color: #f0f0f0;
+            --waline-avatar-size: 3.25rem;
+            --waline-m-avatar-size: calc(var(--waline-avatar-size) * 9 / 13);
+            --waline-badge-color:var(--waline-active-color);
+            --waline-badge-font-size: 0.775em;
+            --waline-info-bg-color: #f8f8f8;
+            --waline-info-color: #999;
+            --waline-info-font-size: 0.625em;
+            --waline-border: 1px solid var(--waline-border-color);
+            --waline-avatar-radius: 50%;
+            --waline-box-shadow: none;
+            }
+
+             
+            html.night {
+            --waline-white: #000;
+            --waline-light-grey: #666;
+            --waline-dark-grey: #999;
+            --waline-color: #888;
+            --waline-bg-color: #1e1e1e;
+            --waline-bg-color-light: #272727;
+            --waline-border-color: #333;
+            --waline-disable-bg-color: #444;
+            --waline-disable-color: #272727;
+            --waline-bq-color: #272727;
+            --waline-info-bg-color: #272727;
+            --waline-info-color: #666;
+            }
+
+             
+            .wl-editor:focus, .wl-input:focus { background: transparent; }
+            .wl-info .wl-text-number { color: var(--waline-color); font-size: .75em; }
+            .wl-card .wl-delete,
+            .wl-card .wl-like,
+            .wl-card .wl-reply,
+            .wl-card .wl-edit,
+            .wl-card span.wl-nick,
+            .wl-empty, .wl-admin-actions,
+            [data-waline] p { color: unset; }
+
+             
+            #waline {
+            max-width: unset;
+            margin: 0 auto;
+            width: 90%;
+            }
+            .wl-card { border: 0; }
+            .wl-card .wl-quote { border-inline-start: 0 dashed rgba(237, 237, 237, .5); }
+            .wl-card-item { position: relative; display: flex; padding: .2em; }
+            .wl-addr { display: none !important; color: transparent !important; }
+            .wl-content .vemoji,
+            .wl-content .wl-emoji { display: inline-block; vertical-align: baseline; height: 3.4em !important; margin: -0.125em .25em; }
+            img.wl-emoji, img.vemoji { vertical-align: sub; transition: ease-out .6s; }
+            img.wl-emoji:hover, img.vemoji:hover { transform: scale(1.8) !important; }
+            .wl-header { display: flex; overflow: hidden; padding: 0 4px; border-bottom: 0 dashed var(--waline-border-color); border-top-left-radius: 0; border-top-right-radius: 0; }
+            .wl-btn.primary { border-color: transparent !important; background: #ab3740; color: #fff; }
+            @media (max-width:580px) {
+            .wl-header-item:not(:last-child) { border-bottom: 0 dashed var(--waline-border-color); }
+            }
+            </style>
+
+            
+            <div id="waline"></div>
+
+            
+            <script type="module">
+            import { init } from 'https://unpkg.com/@waline/client@v3/dist/waline.js';
+
+            init({
+                el: '#waline',
+                serverURL: 'https://waline-pwd1df5ms-maotan23s-projects.vercel.app',
+                dark: 'html.night, body.night', 
+                emoji: [
+                    '//unpkg.com/@waline/emojis@1.2.0/tw-emoji',
+                ],
+            });
+
+            </script>
+
+  </div>
+</div>
+
+                    </div>
+            </div><div id="sideContainer" class="side-container">
+    
+    <a class="a-block nav-head false" href="http://localhost:1313/">
+    
+        <div class="nav-title">
+            皮裂魂奔
+        </div>
+        
+    </a>
+
+    <div class="nav-link-list">
+        
+        
+            
+            
+            
+            
+            
+            <a class="a-block nav-link-item false" href="/archives">
+                归档 Archives
+            </a>
+            
+        
+            
+            
+            
+            
+            
+            <a class="a-block nav-link-item false" href="/posts/about">
+                关于 About
+            </a>
+            
+        
+            
+            
+            
+            
+            
+            <a class="a-block nav-link-item false" href="/posts/friends">
+                友链 Friends
+            </a>
+            
+        
+    </div>
+
+    
+
+    <div class="nav-footer">
+        
+Hugo Theme <a href="https://github.com/amazingrise/hugo-theme-diary">Diary</a> by <a href="https://risehere.net/">Rise</a>
+<br>
+移植自 <a href="https://mak1t0.cc/" target="_blank" rel="noreferrer noopener">Makito</a>'s <a href="https://github.com/SumiMakito/hexo-theme-journal/" target="_blank" rel="noreferrer noopener">Journal.</a> <br>
+<br>
+
+&copy;
+	
+	?-2025 Haunted Blog
+	
+
+    </div>
+    
+</div><div id="extraContainer" class="extra-container">
+    <div class="toc-wrapper">
+        
+
+        
+        <div class="toc">
+
+
+</div>
+        
+    </div>
+    <div class="pagination">
+        <a id="globalBackToTop" class="pagination-action animated-visibility" href="#top"
+            :class="{ invisible: scrollY == 0 }">
+            <i class="material-icons pagination-action-icon">
+                keyboard_arrow_up
+            </i>
+        </a>
+        
+        <a type="button" class="pagination-action" id="darkModeToggleButton">
+            <span class="material-icons pagination-action-icon" id="darkModeToggleIcon">
+                dark_mode
+            </span>
+        </a>
+        
+        
+    </div>
+</div>
+
+<div id="single-column-footer">
+Hugo Theme <a href="https://github.com/amazingrise/hugo-theme-diary">Diary</a> by <a href="https://risehere.net/">Rise</a>
+<br>
+移植自 <a href="https://mak1t0.cc/" target="_blank" rel="noreferrer noopener">Makito</a>'s <a href="https://github.com/SumiMakito/hexo-theme-journal/" target="_blank" rel="noreferrer noopener">Journal.</a> <br>
+<br>
+
+&copy;
+	
+	?-2025 Haunted Blog
+	
+</div>
+            </div>
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.css">
+<div id="aplayer"></div>
+
+<script src="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.js"></script>
+<script>
+const staticDir = "http://localhost:1313/"
+const ap = new APlayer({
+    container: document.getElementById('aplayer'),
+    fixed: true,
+    autoplay: false,
+    theme: '#961010',
+    loop: 'all',
+    order: 'list',
+    preload: 'metadata',
+    volume: 0.5,
+  audio: [
+        {
+            title: 'Army Dreamers in 29edo',
+            author: 'Kate Bush/Deister Orchestra',
+            url: 'https://music.163.com/song/media/outer/url?id=2165388420.mp3',
+            cover: 'https://s3.bmp.ovh/imgs/2025/08/13/cd630c6249f394c5.jpg',
+            lrc: '',
+        },
+
+        {
+            title: 'リズと青い鳥 第三楽章「愛ゆえの決断」',
+            author: '松田彬人',
+            url: staticDir + 'music/bluebird.mp3',
+            cover: 'https://s3.bmp.ovh/imgs/2025/08/13/fb43e14e9e98a0e6.jpg',
+            lrc: '',
+        },
+
+        {
+            title: 'Pagan Poetry',
+            author: 'Bjork',
+            url: staticDir + 'music/PaganPoetry.mp3',
+            cover: 'https://s3.bmp.ovh/imgs/2025/08/13/abf7b56aee2c0254.jpg',
+            lrc:'',
+        },
+
+        {
+            title: 'The Haunted Palace',
+            author: 'Sopor Aeternus & the Ensemble of Shadows',
+            url: 'https://music.163.com/song/media/outer/url?id=27725392.mp3',
+            cover: 'https://s3.bmp.ovh/imgs/2025/08/13/3d8c8e717de1fd1c.jpg',
+            lrc: '',
+        },
+
+        {
+            title: 'Empty Warehouse',
+            author: 'Alias Conrad Coldwood',
+            url: 'https://music.163.com/song/media/outer/url?id=439915037.mp3',
+            cover: 'https://s3.bmp.ovh/imgs/2025/08/13/44df2c27a9b397c3.jpg',
+            lrc: '',
+        },
+        
+        {
+            title: 'Enchanters',
+            author: 'Raney Shockne/Elizaveta/Nick Stoubis',
+            url: 'https://music.163.com/song/media/outer/url?id=31529024.mp3',
+            cover: 'https://s3.bmp.ovh/imgs/2025/08/13/b63a40a6cede0a0c.jpg',
+            lrc: '',
+        },
+    ]
+});
+
+    window.onbeforeunload = () => {
+        
+        const playInfo = {
+            index: ap.list.index,
+            currentTime: ap.audio.currentTime,
+            paused: ap.paused
+        };
+        localStorage.setItem("playInfo", JSON.stringify(playInfo));
+    };
+
+    
+
+    window.onload = () => {
+        
+        const playInfo = JSON.parse(localStorage.getItem("playInfo"));
+        if (!playInfo) {
+            return;
+        }
+        
+        ap.list.switch(playInfo.index);
+        
+        setTimeout(() => {
+            
+            ap.seek(playInfo.currentTime);
+            
+            if (!playInfo.paused) {
+                ap.play()
+            }
+        }, 500);
+    };
+</script>
+
+    <script src="/js/journal.js"></script></body>
+</html>

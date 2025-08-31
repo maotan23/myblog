@@ -1,0 +1,620 @@
+<!DOCTYPE html>
+<html lang="zh"><head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+<title>顺风车</title>
+
+
+
+
+<meta charset="utf-8">
+<meta name="X-UA-Compatible" content="IE=edge">
+<meta name="google-site-verification" content="G-XXXXXXXXXX">
+<meta content="width=device-width, initial-scale=1.0, maximum-scale=5, user-scalable=5" name="viewport">
+<meta content="telephone=no" name="format-detection">
+<meta name="description" content="1923年12月，纽约的爱尔兰裔小伙子拥有了第一辆福特牌小轿车。">
+<meta name="renderer" content="webkit">
+<meta name="theme-color" content="#ffffff">
+
+
+
+<meta property="og:url" content="http://localhost:1313/posts/trpg/car/">
+  <meta property="og:site_name" content="皮裂魂奔">
+  <meta property="og:title" content="顺风车">
+  <meta property="og:description" content="1923年12月，纽约的爱尔兰裔小伙子拥有了第一辆福特牌小轿车。">
+  <meta property="og:locale" content="zh">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2022-03-09T00:00:00+00:00">
+    <meta property="article:modified_time" content="2022-03-09T00:00:00+00:00">
+    <meta property="article:tag" content="弗恩·金">
+    <meta property="article:tag" content="弗瑞德·特纳">
+
+
+
+
+
+
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="顺风车">
+  <meta name="twitter:description" content="1923年12月，纽约的爱尔兰裔小伙子拥有了第一辆福特牌小轿车。">
+
+
+
+
+
+
+
+      <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+      <script>
+        var doNotTrack = false;
+        if ( false ) {
+          var dnt = (navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack);
+          var doNotTrack = (dnt == "1" || dnt == "yes");
+        }
+        if (!doNotTrack) {
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-XXXXXXXXXX');
+        }
+      </script>
+
+
+
+
+<script type="text/javascript">
+  (function(c,l,a,r,i,t,y){
+      c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+      t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+      y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+  })(window, document, "clarity", "script", "abcdefghzd");
+</script>
+
+
+
+  
+
+
+
+
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+
+
+
+      <script src="/js/toc.js"></script>
+    
+    <link type="text/css" rel="stylesheet" href="/vendor/css/bootstrap.min.css">
+
+<link rel="stylesheet" href="/scss/dark-mode.min.375b2b203baec686ea1e6f3cdf635313bf58989301893c2a798fb4e3e560a695.css" integrity="sha256-N1srIDuuxobqHm8832NTE79YmJMBiTwqeY&#43;04&#43;VgppU=" media="screen">
+
+
+<link rel="stylesheet"
+          href="https://fonts.googleapis.com/css?family=Material+Icons">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<link rel="stylesheet" href="https://unpkg.com/@waline/client@v3/dist/waline.css" />
+
+
+<script defer src="https://cloud.umami.is/script.js" data-website-id="7702f9d4-077b-4b77-b168-abe5f78d43b9"></script>
+
+</head>
+<body>
+    	<div id="app"><div class="single-column-drawer-container" id="drawer"
+     v-bind:class="{ 'single-column-drawer-container-active': isDrawerOpen }">
+    <div class="drawer-content">
+        <div class="drawer-menu">
+            
+            
+            
+                
+                
+                
+                
+                
+                <a class="a-block drawer-menu-item false" href="/archives">
+                    归档 Archives
+                </a>
+                
+            
+                
+                
+                
+                
+                
+                <a class="a-block drawer-menu-item false" href="/posts/about">
+                    关于 About
+                </a>
+                
+            
+                
+                
+                
+                
+                
+                <a class="a-block drawer-menu-item false" href="/posts/friends">
+                    友链 Friends
+                </a>
+                
+            
+            
+            <div class="toc">
+
+
+</div>
+            
+        </div>
+    </div>
+</div>
+<transition name="fade">
+    <div id="drawer-mask" v-bind:class="{ 'single-column-drawer-mask': mounted }" v-if="isDrawerOpen" v-on:click="toggleDrawer"></div>
+</transition>
+<nav id="navBar" class="navbar sticky-top navbar-light single-column-nav-container">
+    <div id="navBackground" class="nav-background"></div>
+    <div class="container container-narrow nav-content">
+        <button id="nav_dropdown_btn" class="nav-dropdown-toggle" type="button" v-on:click="toggleDrawer">
+            <i class="material-icons">
+                menu
+            </i>
+        </button>
+        <a id="navTitle" class="navbar-brand" href="http://localhost:1313/">
+            皮裂魂奔
+        </a>
+        
+        <button type="button" class="nav-darkmode-toggle" id="darkModeToggleButton2">
+            <i class="material-icons" id="darkModeToggleIcon2">
+                dark_mode
+            </i>
+        </button>
+        
+    </div>
+</nav>
+<div class="single-column-header-container" id="pageHead"
+     v-bind:style="{ transform: 'translateZ(0px) translateY('+.3*scrollY+'px)', opacity: 1-navOpacity }">
+    <a href="http://localhost:1313/">
+        <div class="single-column-header-title">皮裂魂奔</div>
+        
+
+    </a>
+</div>
+
+            <div id="content">
+                <div id="streamContainer" class="stream-container">
+
+    <div class="post-list-container post-list-container-shadow">
+        <div class="post">
+            
+            
+            
+
+            <div class="post-head-wrapper-text-only"
+                
+            >
+                <div class="post-title">
+                    顺风车
+                    
+                    <div class="post-subtitle">
+                        1923年12月，纽约的爱尔兰裔小伙子拥有了第一辆福特牌小轿车。
+                    </div>
+                    
+
+                    
+                    <div class="post-meta">
+                        <span class="meta-item meta-date">
+                        
+                            2022-03-09
+                        
+                        </span>
+
+                        
+                        <span class="meta-item meta-categories">
+                            &nbsp; <i class="material-icons" style="">folder</i>
+                            <a href="/categories/%E8%B7%91%E5%9B%A2%E8%A1%8D%E7%94%9F">跑团衍生</a>
+                        </span>
+                        
+
+                        
+                        
+                        <span class="meta-item meta-tags">
+                            &nbsp; <i class="material-icons" style="">label</i>
+                            
+                                <a href="/tags/%E5%BC%97%E6%81%A9%E9%87%91">弗恩·金</a>&nbsp;
+                            
+                                <a href="/tags/%E5%BC%97%E7%91%9E%E5%BE%B7%E7%89%B9%E7%BA%B3">弗瑞德·特纳</a>&nbsp;
+                            
+                        </span>
+                        
+                        
+
+                       
+
+                        
+                    </div>
+                </div>
+            </div>
+            
+            <div class="post-body-wrapper">
+                
+                <div class="post-body" v-pre>
+                
+                    <p><br/><br/></p>
+<p>1923年12月，叶芝拿到了诺贝尔文学奖，埃菲尔铁塔的修建者上了天堂，纽约的爱尔兰裔小伙子则拥有了第一辆福特牌小轿车。浅色头发的上司把车钥匙丢进弗恩·金手里，拍拍烟灰走人了；这预示着未来的很长一段时间内，他要准备好担任司机的工作，而其他时候，可以独自驶向海港兜风。</p>
+<p>大西洋的寒湿空气将他黯红的鬓发吹拂起来，没有下雪的傍晚干燥且剔透。在这短暂的属于自己的时刻，金在教堂外墙熄灭了引擎，墙角有一双陌生的、乞求的眼睛，视线从他的定制鞋底向上攀爬到正装的尖领。此刻，教堂的巨大鸣钟声从塔楼飞驰而下，将整条街道包围，金侧过脑袋，极目望向建筑物的拱顶，石头、曲线、混凝土，花饰窗格外有野鸽栖息，他的思维只游走了一下，便回到眼前，回到那个可怜兮兮的小流浪汉身上，他把硬币抛进对方的掌心，准备转身的时候又抛了一枚，只因对方没说多余的话。很快，他钻进车内，向下一个目的地驶去。他没有注意到街道对面，另一双眼睛足以盯得人冷汗涔涔，这目光跟随他的汽车一同移动。</p>
+<p><br/><br/></p>
+<p>如果要打个比方，那么弗恩·金是这种人：他凭本能和半桶水的教育知道，多余的反思有害无利。哪怕被指着鼻子，说出无凭无据的指责，他也要故作诚恳地说：“也许真是这样。”而后密切观察对方恍过神来、茫然无措的模样。他的同僚、本地区的另一位跑腿小弟、高大强壮的弗瑞德·特纳却不一样，他仿佛没有从偏见和排挤的环境中找到一点儿经验，没能体现出一点儿保卫自我的潜能，以至于有时遭受讥讽，说他在受制于人时反而享有更大的快乐。</p>
+<p>弗瑞德眼看到这位尚不熟悉的同胞走进酒吧，点了杯和往常一样的饮品，他似乎完全没兴趣尝鲜，只想快些解渴。弗恩·金才二十出头，身板几乎有些羸弱，这能够解释他格外矫健的步态，却难以讲清这个小家伙为何能得到摩尔根的信赖。弗瑞德暗自猜测这和收买报童、在街边的流浪汉穿插眼线是一样的道理，把凭空的危险嫁接给生不逢时的人，坐在高位的人却可以欢畅地豪饮。他想到这，又对黑帮的这份差事产生了复杂矛盾的感受，就像他这麻木的二十七年人生一样。他几乎有点同情这个家伙，但又立刻感到多管闲事的尴尬，只得独自闷了口酒。</p>
+<p>他坐在吧台的边缘位置，背后有欢闹的人群攒动，酒杯放下时，余光处，方才在他头脑里打转的红发小子却正紧盯着自己。弗瑞德不知这是怎么回事，他从来不知道如何应对别人的好奇心，只能装作无事发生，喝下第二口，动作僵硬了一些，本就绷紧的衣扣又几乎要脱离控制；他仍然没能习惯这种事。最后他大着胆子，透过人群的肩膀望回去，却发现金已经收回了视线，正在同老板闲谈。刚才的一切就好像没有发生一般。</p>
+<p><br/><br/></p>
+<p>砰！</p>
+<p>枪响的时刻，酒吧内空气灼热，仿佛包括美国梦在内的任何物品都能燃烧。逃散的人群撞碎玻璃杯盏，焦急的眼睛四处搜寻同行伴侣。独身的弗瑞德抛下了没喝干的酒，手掌覆在腰胯的枪袋上，他注意到红发的家伙做出了同样的反应。</p>
+<p>芝加哥打字机像游玩保龄球般，将桌面的物品逐个击碎，没来得及撤走的客人躲在桌下，发出抖颤的、含混不清的噪音。弗瑞德找到了一个安全位置，离后门出口只有两步之遥，在他即将离开这片混乱时，一只陌生的、乞求的手捉住了他的裤腿，他回头看见无名客人满脸的冷汗。</p>
+<p>一股推动力从背后拍来，没有他自身的力量大，但也使其打了个趔趄，朝门口扑去，那只手垂落下去，弗瑞德的胳膊则被另一只手牢牢箍住。枪子很快飞过来，金把眼前的桌子掀翻，那名客人顿时暴露在攻击之下，俨然落得失魂落魄的模样。弗瑞德的视线与身形都被桌面遮挡，好在来者没有瞄准他们的脚踝，但这木桌的材质似乎太过轻巧，几枚子弹逾越而过，其中一颗钉在他的耳边，夺走一些血肉；但他不再顾得上这些，也无从获知求助者的结局了，他被金几乎以拖拽的力道带走，每人朝身后飞快地放了两枪。</p>
+<p><br/><br/></p>
+<p>金没有想到在无关工作的时间，这辆轿车也迅速地发挥了作用。无法预测的危险是家常便饭，没有留下致命伤乃是莫大的幸运。弗瑞德坐在副驾驶座，大口地喘着气，而后平息下来，他不知道如何与金相处，便透过前视镜做一些细微的观察，金的表情松弛了下来，但展露出的神色与正面情绪毫不相关。</p>
+<p>车开进一间空仓库，金迅速地合上仓门，拴好锁，弗瑞德上前试图搭把手，但却迟了一步。金回头望着他，而他也回望金，只是不知道该说些什么，空旷的仓库内，生锈般的气息横亘在他们中间。真正成为难言之隐的事实是，当那枚子弹擦过耳际，瞬间的痛觉也激起了其它感受；金的视线下移，对面那剪裁、熨烫过的西装长裤上，出现了山坡般的痕迹，他为此保持了不知该算体贴还是残忍的沉默。</p>
+<p>弗瑞德暗自期盼仓库的某个角落出现地洞，而自己化身为一只鸵鸟，但相当可惜的是，此处的路面比外侧的马路还要平整，水泥好似在讽刺着他。</p>
+<p>也许是因为上次见面，弗瑞德纠正了他仪表着装上的错误，弗恩·金彰显出他最大的仁慈；这份仁慈是他没有施予无辜客人的。于是，1923年12月，在这个寒冷、危急、被巧合冲昏的日子，弗瑞德第一次受邀前往同事的家中。他还隐隐感到对方的眼睛粘在了自己领口的空隙处，而这必定是一个巨大的误会。</p>
+
+                    
+                    <HR width="100%" id="EOF">
+		    <p style="color:#777;">最后修改于 2022-03-09</p>
+                    
+                </div>
+            </div>
+            
+            
+            <nav class="post-pagination">
+                
+                <a class="newer-posts" href="/posts/trpg/tower/">
+			下回<br>驻莫涅塔哨兵调查日志
+                </a>
+                
+                
+                
+                <a class="older-posts" href="/posts/novels/poet/">
+			上回<br>诗的正义
+                </a>
+                
+            </nav>
+            <div class="post-comment-wrapper">
+                
+
+
+
+
+
+
+
+
+
+
+
+
+            </div>
+            
+            <link
+                rel="stylesheet"
+                href="https://unpkg.com/@waline/client@v3/dist/waline.css"
+            />
+
+
+
+            
+            <style>
+             
+            :root {
+            --waline-font-size: 16px;
+            --waline-white: #fff;
+            --waline-light-grey: #999;
+            --waline-dark-grey: #666;
+            --waline-theme-color:#ab3740;
+            --waline-active-color:#ab3740;
+            --waline-color: #000000;
+            --waline-bg-color: rgb(247, 240, 240);
+            --waline-bg-color-light: #f8f8f8;
+            --waline-bg-color-hover: #f0f0f0;
+            --waline-border-color: transparent;
+            --waline-disable-bg-color: #f8f8f8;
+            --waline-disable-color: #bbb;
+            --waline-code-bg-color: #282c34;
+            --waline-bq-color: #f0f0f0;
+            --waline-avatar-size: 3.25rem;
+            --waline-m-avatar-size: calc(var(--waline-avatar-size) * 9 / 13);
+            --waline-badge-color:var(--waline-active-color);
+            --waline-badge-font-size: 0.775em;
+            --waline-info-bg-color: #f8f8f8;
+            --waline-info-color: #999;
+            --waline-info-font-size: 0.625em;
+            --waline-border: 1px solid var(--waline-border-color);
+            --waline-avatar-radius: 50%;
+            --waline-box-shadow: none;
+            }
+
+             
+            html.night {
+            --waline-white: #000;
+            --waline-light-grey: #666;
+            --waline-dark-grey: #999;
+            --waline-color: #888;
+            --waline-bg-color: #1e1e1e;
+            --waline-bg-color-light: #272727;
+            --waline-border-color: #333;
+            --waline-disable-bg-color: #444;
+            --waline-disable-color: #272727;
+            --waline-bq-color: #272727;
+            --waline-info-bg-color: #272727;
+            --waline-info-color: #666;
+            }
+
+             
+            .wl-editor:focus, .wl-input:focus { background: transparent; }
+            .wl-info .wl-text-number { color: var(--waline-color); font-size: .75em; }
+            .wl-card .wl-delete,
+            .wl-card .wl-like,
+            .wl-card .wl-reply,
+            .wl-card .wl-edit,
+            .wl-card span.wl-nick,
+            .wl-empty, .wl-admin-actions,
+            [data-waline] p { color: unset; }
+
+             
+            #waline {
+            max-width: unset;
+            margin: 0 auto;
+            width: 90%;
+            }
+            .wl-card { border: 0; }
+            .wl-card .wl-quote { border-inline-start: 0 dashed rgba(237, 237, 237, .5); }
+            .wl-card-item { position: relative; display: flex; padding: .2em; }
+            .wl-addr { display: none !important; color: transparent !important; }
+            .wl-content .vemoji,
+            .wl-content .wl-emoji { display: inline-block; vertical-align: baseline; height: 3.4em !important; margin: -0.125em .25em; }
+            img.wl-emoji, img.vemoji { vertical-align: sub; transition: ease-out .6s; }
+            img.wl-emoji:hover, img.vemoji:hover { transform: scale(1.8) !important; }
+            .wl-header { display: flex; overflow: hidden; padding: 0 4px; border-bottom: 0 dashed var(--waline-border-color); border-top-left-radius: 0; border-top-right-radius: 0; }
+            .wl-btn.primary { border-color: transparent !important; background: #ab3740; color: #fff; }
+            @media (max-width:580px) {
+            .wl-header-item:not(:last-child) { border-bottom: 0 dashed var(--waline-border-color); }
+            }
+            </style>
+
+            
+            <div id="waline"></div>
+
+            
+            <script type="module">
+            import { init } from 'https://unpkg.com/@waline/client@v3/dist/waline.js';
+
+            init({
+                el: '#waline',
+                serverURL: 'https://waline-pwd1df5ms-maotan23s-projects.vercel.app',
+                dark: 'html.night, body.night', 
+                emoji: [
+                    '//unpkg.com/@waline/emojis@1.2.0/tw-emoji',
+                ],
+            });
+
+            </script>
+
+  </div>
+</div>
+
+                    </div>
+            </div><div id="sideContainer" class="side-container">
+    
+    <a class="a-block nav-head false" href="http://localhost:1313/">
+    
+        <div class="nav-title">
+            皮裂魂奔
+        </div>
+        
+    </a>
+
+    <div class="nav-link-list">
+        
+        
+            
+            
+            
+            
+            
+            <a class="a-block nav-link-item false" href="/archives">
+                归档 Archives
+            </a>
+            
+        
+            
+            
+            
+            
+            
+            <a class="a-block nav-link-item false" href="/posts/about">
+                关于 About
+            </a>
+            
+        
+            
+            
+            
+            
+            
+            <a class="a-block nav-link-item false" href="/posts/friends">
+                友链 Friends
+            </a>
+            
+        
+    </div>
+
+    
+
+    <div class="nav-footer">
+        
+Hugo Theme <a href="https://github.com/amazingrise/hugo-theme-diary">Diary</a> by <a href="https://risehere.net/">Rise</a>
+<br>
+移植自 <a href="https://mak1t0.cc/" target="_blank" rel="noreferrer noopener">Makito</a>'s <a href="https://github.com/SumiMakito/hexo-theme-journal/" target="_blank" rel="noreferrer noopener">Journal.</a> <br>
+<br>
+
+&copy;
+	
+	?-2025 Haunted Blog
+	
+
+    </div>
+    
+</div><div id="extraContainer" class="extra-container">
+    <div class="toc-wrapper">
+        
+
+        
+        <div class="toc">
+
+
+</div>
+        
+    </div>
+    <div class="pagination">
+        <a id="globalBackToTop" class="pagination-action animated-visibility" href="#top"
+            :class="{ invisible: scrollY == 0 }">
+            <i class="material-icons pagination-action-icon">
+                keyboard_arrow_up
+            </i>
+        </a>
+        
+        <a type="button" class="pagination-action" id="darkModeToggleButton">
+            <span class="material-icons pagination-action-icon" id="darkModeToggleIcon">
+                dark_mode
+            </span>
+        </a>
+        
+        
+    </div>
+</div>
+
+<div id="single-column-footer">
+Hugo Theme <a href="https://github.com/amazingrise/hugo-theme-diary">Diary</a> by <a href="https://risehere.net/">Rise</a>
+<br>
+移植自 <a href="https://mak1t0.cc/" target="_blank" rel="noreferrer noopener">Makito</a>'s <a href="https://github.com/SumiMakito/hexo-theme-journal/" target="_blank" rel="noreferrer noopener">Journal.</a> <br>
+<br>
+
+&copy;
+	
+	?-2025 Haunted Blog
+	
+</div>
+            </div>
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.css">
+<div id="aplayer"></div>
+
+<script src="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.js"></script>
+<script>
+const staticDir = "http://localhost:1313/"
+const ap = new APlayer({
+    container: document.getElementById('aplayer'),
+    fixed: true,
+    autoplay: false,
+    theme: '#961010',
+    loop: 'all',
+    order: 'list',
+    preload: 'metadata',
+    volume: 0.5,
+  audio: [
+        {
+            title: 'Army Dreamers in 29edo',
+            author: 'Kate Bush/Deister Orchestra',
+            url: 'https://music.163.com/song/media/outer/url?id=2165388420.mp3',
+            cover: 'https://s3.bmp.ovh/imgs/2025/08/13/cd630c6249f394c5.jpg',
+            lrc: '',
+        },
+
+        {
+            title: 'リズと青い鳥 第三楽章「愛ゆえの決断」',
+            author: '松田彬人',
+            url: staticDir + 'music/bluebird.mp3',
+            cover: 'https://s3.bmp.ovh/imgs/2025/08/13/fb43e14e9e98a0e6.jpg',
+            lrc: '',
+        },
+
+        {
+            title: 'Pagan Poetry',
+            author: 'Bjork',
+            url: staticDir + 'music/PaganPoetry.mp3',
+            cover: 'https://s3.bmp.ovh/imgs/2025/08/13/abf7b56aee2c0254.jpg',
+            lrc:'',
+        },
+
+        {
+            title: 'The Haunted Palace',
+            author: 'Sopor Aeternus & the Ensemble of Shadows',
+            url: 'https://music.163.com/song/media/outer/url?id=27725392.mp3',
+            cover: 'https://s3.bmp.ovh/imgs/2025/08/13/3d8c8e717de1fd1c.jpg',
+            lrc: '',
+        },
+
+        {
+            title: 'Empty Warehouse',
+            author: 'Alias Conrad Coldwood',
+            url: 'https://music.163.com/song/media/outer/url?id=439915037.mp3',
+            cover: 'https://s3.bmp.ovh/imgs/2025/08/13/44df2c27a9b397c3.jpg',
+            lrc: '',
+        },
+        
+        {
+            title: 'Enchanters',
+            author: 'Raney Shockne/Elizaveta/Nick Stoubis',
+            url: 'https://music.163.com/song/media/outer/url?id=31529024.mp3',
+            cover: 'https://s3.bmp.ovh/imgs/2025/08/13/b63a40a6cede0a0c.jpg',
+            lrc: '',
+        },
+    ]
+});
+
+    window.onbeforeunload = () => {
+        
+        const playInfo = {
+            index: ap.list.index,
+            currentTime: ap.audio.currentTime,
+            paused: ap.paused
+        };
+        localStorage.setItem("playInfo", JSON.stringify(playInfo));
+    };
+
+    
+
+    window.onload = () => {
+        
+        const playInfo = JSON.parse(localStorage.getItem("playInfo"));
+        if (!playInfo) {
+            return;
+        }
+        
+        ap.list.switch(playInfo.index);
+        
+        setTimeout(() => {
+            
+            ap.seek(playInfo.currentTime);
+            
+            if (!playInfo.paused) {
+                ap.play()
+            }
+        }, 500);
+    };
+</script>
+
+    <script src="/js/journal.js"></script></body>
+</html>

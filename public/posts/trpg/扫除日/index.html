@@ -1,0 +1,682 @@
+<!DOCTYPE html>
+<html lang="zh"><head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+<title>扫除日</title>
+
+
+
+
+<meta charset="utf-8">
+<meta name="X-UA-Compatible" content="IE=edge">
+<meta name="google-site-verification" content="G-XXXXXXXXXX">
+<meta content="width=device-width, initial-scale=1.0, maximum-scale=5, user-scalable=5" name="viewport">
+<meta content="telephone=no" name="format-detection">
+<meta name="description" content="“有一只野猫对自己的鼻子很感兴趣，正在满世界地寻找……”">
+<meta name="renderer" content="webkit">
+<meta name="theme-color" content="#ffffff">
+
+
+
+<meta property="og:url" content="http://localhost:1313/posts/trpg/%E6%89%AB%E9%99%A4%E6%97%A5/">
+  <meta property="og:site_name" content="皮裂魂奔">
+  <meta property="og:title" content="扫除日">
+  <meta property="og:description" content="“有一只野猫对自己的鼻子很感兴趣，正在满世界地寻找……”">
+  <meta property="og:locale" content="zh">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2023-12-04T00:00:00+00:00">
+    <meta property="article:modified_time" content="2023-12-04T00:00:00+00:00">
+    <meta property="article:tag" content="阿尔奇比亚德·杜波瓦">
+    <meta property="article:tag" content="弗鲁格“跛鸭”">
+    <meta property="article:tag" content="伯努瓦·勒菲弗尔">
+
+
+
+
+
+
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="扫除日">
+  <meta name="twitter:description" content="“有一只野猫对自己的鼻子很感兴趣，正在满世界地寻找……”">
+
+
+
+
+
+
+
+      <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+      <script>
+        var doNotTrack = false;
+        if ( false ) {
+          var dnt = (navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack);
+          var doNotTrack = (dnt == "1" || dnt == "yes");
+        }
+        if (!doNotTrack) {
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-XXXXXXXXXX');
+        }
+      </script>
+
+
+
+
+<script type="text/javascript">
+  (function(c,l,a,r,i,t,y){
+      c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+      t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+      y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+  })(window, document, "clarity", "script", "abcdefghzd");
+</script>
+
+
+
+  
+
+
+
+
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+
+
+
+      <script src="/js/toc.js"></script>
+    
+    <link type="text/css" rel="stylesheet" href="/vendor/css/bootstrap.min.css">
+
+<link rel="stylesheet" href="/scss/dark-mode.min.f06db849abd227fa7530d69a5b6784ce57b77c2278f9eee37820b5ba0c51079b.css" integrity="sha256-8G24SavSJ/p1MNaaW2eEzle3fCJ4&#43;e7jeCC1ugxRB5s=" media="screen">
+
+
+<link rel="stylesheet"
+          href="https://fonts.googleapis.com/css?family=Material+Icons">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<link rel="stylesheet" href="https://unpkg.com/@waline/client@v3/dist/waline.css" />
+
+
+<script defer src="https://cloud.umami.is/script.js" data-website-id="7702f9d4-077b-4b77-b168-abe5f78d43b9"></script>
+
+</head>
+<body>
+    	<div id="app"><div class="single-column-drawer-container" id="drawer"
+     v-bind:class="{ 'single-column-drawer-container-active': isDrawerOpen }">
+    <div class="drawer-content">
+        <div class="drawer-menu">
+            
+            
+            
+                
+                
+                
+                
+                
+                <a class="a-block drawer-menu-item false" href="/archives">
+                    归档 Archives
+                </a>
+                
+            
+                
+                
+                
+                
+                
+                <a class="a-block drawer-menu-item false" href="/posts/about">
+                    关于 About
+                </a>
+                
+            
+                
+                
+                
+                
+                
+                <a class="a-block drawer-menu-item false" href="/posts/friends">
+                    友链 Friends
+                </a>
+                
+            
+            
+            <div class="toc">
+
+
+</div>
+            
+        </div>
+    </div>
+</div>
+<transition name="fade">
+    <div id="drawer-mask" v-bind:class="{ 'single-column-drawer-mask': mounted }" v-if="isDrawerOpen" v-on:click="toggleDrawer"></div>
+</transition>
+<nav id="navBar" class="navbar sticky-top navbar-light single-column-nav-container">
+    <div id="navBackground" class="nav-background"></div>
+    <div class="container container-narrow nav-content">
+        <button id="nav_dropdown_btn" class="nav-dropdown-toggle" type="button" v-on:click="toggleDrawer">
+            <i class="material-icons">
+                menu
+            </i>
+        </button>
+        <a id="navTitle" class="navbar-brand" href="http://localhost:1313/">
+            皮裂魂奔
+        </a>
+        
+        <button type="button" class="nav-darkmode-toggle" id="darkModeToggleButton2">
+            <i class="material-icons" id="darkModeToggleIcon2">
+                dark_mode
+            </i>
+        </button>
+        
+    </div>
+</nav>
+<div class="single-column-header-container" id="pageHead"
+     v-bind:style="{ transform: 'translateZ(0px) translateY('+.3*scrollY+'px)', opacity: 1-navOpacity }">
+    <a href="http://localhost:1313/">
+        <div class="single-column-header-title">皮裂魂奔</div>
+        
+
+    </a>
+</div>
+
+            <div id="content">
+                <div id="streamContainer" class="stream-container">
+
+    <div class="post-list-container post-list-container-shadow">
+        <div class="post">
+            
+            
+            
+
+            <div class="post-head-wrapper-text-only"
+                
+            >
+                <div class="post-title">
+                    扫除日
+                    
+                    <div class="post-subtitle">
+                        “有一只野猫对自己的鼻子很感兴趣，正在满世界地寻找……”
+                    </div>
+                    
+
+                    
+                    <div class="post-meta">
+                        <span class="meta-item meta-date">
+                        
+                            2023-12-04
+                        
+                        </span>
+
+                        
+                        <span class="meta-item meta-categories">
+                            &nbsp; <i class="material-icons" style="">folder</i>
+                            <a href="/categories/%E8%B7%91%E5%9B%A2%E8%A1%8D%E7%94%9F">跑团衍生</a>
+                        </span>
+                        
+
+                        
+                        
+                        <span class="meta-item meta-tags">
+                            &nbsp; <i class="material-icons" style="">label</i>
+                            
+                                <a href="/tags/%E9%98%BF%E5%B0%94%E5%A5%87%E6%AF%94%E4%BA%9A%E5%BE%B7%E6%9D%9C%E6%B3%A2%E7%93%A6">阿尔奇比亚德·杜波瓦</a>&nbsp;
+                            
+                                <a href="/tags/%E5%BC%97%E9%B2%81%E6%A0%BC%E8%B7%9B%E9%B8%AD">弗鲁格“跛鸭”</a>&nbsp;
+                            
+                                <a href="/tags/%E4%BC%AF%E5%8A%AA%E7%93%A6%E5%8B%92%E8%8F%B2%E5%BC%97%E5%B0%94">伯努瓦·勒菲弗尔</a>&nbsp;
+                            
+                        </span>
+                        
+                        
+
+                       
+
+                        
+                    </div>
+                </div>
+            </div>
+            
+            <div class="post-body-wrapper">
+                
+                <div class="post-body" v-pre>
+                
+                    <p><br/><br/></p>
+<p>“有一只野猫对自己的鼻子很感兴趣，正在满世界地寻找……”阿尔奇比亚德，旷土东北部的炼金师、药剂商人、生物学者、独腿老人正在一边背诵《传道法师列传》，一边打扫房间。屋外下着暴雨，他的侄孙正抱膝坐在角落，看向云雾弥漫的茂典阁，黎明之拱仍然安静地横亘在那上空。</p>
+<p>论污垢的顽固程度，阁楼这扇三角形玻璃窗尤为突出。每天早上，老人都命令睡在此处的侄孙用魔法伎俩清理窗面，但自从上次庆典，疯法师的火球砸中了它，一些奇妙的裂痕出现了。孩子不肯放过观察这些裂痕的机会，久久地蹲伏在窗前，看破碎如棱镜般的街面。他甚至不惜偷窃姥爷的药水，用堪称不检点的方式调和，粘住玻璃边缘。实验事故败露的那天，阿尔奇比亚德一声长叹，捋了捋唇髭，抬起厚达两枚金币的珍禽异兽图鉴，给他的脑门来了一下。</p>
+<p>现在，他正站在破损而粘腻的窗前，眯眼打量街道。依据咒法师、位面旅行者、他失踪已久的侄女尤弗哈斯之口，在遥远的被遗忘的国度，这个时节被称作枯萎之月。暴风雨打下了枝头的苹果，一个矮人铁匠窜到露台，收走了原本挂在那儿的围裙。忽然，他动了动耳朵，本就弯曲的脊背加倍拱了起来。</p>
+<p>“怎么不念下去？阿尔奇比亚德，你不会忘了吧？”十岁的法师学徒啪地合上书本，投来质疑的眼神。</p>
+<p>“急什么！”老人压低声音，“闭嘴，你难道听不见……”</p>
+<p>“是药锅在冒泡，你有点神经过敏了。”</p>
+<p>“笑话！我活了八十六年，还会被这点动静吓到？”</p>
+<p>“说不定是客人呢。”法师学徒耸耸肩，踮起脚把书本复归原位。</p>
+<p>“谁会在阿尔奇比亚德关店扫除的时候贸然来访？除非他情愿吃一记致病射线。有些人总爱尝尝苦头，而他们中的大多数来者不善。”</p>
+<p>法师学徒沉默了，他不安地动了动，但眼神中还有一丝机警和期待。跳过堆叠的书山是一件难事，而对经验丰富的阅读者很简单。他两步窜到老人的断腿旁边，拽了拽被炼金药水腐蚀得破烂不堪的衣摆。</p>
+<p>“……难道是鬼婆？我昨天又做了梦，还是那片林子，她呼唤我回归血统……”</p>
+<p>阿尔奇比亚德睁大了眯缝眼，继而哈哈大笑，“只要你还在阿凯维沃一天，就犯不着担心那帮老东西抓走你。”他脸上的谨慎一扫而空，仿佛把危机感统统揉碎了扔进堕影冥界，换来滔滔不绝的絮叨，“比起这个诅咒，你不如担心担心血脉里的丧心病。瞧瞧这张蔫脸，这瘦弱的鸡爪，和你父亲一个样！我还记得勒菲弗尔氏拿到助手岗位前，发了疯似地捉狮鹫，野生的狮鹫……”</p>
+<p>“我也想捉狮鹫。”学徒的眼睛突然光芒四射。</p>
+<p>“那你就想吧！”阿尔奇比亚德呵斥道，“好了，快下去，看看到底是怎么回事。”</p>
+<p>法师学徒熟练地往前躲了一步，防止被老人的独腿踹到屁股。他吐了吐舌，坐上了楼梯扶手，双手揣兜，借着重力和一颗懒惰的心，一路滑下楼去。</p>
+<p>蹭着环形楼梯下降到一层的药剂铺，那种奇异的声音愈发清晰：就像在剪裁纸张，又像一双非人的小脚踩踏在沙地里。刚被列为一号嫌疑人的大锅里咕咚冒泡，一旁的菜板盛放着切碎的鼠尾草根茎，再然后是依据容量大小顺序排列的试管，旁边有一本被热气掀起、纸页忽上忽下的解剖书。</p>
+<p>“奇怪？阿尔奇比亚德，你是不是——”</p>
+<p>二号嫌疑人应声而动，门板上传来急促而疯狂的敲打声。</p>
+<p>法师学徒怪叫一声，像只折了寿的老鼠，向后大跳一步，弓起了背，缩在桌脚下，再不吭声。</p>
+<p>笃笃的下楼声没能掩盖住这突如其来的吵闹，雨水的潮味已然从门缝挤进室内，与药草的诡异熏香糅合在一起，对鼻腔形成张牙舞爪的态势。“该死的，一到雨天，义肢就会生锈……”阿尔奇比亚德发出恼怒的嘟囔，搀着断腿缓缓挪动，当他也来到这片区域，忽然打了个激灵，两只老眼瞪得浑圆，几乎把积年的眼翳都给撑开，然后，他像动物那样使劲嗅了嗅，略作一刻的沉默，爆发出了骇人的狂笑声。</p>
+<p>“笑……么笑……”门缝里传来被暴雨冲刷着的微弱声音。</p>
+<p>阿尔奇比亚德大步向前，穿行在他亲手搭建的三十平方米国土，没有理会桌下探出的两只充满好奇、但又瑟缩不前的眼睛。他轻车熟路地绕过宛如废品堆的材料架，像一具失能的死火山似地趴在地上，低声念叨了几句咒语。过了几秒，他才发出沙哑而得意的轻笑，缓缓站起，手中捏住了逃犯。</p>
+<p><br/><br/></p>
+<p>一声响亮的呱鸣撕开了空气。老炼金师满不在乎地扔掉手中物，同时做了一个轻快的手势。砰的一声，大门开启，一个发型夸张、长着硕大鼻子、身穿精美刺绣短衣的小个子毫无预料地摔了进来，以脸着地。</p>
+<p>几乎是同一刻，完全符合阿尔奇比亚德预料的是，另一道身影从桌下猛窜出来，飞快地扑向了他刚才扔掉的活物——那是一只色泽鲜艳的钟角蛙。</p>
+<p>“我为你感到不齿！”炼金师皱紧眉头，“要用魔法！”</p>
+<p>“真是费了好一番功夫啊！”侏儒从地上艰难爬起，“还以为你会迎接的是我呢，伯努瓦·勒菲弗尔！”</p>
+<p>被喊到名字的法师学徒吃吃地笑起来，全神贯注地盯着闷在掌心的青蛙。阿尔奇比亚德嫌弃地看了他一眼，挥了挥手，一根靠在墙边的手杖飞向老人，他干脆用杖底勾起伯努瓦的后领，把他从地上揪起来。</p>
+<p>“是你啊，跛鸭。”阿尔奇比亚德耸耸肩，把手杖平放在膝头，顺势陷进了一张软椅，“我还想谁这么不懂礼貌。暴雨天，关门清客的日子，也不提前写封信来，你就不怕我在地下室？这样谁能听见你的哀嚎？”</p>
+<p>“哈！阿尔奇比亚德，臭老头！如果我不是认识了你二十年，又对这条街的风评相当熟悉，我甚至都会相信，你的字典里有‘礼貌’二字了。”侏儒替他小心地合上大门，踏着舞蹈般的步子上前，高举起短短的双手，“久别重逢！你的腰好些了吗？”</p>
+<p>“呸！”伯努瓦打了个哆嗦，把舔进嘴巴的泥吐出来。钟角蛙惊恐而无助地看着他。</p>
+<p>“糟透了，比以往任何时候都糟糕。我早就嘱咐好了他，如果哪天我突然死了，他要为每件器官找到用处。”阿尔奇比亚德憔悴地笑了，伸出手温柔地拥抱这位矮小的朋友，“跛鸭，多谢你四年前送来的药。”</p>
+<p>“我如今带来了一份更好的礼物，你绝对意想不到。”侏儒眯起了眼睛，眼中闪动着狡黠的灵光，“虽然你不像制造金属爆炸时那样癫狂了，但脾气还是个倔老头，我相信你没放弃……”</p>
+<p>“我可以拥有它吗？”伯努瓦双手捏着青蛙，打断了这位身高相仿的来客。</p>
+<p>“当然，当然！拿去吧，小朋友！”跛鸭用上扬的声调说，露出了热情的微笑，“刚才说到哪儿来着？噢，对，这只黏糊糊的朋友就是我在路上捡的，它落在一个小水坑里，我路过时靴子沾了水，简直要吓掉半条命，生怕把礼物给弄湿了！没错，我这次就是为了带来……”</p>
+<p>“可以挖心吗？”伯努瓦又用两枚拇指掰动青蛙的胸腹，展示给跛鸭看。青蛙快速的眨眼就像在求救。</p>
+<p>“……最好不要。当然啦，如果哪天它不幸身亡，譬如失足摔进了你们那口大锅，或者一个脚滑躺在了你姥爷的牙签上……反正，只要成了尸体，你当然可以身为朋友，替他处理一下身后事……咳，言归正传……”</p>
+<p>忽然他停住了。因为，当他演讲时就会自然闭合的绿松石色大眼睛重新睁开时，跛鸭注意到，有一只小小的坩埚——显然是炼金师制造的人工生命仆从——飞舞在陷入沉思的伯努瓦和面露得意之色的阿尔奇比亚德之间，两只垂落的爪子紧攥着一封信件，正是从他兜里不翼而飞的那封。</p>
+<p><br/><br/></p>
+<p>“阿尔奇比亚德……！”跛鸭忿忿地咬牙，“我早该知道，你这老东西不会白白地给人拥抱！”</p>
+<p>那个自命不凡的老头抬起了下巴，露出相当满意的微笑，他脸上的灰斑和褶皱都因此铺展开来，似乎真心实意地为这场恶作剧感到愉快。但在炫耀的言词流出口中之前，他的侄孙就伸出右手，一把将信件夺走了。微笑从他的老脸上转瞬即逝。</p>
+<p>“是你不够经验丰富，跛鸭。等你活到八十六岁，身上就会神奇地长出名叫心眼的东西。”阿尔奇比亚德抢回信封，一把推开伯努瓦的脸，“没有落款？”</p>
+<p>“没有落款。”跛鸭瞪了他一眼，脸上又复现出柔和的表情，“你快拆开看吧。外面的雨下得可真大，我为了保护它，用皮带把它捆在肚脐眼上，用马甲遮着它，又用外套顶住斜前方的暴雨。这可不，我的靴子泡了脚，裤子都快掉下去，只有它还是干燥的、温暖的、留着墨水味儿的！我这身衣服还是从前那个行会老板的，俗话说，侏儒靠衣装，半人马靠鞍……”</p>
+<p>伯努瓦的眼珠转了转，若有所思地瞧着那件沾满水珠的红外套。他想起阁楼的窗户并没有照出访客的身影，也许是碎裂的镜面起了作用，将这个本就瘦小的身形折叠得像只苹果。</p>
+<p>“少废话。伯努瓦，拿裁信刀来。”老炼金师用胳膊肘捅了一下侄孙，后者做了两遍手势，才不熟练地从远处取来一把刀，险些弄翻了路径上的一盆番红花。独腿老人嘀嘀咕咕地拆信，仿佛想抵御老朋友的唠叨，但在下一刻，他发出了凄厉的惨叫，捂着门牙蔫蔫倒下。</p>
+<p>然而，当他毫无痛觉地睁开眼，却发现眼前一无所变，粗粝舌头包裹的尖牙没有啃向他的鼻子，宝箱怪也没有给他一记老拳。只剩下些许魔法粉末，在光洁的信封表面淡淡发光。</p>
+<p>“你暗算我，弗鲁格！如此粗鄙的恶作剧，连我十岁的侄孙都会做！”</p>
+<p>“我没学过。”伯努瓦吃惊地说。</p>
+<p>“闭嘴！”阿尔奇比亚德愤怒地揪住了自己的胡子。</p>
+<p>绰号跛鸭、本名弗鲁格的侏儒幻术师叉着腰，爆发出一阵浑身舒爽的大笑。他脱下湿漉漉的外套，搭在一边，顺势跳上了炼金师面前的桌台，用矮小的身子为他们鞠上一躬，作了一个请的姿势。</p>
+<p>阿尔奇比亚德恶狠狠地用鼻孔出气，一边用裁纸刀细致地沿线开封。伯努瓦在一旁啧啧称奇，即使是趁睡觉剪了他半边胡子的那天，也没见过如此大的火气。信封里是一个牛皮纸包裹，牛皮纸里又是一只束口袋。跛鸭弗鲁格趁机把怀中的另一件礼物递给伯努瓦，那是一本《初级魔法学原理》，年幼的法师学徒瞪圆了眼睛，即刻欣喜若狂，把整张脸埋进书里，深深地吸了一口纸浆的气味，露出陶醉的神情。</p>
+<p>最后，出现在炼金师几乎腐坏的掌心的，是一片干瘪的树叶。透明密封袋阻止了他用熟稔的手法揉搓干叶，保持了它形状的完整。他莫测地瞅了一眼弗鲁格，后者心领神会，施施然开口。</p>
+<p>“不久前，我梦见了古旅人。就是教授们曾经提到的那个庞然大物，有好多条手臂，古怪的眼睛，说着晦涩难懂的话。这些你都知道，可我第一次亲眼见到，所以我跑回了斯翠海文，去翻巨龙们留下的藏品库。就在一阵乱翻中……我找到了她的痕迹，这不就想起你来了吗？”</p>
+<p>“尤弗哈斯？”老人用鼻孔喷了口气，“我早把她给忘了。”</p>
+<p>侏儒笑了笑，继续说道，“她当然不是一个圣法谕，那些混沌的研究没给她带来处罚都是万幸。况且，她跨越的是位面，而非时空。我想这两件事之间并无关联，梦境带来的启示是我将再次踏上旅程，但在临别之际，既然碰巧找到了你的家人的讯息，我这个老朋友怎能有所隐瞒？”</p>
+<p>“论一心二用，没人赢得了你。”阿尔奇比亚德耸耸肩，看上去气消了大半。</p>
+<p>伯努瓦把新书抱在胸前，有节奏地捏着青蛙的小脚。听到这里，他一把甩开手中的活物，扑到桌前仰视着侏儒，“弗鲁格！这片叶子是妈妈的研究？”</p>
+<p>“想知道？那就摸摸看。”幻术师一屁股坐下，欢快地摇晃着两只灌了雨水的靴子，“包装这么多层，只是为了防范炼金师的急性子。万一当场揉碎了，我的法表里可没写修复术。”</p>
+<p><br/><br/></p>
+<p>阿尔奇比亚德闷哼一声，由着侄孙将密封袋夺走，而后小心翼翼地拆封。当枯叶落在他的掌心，便显现出真正的奥秘：它的外形平凡无奇，但对一片叶子来说着实太重。伯努瓦合并拇指与食指，用极轻的力道揉搓了一下叶片，其间的叶脉忽然映现出黯淡的光泽，仿佛通入电流。年幼的法师学徒张大嘴巴，恨不得一口将它吃下去；他那留着长长胡子的姥爷也不自觉地揉搓着双手，表露出一种近于纯真的喜悦。</p>
+<p>“尤弗哈斯，是她的魔法微粒。”阿尔奇比亚德轻声感叹，“她还活着？”</p>
+<p>“不一定。”弗鲁格出声反驳，又像意识到了这句话的无情，尴尬地补充，“捐赠者是勒菲弗尔氏，所以，我想这是他们启程后的收藏品。别看这叶片长相寻常，它所起到的作用绝不只是拿来签名而已。老伙计，我知道你对魔法微粒的嗅觉敏感异常，一如从门缝里闻到了我。这份礼物，送得还算讨喜吧？”</p>
+<p>炼金师不发一语地眯起那双促狭的、积攒着厚厚眼翳的老眼。法师学徒则直视着客人，点了点头，重新将其存入密封袋，珍惜地揣在怀里。</p>
+<p>“那你呢，跛鸭？”阿尔奇比亚德反问道，“你准备什么时候走？”</p>
+<p>弗鲁格一跃而起，拍了拍衬衫，神气十足地开了口，“现在就走。时光不等人，我的老朋友。要不是下定了决心，我又何必挑这样一个坏天气强行出门！”</p>
+<p>“凭你的本事，我看是暴风雨娱乐了你。”</p>
+<p>侏儒嘻嘻地笑了起来，过了一会，他忽然露出怀念的表情，定定地望着眼前的老人。</p>
+<p>“阿尔奇比亚德，我好想和你们再一次踏上旅程啊。”</p>
+<p>“我也一样，弗鲁格。”老炼金师泰然自若地说，微微后仰，合上了眼睛。</p>
+<p>尽管法师学徒对这段对话感到突兀和莫名其妙，另外两人却显然想起了什么。老炼金师摊出一只手掌，招呼对方靠近。侏儒幻术师耸耸肩，没有顾及前车之鉴，仍旧把胡桃木色的脑袋凑了过去。阿尔奇比亚德于是抬起了疲弱不堪的双臂，在这对窄小肩膀的两边都用力握了握。</p>
+<p>借此机会，炼金师的人工生命仆从又将一种魔法物品挂在客人背后。那是一颗水滴状的细小物质，能够凭主人的心意吸收物品表面的水分，简而言之，就是能把暴雨淋湿的衣服迅速烘干。这动作轻巧得出奇，即使从法师学徒的视角能够看清一切，他也只是睁大了眼睛，怀着一种好玩的心态静静凝视。</p>
+<p>只有当侏儒幻术师踏出门外，顺着旷土的漫漫长路独行远去，被巨大的启蒙火炬照亮时，也许会突然想挠个痒，继而发现这个迷你的饯别礼。</p>
+<p><br/><br/></p>
+<p>等到大门重新合上，暴雨倾轧的咆哮声骤然收束，余留下炼金药锅那温热而玄妙的气味。伯努瓦拍了拍手，抱着一刻也没有脱手的魔法书，踏着轻盈的步子，哼着小曲往阁楼上去，突然受到了一股向后的拉扯力，趔趄了半步。钟角蛙咕呱一声，从他的鞋尖险险跳过。</p>
+<p>“还愣着干嘛？”阿尔奇比亚德板着老脸，放下手杖，“继续打扫。”</p>
+
+                    
+                    <HR width="100%" id="EOF">
+		    <p style="color:#777;">最后修改于 2023-12-04</p>
+                    
+                </div>
+            </div>
+            
+            
+            <nav class="post-pagination">
+                
+                <a class="newer-posts" href="/posts/novels/fish/">
+			下回<br>买鱼
+                </a>
+                
+                
+                
+                <a class="older-posts" href="/posts/novels/desert/">
+			上回<br>沙漠
+                </a>
+                
+            </nav>
+            <div class="post-comment-wrapper">
+                
+
+
+
+
+
+
+
+
+
+
+
+
+            </div>
+            
+            <link
+                rel="stylesheet"
+                href="https://unpkg.com/@waline/client@v3/dist/waline.css"
+            />
+
+
+
+            
+            <style>
+             
+            :root {
+            --waline-font-size: 16px;
+            --waline-white: #fff;
+            --waline-light-grey: #999;
+            --waline-dark-grey: #666;
+            --waline-theme-color:#ab3740;
+            --waline-active-color:#ab3740;
+            --waline-color: #000000;
+            --waline-bg-color: rgb(247, 240, 240);
+            --waline-bg-color-light: #f8f8f8;
+            --waline-bg-color-hover: #f0f0f0;
+            --waline-border-color: transparent;
+            --waline-disable-bg-color: #f8f8f8;
+            --waline-disable-color: #bbb;
+            --waline-code-bg-color: #282c34;
+            --waline-bq-color: #f0f0f0;
+            --waline-avatar-size: 3.25rem;
+            --waline-m-avatar-size: calc(var(--waline-avatar-size) * 9 / 13);
+            --waline-badge-color:var(--waline-active-color);
+            --waline-badge-font-size: 0.775em;
+            --waline-info-bg-color: #f8f8f8;
+            --waline-info-color: #999;
+            --waline-info-font-size: 0.625em;
+            --waline-border: 1px solid var(--waline-border-color);
+            --waline-avatar-radius: 50%;
+            --waline-box-shadow: none;
+            }
+
+             
+            html.night {
+            --waline-white: #000;
+            --waline-light-grey: #666;
+            --waline-dark-grey: #999;
+            --waline-color: #888;
+            --waline-bg-color: #1e1e1e;
+            --waline-bg-color-light: #272727;
+            --waline-border-color: #333;
+            --waline-disable-bg-color: #444;
+            --waline-disable-color: #272727;
+            --waline-bq-color: #272727;
+            --waline-info-bg-color: #272727;
+            --waline-info-color: #666;
+            }
+
+             
+            .wl-editor:focus, .wl-input:focus { background: transparent; }
+            .wl-info .wl-text-number { color: var(--waline-color); font-size: .75em; }
+            .wl-card .wl-delete,
+            .wl-card .wl-like,
+            .wl-card .wl-reply,
+            .wl-card .wl-edit,
+            .wl-card span.wl-nick,
+            .wl-empty, .wl-admin-actions,
+            [data-waline] p { color: unset; }
+
+             
+            #waline {
+            max-width: unset;
+            margin: 0 auto;
+            width: 90%;
+            }
+            .wl-card { border: 0; }
+            .wl-card .wl-quote { border-inline-start: 0 dashed rgba(237, 237, 237, .5); }
+            .wl-card-item { position: relative; display: flex; padding: .2em; }
+            .wl-addr { display: none !important; color: transparent !important; }
+            .wl-content .vemoji,
+            .wl-content .wl-emoji { display: inline-block; vertical-align: baseline; height: 3.4em !important; margin: -0.125em .25em; }
+            img.wl-emoji, img.vemoji { vertical-align: sub; transition: ease-out .6s; }
+            img.wl-emoji:hover, img.vemoji:hover { transform: scale(1.8) !important; }
+            .wl-header { display: flex; overflow: hidden; padding: 0 4px; border-bottom: 0 dashed var(--waline-border-color); border-top-left-radius: 0; border-top-right-radius: 0; }
+            .wl-btn.primary { border-color: transparent !important; background: #ab3740; color: #fff; }
+            @media (max-width:580px) {
+            .wl-header-item:not(:last-child) { border-bottom: 0 dashed var(--waline-border-color); }
+            }
+            </style>
+
+            
+            <div id="waline"></div>
+
+            
+            <script type="module">
+            import { init } from 'https://unpkg.com/@waline/client@v3/dist/waline.js';
+
+            init({
+                el: '#waline',
+                serverURL: 'https://waline-pwd1df5ms-maotan23s-projects.vercel.app',
+                dark: 'html.night, body.night', 
+                emoji: [
+                    '//unpkg.com/@waline/emojis@1.2.0/tw-emoji',
+                ],
+            });
+
+            </script>
+
+  </div>
+</div>
+
+                    </div>
+            </div><div id="sideContainer" class="side-container">
+    
+    <a class="a-block nav-head false" href="http://localhost:1313/">
+    
+        <div class="nav-title">
+            皮裂魂奔
+        </div>
+        
+    </a>
+
+    <div class="nav-link-list">
+        
+        
+            
+            
+            
+            
+            
+            <a class="a-block nav-link-item false" href="/archives">
+                归档 Archives
+            </a>
+            
+        
+            
+            
+            
+            
+            
+            <a class="a-block nav-link-item false" href="/posts/about">
+                关于 About
+            </a>
+            
+        
+            
+            
+            
+            
+            
+            <a class="a-block nav-link-item false" href="/posts/friends">
+                友链 Friends
+            </a>
+            
+        
+    </div>
+
+    
+
+    <div class="nav-footer">
+        
+Hugo Theme <a href="https://github.com/amazingrise/hugo-theme-diary">Diary</a> by <a href="https://risehere.net/">Rise</a>
+<br>
+移植自 <a href="https://mak1t0.cc/" target="_blank" rel="noreferrer noopener">Makito</a>'s <a href="https://github.com/SumiMakito/hexo-theme-journal/" target="_blank" rel="noreferrer noopener">Journal.</a> <br>
+<br>
+
+&copy;
+	
+	?-2025 Haunted Blog
+	
+
+    </div>
+    
+</div><div id="extraContainer" class="extra-container">
+    <div class="toc-wrapper">
+        
+
+        
+        <div class="toc">
+
+
+</div>
+        
+    </div>
+    <div class="pagination">
+        <a id="globalBackToTop" class="pagination-action animated-visibility" href="#top"
+            :class="{ invisible: scrollY == 0 }">
+            <i class="material-icons pagination-action-icon">
+                keyboard_arrow_up
+            </i>
+        </a>
+        
+        <a type="button" class="pagination-action" id="darkModeToggleButton">
+            <span class="material-icons pagination-action-icon" id="darkModeToggleIcon">
+                dark_mode
+            </span>
+        </a>
+        
+        
+    </div>
+</div>
+
+<div id="single-column-footer">
+Hugo Theme <a href="https://github.com/amazingrise/hugo-theme-diary">Diary</a> by <a href="https://risehere.net/">Rise</a>
+<br>
+移植自 <a href="https://mak1t0.cc/" target="_blank" rel="noreferrer noopener">Makito</a>'s <a href="https://github.com/SumiMakito/hexo-theme-journal/" target="_blank" rel="noreferrer noopener">Journal.</a> <br>
+<br>
+
+&copy;
+	
+	?-2025 Haunted Blog
+	
+</div>
+            </div>
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.css">
+<div id="aplayer"></div>
+
+<script src="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.js"></script>
+<script>
+const staticDir = "http://localhost:1313/"
+const ap = new APlayer({
+    container: document.getElementById('aplayer'),
+    fixed: true,
+    autoplay: false,
+    theme: '#961010',
+    loop: 'all',
+    order: 'list',
+    preload: 'metadata',
+    volume: 0.5,
+  audio: [
+        {
+            title: 'Army Dreamers in 29edo',
+            author: 'Kate Bush/Deister Orchestra',
+            url: 'https://music.163.com/song/media/outer/url?id=2165388420.mp3',
+            cover: 'https://s3.bmp.ovh/imgs/2025/08/13/cd630c6249f394c5.jpg',
+            lrc: '',
+        },
+
+        {
+            title: 'リズと青い鳥 第三楽章「愛ゆえの決断」',
+            author: '松田彬人',
+            url: staticDir + 'music/bluebird.mp3',
+            cover: 'https://s3.bmp.ovh/imgs/2025/08/13/fb43e14e9e98a0e6.jpg',
+            lrc: '',
+        },
+
+        {
+            title: 'Pagan Poetry',
+            author: 'Bjork',
+            url: staticDir + 'music/PaganPoetry.mp3',
+            cover: 'https://s3.bmp.ovh/imgs/2025/08/13/abf7b56aee2c0254.jpg',
+            lrc:'',
+        },
+
+        {
+            title: 'The Haunted Palace',
+            author: 'Sopor Aeternus & the Ensemble of Shadows',
+            url: 'https://music.163.com/song/media/outer/url?id=27725392.mp3',
+            cover: 'https://s3.bmp.ovh/imgs/2025/08/13/3d8c8e717de1fd1c.jpg',
+            lrc: '',
+        },
+
+        {
+            title: 'Empty Warehouse',
+            author: 'Alias Conrad Coldwood',
+            url: 'https://music.163.com/song/media/outer/url?id=439915037.mp3',
+            cover: 'https://s3.bmp.ovh/imgs/2025/08/13/44df2c27a9b397c3.jpg',
+            lrc: '',
+        },
+        
+        {
+            title: 'Enchanters',
+            author: 'Raney Shockne/Elizaveta/Nick Stoubis',
+            url: 'https://music.163.com/song/media/outer/url?id=31529024.mp3',
+            cover: 'https://s3.bmp.ovh/imgs/2025/08/13/b63a40a6cede0a0c.jpg',
+            lrc: '',
+        },
+    ]
+});
+
+    window.onbeforeunload = () => {
+        
+        const playInfo = {
+            index: ap.list.index,
+            currentTime: ap.audio.currentTime,
+            paused: ap.paused
+        };
+        localStorage.setItem("playInfo", JSON.stringify(playInfo));
+    };
+
+    
+
+    window.onload = () => {
+        
+        const playInfo = JSON.parse(localStorage.getItem("playInfo"));
+        if (!playInfo) {
+            return;
+        }
+        
+        ap.list.switch(playInfo.index);
+        
+        setTimeout(() => {
+            
+            ap.seek(playInfo.currentTime);
+            
+            if (!playInfo.paused) {
+                ap.play()
+            }
+        }, 500);
+    };
+</script>
+
+    <script src="/js/journal.js"></script></body>
+</html>

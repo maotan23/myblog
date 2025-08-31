@@ -81,7 +81,7 @@ theme="github-light"
 
 [[menu.main]]
 url = "/archives"
-name = "归档 Archive"
+name = "归档 Archives"
 weight = 1
 [[menu.main]]
 url = "/posts/about"
