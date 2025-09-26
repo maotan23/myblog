@@ -1,0 +1,23 @@
+{{/* layouts/shortcodes/imgleft.html */}}
+{{ $src := .Get "src" }}
+{{ $alt := .Get "alt" | default "" }}
+{{ $caption := .Get "caption" }}
+{{ $class := .Get "class" | default "img-left" }}
+
+{{/* 先尝试作为页面资源处理（page bundle）以便使用 Hugo image processing */}}
+{{ $imgResource := .Page.Resources.GetMatch $src }}
+
+{{ if $imgResource }}
+  {{/* 使用 Fill 以 80x120 精确输出（居中裁切） */}}
+  {{ $thumb := $imgResource.Fill "80x120 center" }}
+  <figure class="{{ $class }}">
+    <img src="{{ $thumb.RelPermalink }}" alt="{{ $alt }}" width="100" height="150" loading="lazy" decoding="async">
+    {{ if $caption }}<figcaption>{{ $caption }}</figcaption>{{ end }}
+  </figure>
+{{ else }}
+  {{/* 回退：直接使用传入的 src（例如 static 下或外部图片），并用 CSS/inline 限定尺寸 */}}
+  <figure class="{{ $class }}">
+    <img src="{{ $src }}" alt="{{ $alt }}" width="80" height="120" style="object-fit:cover" loading="lazy" decoding="async">
+    {{ if $caption }}<figcaption>{{ $caption }}</figcaption>{{ end }}
+  </figure>
+{{ end }}

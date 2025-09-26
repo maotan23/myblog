@@ -1,0 +1,13 @@
+{{/* 显示文章目录的 partial */}}
+{{ $toc := .TableOfContents }}
+{{ if $toc }}
+  <nav class="post-toc" aria-label="Table of contents">
+    <div class="post-toc__inner">
+      <h3 class="post-toc__title">目录</h3>
+      {{/* .TableOfContents 已是 HTML（<ul>...</ul>） */}}
+      <div class="post-toc__list">
+        {{ $toc | safeHTML }}
+      </div>
+    </div>
+  </nav>
+{{ end }}

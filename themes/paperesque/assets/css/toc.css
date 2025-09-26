@@ -1,0 +1,73 @@
+/* TOC 容器 */
+.post-toc {
+  position: fixed;
+  top: 1.5rem;         /* 距离顶部，可调整 */
+  right: 1.5rem;       /* 距离右边 */
+  max-width: 260px;    /* 最小到最大宽度，防止过宽 */
+  z-index: 999;
+  text-align: right;   /* 右对齐目录文本 */
+  font-size: 14px;     /* 要求的字号 */
+  color: #333333;      /* 灰度的黑色 */
+  line-height: 1.5;
+  background: rgba(255,255,255,0.95); /* 轻微背景，避免内容重叠时难辨；若不想要可以设为 transparent */
+  padding: 0.6rem 0.8rem;
+  border-radius: 8px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.06);
+  transition: opacity 0.18s ease, transform 0.18s ease;
+}
+
+/* 内部布局（使标题和列表右对齐）*/
+.post-toc__inner {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end; /* 右对齐内容 */
+}
+
+/* 标题 */
+.post-toc__title {
+  margin: 0 0 0.4rem 0;
+  font-size: 14px;
+  font-weight: 600;
+  color: #222222;
+}
+
+/* 目录列表：让链接右对齐并支持多层次缩进（靠 margin-right） */
+.post-toc__list ul,
+.post-toc__list li {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  text-align: right; /* 右对齐文本 */
+}
+
+.post-toc__list li {
+  margin: 0.15rem 0;
+}
+
+/* 链接样式（灰色系）*/
+.post-toc__list a {
+  text-decoration: none;
+  color: #333333;
+  font-size: 14px;
+  opacity: 0.92;
+}
+
+/* hover / focus 显示更深色并添加下划线或微动感 */
+.post-toc__list a:hover,
+.post-toc__list a:focus {
+  color: #111111;
+  text-decoration: underline;
+  outline: none;
+}
+
+/* 子目录缩进：用右边距控制（因为文本右对齐） */
+.post-toc__list ul ul {
+  margin-right: 0.75rem; /* 子级右移（表现为视觉缩进）*/
+}
+
+/* 响应式：在小屏幕上隐藏 TOC（可按需调整阈值）*/
+@media (max-width: 1024px) {
+  .post-toc {
+    display: none;
+  }
+}
