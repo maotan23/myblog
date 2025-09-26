@@ -2,7 +2,7 @@
 date: 2017-08-03
 title: "长江"
 description: "如果你碰巧路过M市，务必到长江边上的碎石滩去。"
-tags: 
+tags: ["原创"]
 categories: "短篇小说"
 ---
 

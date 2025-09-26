@@ -4,34 +4,28 @@ hidden: true
 
 <center><img src="https://s3.bmp.ovh/imgs/2025/08/12/46d026b396bb06e3.png"></center>
 
-# 简介
+## 欢迎你
 
-您好，欢迎来到Haunted Blog，这是一个私人的博客网站，用于堆放OC/小说/随笔/月记等内容。
+来到 Haunted Blog！
 
-<br/>
-
-# 联系方式
-
-您可以通过这些方式联系我<small>（不联系也没关系）</small>。
-
-QQ：1494843825
-
-邮箱：Zgougou23@outlook.com
-
-长毛象：<a href="https://wxw.moe/@Oroboros" target="_blank">传送门在此</a>
+这是一个私人博客网站，用于存放 OC/随笔/月记 等内容。
 
 <br/>
 
-# Credits
+## 联系我
 
-本站由<a href="https://gohugo.io/" target="_blank">Hugo</a>搭建，<a href="https://www.cloudflare.com/zh-cn/developer-platform/products/pages/" target="_blank">Cloudflare Pages</a>部署，<a href="https://www.imgurl.org/" target="_blank">ImgURL</a>提供图床，<a href="https://waline.js.org/" target="_blank">Waline</a>提供评论功能（修复中），<a href="https://aplayer.js.org/" target="_blank">APlayer</a>提供音乐播放器，使用<a href="https://github.com/amazingrise/hugo-theme-diary" target="_blank">Diary</a>主题。
+<small>（如果您需要）</small>
+
+- QQ：1494843825
+
+- 邮箱：Zgougou23@outlook.com
+
+- <a rel="me" href="https://wxw.moe/@Oroboros">Mastodon</a>
 
 <br/>
 
-左下角悬浮挂件——播放音乐
+## Credits
 
-右侧月亮按钮——切换夜间模式
+本站由<a href="https://gohugo.io/" target="_blank">Hugo</a>搭建，<a href="https://www.cloudflare.com/zh-cn/developer-platform/products/pages/" target="_blank">Cloudflare Pages</a>部署，<a href="https://www.imgurl.org/" target="_blank">ImgURL</a>提供图床，使用<a href="https://github.com/capnfabs/paperesque" target="_blank">Paperesque</a>主题。
 
 <br/>
-
-<center><img src="https://s3.bmp.ovh/imgs/2025/08/12/cbe633b4effa64f2.png"></center>

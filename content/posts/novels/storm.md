@@ -2,7 +2,7 @@
 date: 2021-07-01
 title: "落雷之夜"
 description: "尽管他们如此相似，却无法分与对方力量。"
-tags: 
+tags: ["原创"]
 categories: "短篇小说"
 ---
 

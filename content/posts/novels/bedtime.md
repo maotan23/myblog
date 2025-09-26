@@ -2,7 +2,7 @@
 date: 2014-01-01
 title: "睡前故事"
 description: "死神/魔女/狐狸/黑猫/灰尘的故事"
-tags: 
+tags: ["原创"]
 categories: "短篇小说"
 ---
 

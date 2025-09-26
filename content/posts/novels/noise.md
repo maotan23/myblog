@@ -2,7 +2,7 @@
 date: 2014-05-30
 title: "杂音"
 description: "大概凌晨三四点的时候，一麻醒了过来。她是被热醒的。"
-tags: 
+tags: ["原创"]
 categories: "短篇小说"
 ---
 

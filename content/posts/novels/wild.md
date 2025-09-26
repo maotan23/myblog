@@ -2,7 +2,7 @@
 date: 2019-03-23
 title: "原野 河流 原野"
 description: "原野燃烧的那天，士兵脱逃了。"
-tags: 
+tags: ["原创"]
 categories: "短篇小说"
 ---
 

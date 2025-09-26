@@ -2,7 +2,7 @@
 date: 2022-08-01
 title: "沙漠"
 description: "在羊水破了的时刻，孩子父亲跑到阳台上观看绞刑架的处刑过程。"
-tags: 
+tags: ["原创"]
 categories: "短篇小说"
 ---
 

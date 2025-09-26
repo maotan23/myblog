@@ -2,7 +2,7 @@
 date: 2019-09-10
 title: "Violin"
 description: "在医院门口，一条狗向我狂吠，我等待着我的朋友。"
-tags: 
+tags: ["原创"]
 categories: "短篇小说"
 ---
 
@@ -64,7 +64,7 @@ categories: "短篇小说"
 
 <br/>
 
-<blockquote><br/><br/>
+<blockquote>
 
 尤利西斯爱上了一个少女。一天，少女向他款款走来，越过了他。当她经过时，她对他说道：“昨日，我看见你，也看见了你的墓碑。”
 

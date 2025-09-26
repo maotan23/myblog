@@ -2,7 +2,7 @@
 date: 2018-08-31
 title: "水鸟"
 description: "早上出门，遇见极响亮的雨水声，才真正从如盆的暴雨中感到夏天。"
-tags: 
+tags: ["原创"]
 categories: "短篇小说"
 ---
 

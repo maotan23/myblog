@@ -2,7 +2,7 @@
 date: 2018-08-03
 title: "凶杀案"
 description: "她真漂亮：蓝眼睛、红嘴唇。"
-tags: 
+tags: ["原创"]
 categories: "短篇小说"
 ---
 

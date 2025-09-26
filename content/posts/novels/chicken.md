@@ -2,7 +2,7 @@
 date: 2018-08-11
 title: "幽禽对手"
 description: "傍晚的时候，她把书本放下来，手掌平放在桌面上。"
-tags: 
+tags: ["原创"]
 categories: "短篇小说"
 ---
 

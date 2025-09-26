@@ -2,7 +2,7 @@
 date: 2024-01-09
 title: "水蚁季"
 description: "昨夜下了密密的雨，屋子里闷得不透气。"
-tags: 
+tags: ["原创"]
 categories: "短篇小说"
 ---
 

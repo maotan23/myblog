@@ -2,7 +2,7 @@
 date: 2021-08-01
 title: "诗的正义"
 description: "这是从他的心上生生割下来的诗歌，是血肉的横切面，有浓烈的腥味。"
-tags: 
+tags: ["原创"]
 categories: "短篇小说"
 ---
 
