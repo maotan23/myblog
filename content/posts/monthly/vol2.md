@@ -72,7 +72,7 @@ tags: ["月记"]
 
 ## 陇春志异：宰牲篇
 
-今天早上刚打完的香油出品游戏。<a href="https://sweetsomestudio.itch.io/strange-tales-from-longchun-sacrifice/devlog/1061575/-s-chinese-introduction" target="_blank">游戏介绍和下载地址在这里</a>。主界面和论坛的UI实在是做得太太太太好看了，而且整体有一种很独特的气质，喜欢结局选择去见老板时风雨欲来的演出。三首角色曲的填词都很美。感觉一个月做出这种精细度和完整度也太厉害了……
+今天早上刚打完的香油出品游戏。<a href="https://sweetsomestudio.itch.io/strange-tales-from-longchun-sacrifice/devlog/1061575/-s-chinese-introduction" target="_blank">游戏介绍和下载地址在这里</a>。主界面和论坛的UI实在是做得太太太太好看了，而且整体有一种很独特的气质，喜欢结局选择去见老板时风雨欲来的演出。三首角色曲的填词都很美<small>（经提醒修正，是主题曲填词，三首角色曲很美不过歌词其实是佛经）</small>。感觉一个月做出这种精细度和完整度也太厉害了……
 
 <br/><br/>
 
