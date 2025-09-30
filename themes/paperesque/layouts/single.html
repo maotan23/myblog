@@ -40,21 +40,3 @@ Would also be cool to make this fold on mobile so there's two links on separate 
     </div>
   {{ end }}
 {{ end }}
-
-{{ define "main" }}
-  <main class="content-main">
-    <article class="post">
-      <header class="post-header">
-        <h1>{{ .Title }}</h1>
-        {{/* ... 其它元数据 ... */}}
-      </header>
-
-      <div class="post-body">
-        {{ .Content }}
-      </div>
-    </article>
-
-    {{/* 在正文渲染后（或页面任意处）加载 TOC partial */}}
-    {{ partial "toc.html" . }}
-  </main>
-{{ end }}

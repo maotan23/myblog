@@ -101,6 +101,9 @@
   }
 }
 
+@import url("https://fontsapi.zeoseven.com/438/main/result.css");
+@import url("https://fontsapi.zeoseven.com/440/main/result.css");
+
 body {
   -webkit-font-smoothings: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -148,9 +151,6 @@ code {
   -webkit-font-smoothings: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-
-@import url("https://fontsapi.zeoseven.com/438/main/result.css");
-@import url("https://fontsapi.zeoseven.com/440/main/result.css");
 
 .article-body p{
   text-indent: 2em;
