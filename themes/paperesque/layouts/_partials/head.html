@@ -1,0 +1,14 @@
+<!-- layouts/partials/head.html -->
+<head>
+  <meta charset="utf-8">
+  <title>{{ if .Title }}{{ .Title }} | {{ end }}{{ site.Title }}</title>
+  <!-- 你的其它全局样式 / meta -->
+
+  {{/* 仅当为页面且有 TableOfContents 时才引入 toc.css */}}
+  {{ if and .IsPage .TableOfContents }}
+    {{ $toccss := resources.Get "css/toc.css" | resources.Minify | resources.Fingerprint "sha384" }}
+    <link rel="stylesheet" href="{{ $toccss.RelPermalink }}" integrity="{{ $toccss.Data.Integrity }}" crossorigin="anonymous">
+  {{ end }}
+
+  {{/* 你可能已有的其它 css 引入 */}}
+</head>

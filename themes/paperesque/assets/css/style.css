@@ -101,8 +101,24 @@
   }
 }
 
-@import url("https://fontsapi.zeoseven.com/438/main/result.css");
-@import url("https://fontsapi.zeoseven.com/440/main/result.css");
+
+@font-face {
+  font-family: 'Huiwen-ZhengKai';
+  src: url('/fonts/Huiwen-ZhengKai.woff') format('woff'),
+       url('/fonts/Huiwen-ZhengKai.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap; 
+}
+
+@font-face {
+  font-family: 'Huiwen-FangSong';
+  src: url('/fonts/Huiwen-FangSong.woff') format('woff'),
+       url('/fonts/Huiwen-FangSong.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
 
 body {
   -webkit-font-smoothings: antialiased;
@@ -819,27 +835,109 @@ article table th {
   }
 }
 
-.img-left {
-  float: left;
-  width: 100px;
-  height: 150px;
-  margin: 0 12px 8px 2em;
-  overflow: hidden;
-}
-.img-left img {
-  display: block;
-  width: 100%;
-  height: 100%;
-  object-fit: cover; /* 保持不变形并裁切填满 */
-  border-radius: 7px;
-}
-.img-left figcaption {
-  font-size: 14px;
-  margin-top: 4px;
-  color: #666;
+
+
+/* 下面这些是toc的css */
+
+.article-layout {
+  position: relative;
 }
 
-/* 小屏装置下把图片改成不浮动，避免排版问题 */
-@media (max-width: 600px) {
-  .img-left { float: none; display: block; margin: 0 auto 12px; }
+.toc-container {
+  position: fixed;
+  left: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 200px;
+  max-height: 90vh;
+  overflow-y: auto;
+  z-index: 100;
+  background: rgba(255, 255, 255, 0.9);
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  font-size: 14px;
+  font-family: "Huiwen-ZhengKai", serif;
+  font-weight: 600;
+}
+
+.article-main {
+  /* 保持原有布局，不被TOC挤压 */
+  width: 100%;
+  max-width: none;
+  margin: 0 auto;
+}
+
+/* 去掉TOC中的序号标记 */
+.toc-container ul {
+  list-style: none !important;
+  padding-left: 0 !important;
+}
+
+.toc-container li {
+  list-style: none !important;
+}
+
+.toc-container li::before {
+  content: none !important;
+}
+
+.toc-container a {
+  text-decoration: none;
+  color: #333;
+  display: block;
+  padding: 4px 0;
+  border-left: 2px solid transparent;
+  transition: all 0.2s ease;
+}
+
+.toc-container a:hover {
+  border-left-color: #007cba;
+  color: #007cba;
+}
+
+/* TOC层级样式 */
+.toc-container ul ul {
+  padding-left: 15px !important;
+}
+
+.toc-container li {
+  margin: 2px 0;
+}
+
+/* 响应式设计：在较小屏幕上隐藏TOC */
+@media (max-width: 1200px) {
+  .toc-container {
+    display: none;
+  }
+}
+
+/* 可选：添加显示/隐藏TOC的按钮 */
+.toc-toggle {
+  position: fixed;
+  left: 20px;
+  top: 100px;
+  z-index: 101;
+  background: #007cba;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  padding: 8px 12px;
+  cursor: pointer;
+  display: none;
+}
+
+@media (max-width: 1200px) {
+  .toc-toggle {
+    display: block;
+  }
+  
+  .toc-container {
+    left: -100%;
+    transition: left 0.3s ease;
+  }
+  
+  .toc-container.active {
+    left: 20px;
+  }
 }

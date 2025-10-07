@@ -27,6 +27,7 @@
       <div class="post-date">Last Edited: <span itemprop="dateModified">{{ .Lastmod.Format "January 2, 2006" }}</span></div>
     {{ end }}
   {{ end }}
+  
   {{ if .Draft }}
     <div class="post-date">{{ .WordCount }} words</div>
   {{ end }}

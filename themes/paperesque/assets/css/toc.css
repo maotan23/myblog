@@ -1,4 +1,40 @@
 /* TOC 容器 */
+
+.article-container {
+  display: flex;
+  gap: 2rem;
+  max-width: 100%;
+}
+
+.toc-sidebar {
+  flex: 0 0 250px;
+  position: sticky;
+  top: 2rem;
+  align-self: flex-start;
+  max-height: calc(100vh - 4rem);
+  overflow-y: auto;
+}
+
+.article-content {
+  flex: 1;
+  min-width: 0; /* 防止flex项目溢出 */
+}
+
+/* 响应式设计：在小屏幕上将TOC移到顶部 */
+@media (max-width: 768px) {
+  .article-container {
+    flex-direction: column;
+  }
+  
+  .toc-sidebar {
+    position: static;
+    order: -1;
+    margin-bottom: 1rem;
+  }
+}
+
+/* 如果主题已有相关类名，请根据实际情况调整 */
+
 .post-toc {
   position: fixed;
   top: 1.5rem;         /* 距离顶部，可调整 */
@@ -14,6 +50,29 @@
   border-radius: 8px;
   box-shadow: 0 6px 20px rgba(0,0,0,0.06);
   transition: opacity 0.18s ease, transform 0.18s ease;
+}
+
+/* 去掉默认的列表符号 / 缩进 */
+.toc-content ul,
+.toc-content li {
+  list-style: none;     /* 取消圆点/数字 */
+  margin: 0;
+  padding: 0;
+}
+
+/* 如果想控制子级缩进（视觉层级），用 margin-left */
+.toc-content ul ul {
+  margin-left: 0.8rem;
+}
+
+/* 链接和行距美化 */
+.toc-content li {
+  margin: 0.25rem 0;
+  line-height: 1.4;
+}
+.toc-content a {
+  text-decoration: none;
+  color: inherit;
 }
 
 /* 内部布局（使标题和列表右对齐）*/
@@ -71,3 +130,4 @@
     display: none;
   }
 }
+
