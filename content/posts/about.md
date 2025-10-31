@@ -14,13 +14,9 @@ hidden: true
 
 ## 联系我
 
-<small>（如果您需要）</small>
+<small>（如果需要）</small>
 
-- QQ：1494843825
-
-- 邮箱：Zgougou23@outlook.com
-
-- <a rel="me" href="https://wxw.moe/@Oroboros">Mastodon</a>
+邮箱：Zgougou23@outlook.com
 
 <br/>
 
