@@ -34,6 +34,8 @@ hidden: true
 
 <br/>🍬 <a href="https://writee.org/wu-tang-ying-tang/" target="_blank">无糖硬糖</a>
 
+<br/>🫧 <a href="https://blog.gulugulurave.com/" target="_blank">咕噜咕庐</a>
+
 </center>
 
 <br/>
