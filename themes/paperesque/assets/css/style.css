@@ -86,8 +86,8 @@
     --color-header-brand-secondary-ddopacity: #08151EDD;
     --color-header-brand-secondary: #754A3A;
 
-    --color-link-text: #2381E5;
-    --color-link-hover: #268FFF;
+    --color-link-text: #526e8d;
+    --color-link-hover: #6086ad;
 
     --color-nav-text: #CDC9B9;
 
@@ -101,6 +101,13 @@
   }
 }
 
+img.emoji {
+  display: inline-block !important;
+  max-width: 1.2em !important;
+  height: 1.2em !important;
+  margin: 0 0.05em !important;
+  vertical-align: -0.1em !important;
+}
 
 @font-face {
   font-family: 'Huiwen-ZhengKai';
