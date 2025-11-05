@@ -44,6 +44,8 @@ hidden: true
 
 <br/>👾 <a href="https://alanone.top/" target="_blank">ENCOM一号机</a>
 
+<br/>🌊 <a href="https://imasugu.cc/" target="_blank">東井</a>
+
 
 
 </center>
