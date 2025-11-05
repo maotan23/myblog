@@ -36,6 +36,16 @@ hidden: true
 
 <br/>🫧 <a href="https://blog.gulugulurave.com/" target="_blank">咕噜咕庐</a>
 
+<br/>🌌 <a href="https://kageji.blog/" target="_blank">晷影空间站</a>
+
+<br/>✈️ <a href="https://banshou-air.netlify.app/" target="_blank">夜航南飞</a>
+
+<br/>🐳 <a href="https://mantyke.icu/" target="_blank">小球飞鱼</a>
+
+<br/>👾 <a href="https://alanone.top/" target="_blank">ENCOM一号机</a>
+
+
+
 </center>
 
 <br/>
