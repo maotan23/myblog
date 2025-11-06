@@ -151,11 +151,7 @@ CPU：i5-12600KF
 
 ## 绯红山谷
 
-<iframe src="https://store.steampowered.com/widget/1609230/" 
-        frameborder="0" 
-        width="646" 
-        height="190">
-</iframe>
+{{< book url="https://store.steampowered.com/app/1609230/Scarlet_Hollow/" image="https://free-img.400040.xyz/4/2025/11/06/690c66fe26ba7.jpg" title="Scarlet Hollow " brief="Your aunt’s dead, your cousin hates you, and you’re stuck in the dead-end town of Scarlet Hollow. Choose your path through a branching narrative so dense that you'll see less than a 1/5 of the game on a single playthrough. You won't be able to save everyone. Good luck, and welcome home." tag="game" >}}
 
 只打了一周目，已经感到线路的丰富和自由度了，而且是用Ren'py做的，真的很佩服。开局特质选了 Hot 和 Talk to Animals，前者比较搞笑，就是NPC见到你都会颊渐转樱色，对话选项很社牛，一看就不会因为是卑鄙的外乡人而在小镇被霸凌。后者真是把我游戏体验都提高了一个层次，太萌了，招猫逗狗其乐无穷，还能认识达斯汀和达斯汀的妈妈，还能当面请示狗边牧市长。
 
@@ -169,11 +165,7 @@ CPU：i5-12600KF
 
 ## 朝圣者
 
-<iframe src="https://store.steampowered.com/widget/1049280/" 
-        frameborder="0" 
-        width="646" 
-        height="190">
-</iframe>
+{{< book url="https://store.steampowered.com/app/1049280/_Pilgrims/" image="https://free-img.400040.xyz/4/2025/11/06/690c66fe1f42d.jpg" title="Pilgrims " brief="《Pilgrims》是一款有趣的冒险游戏，由《Machinarium》和《Samorost》背后的制作团队所创造的新作品。游历各地并广交朋友、与你的旅行伙伴们一起欢笑，并以你自己的方式帮助他们完成他们自己的小故事。你究竟能够找到几种不同的解决方案？" tag="game" >}}
 
 看图说话解谜小游戏，美，好玩，萌……
 
@@ -183,11 +175,7 @@ CPU：i5-12600KF
 
 ## 不予播出
 
-<iframe src="https://store.steampowered.com/widget/1147550/" 
-        frameborder="0" 
-        width="646" 
-        height="190">
-</iframe>
+{{< book url="https://store.steampowered.com/app/1147550/__Not_For_Broadcast/" image="https://free-img.400040.xyz/4/2025/11/06/690c7e10b8925.jpg" title="Not For Broadcast " brief="今天是选举之夜！一个新政党以压倒性优势获胜，但《全国晚间新闻》的编辑却逃之夭夭，所以由你这位看门人来控制广播室。你会支持新政府走向反乌托邦吗？还是会不惜一切代价阻止他们？" tag="game" >}}
 
 55gb把我的旧笔记本电脑吓退了，换电脑赶紧来玩一下，感觉内容没有想象中那么充实，只有电视导播模拟一个玩法，剧情推进是UI和内容都有点粗糙的互动小说。点子本身很有创意，配音不错，但是稍微玩一会就腻了。
 
@@ -195,11 +183,7 @@ CPU：i5-12600KF
 
 ## 免戒室：白羊毛与雪
 
-<iframe src="https://store.steampowered.com/widget/3035990/" 
-        frameborder="0" 
-        width="646" 
-        height="190">
-</iframe>
+{{< book url="https://store.steampowered.com/app/3035990/Misericorde_Volume_Two_White_Wool__Snow/" image="https://free-img.400040.xyz/4/2025/11/06/690c66fe2043c.jpg" title="Misericorde Volume Two: White Wool & Snow " brief="White Wool & Snow is the second visual novel in the Misericorde series." tag="game" >}}
 
 只玩了三分之一，但体量已经和卷一全文差不多长了。仍然是包含大量心理深描的写法，很酷的音乐。更细致的感想恐怕得打完再说，但是很喜欢这个故事的氛围，特别喜欢Darcy产生灵视后狂奔的那一整段，感觉好萌啊。义父说这是轻量复刻版修女也疯狂。
 

@@ -62,11 +62,7 @@ tags: ["月记"]
 
 ## OFF重制版
 
-<iframe src="https://store.steampowered.com/widget/3339880/" 
-        frameborder="0" 
-        width="646" 
-        height="190">
-</iframe>
+{{< book url="https://store.steampowered.com/app/3339880/OFF/" image="https://free-img.400040.xyz/4/2025/11/06/690c66ff5d569.jpg" title="OFF " brief="“I’m the Batter. I’ve been entrusted with a sacred mission.” -- One of the most influential RPGs of the last 20 years is finally coming to Steam. Take control of the Batter as he seeks to purify an uncanny and hopeless world haunted by specters, guided by a cryptic, grinning cat called The Judge." tag="game" >}}
 
 重制内容不多，似乎只替换了一些BGM和UI，新增几个对剧情影响不大的隐藏BOSS。打那个哲人鱼差点把心态打崩了，学了下机制还是挺好打的。感觉玩这个重制版属于信仰充值，没有端出太多新东西，但是过度翻新确实会破坏整体风格。可惜BGM不如原版独特。
 
@@ -74,11 +70,7 @@ tags: ["月记"]
 
 ## 爱氏物语
 
-<iframe src="https://store.steampowered.com/widget/1864000/" 
-        frameborder="0" 
-        width="646" 
-        height="190">
-</iframe>
+{{< book url="https://store.steampowered.com/app/1864000/Artis_Impact/" image="https://free-img.400040.xyz/4/2025/11/06/690c66fe2b0bf.webp" title="Artis Impact " brief="这是一款轻松有趣的像素风冒险游戏，在人类与 AI 并存的未来世界中展开的一场充满悬念的旅程。游戏采用回合制战斗，轻松不肝，还有丰富的支线任务和隐藏事件，带来意想不到的惊喜。可爱又幽默的风格与细腻的演出交织，一场既刺激又温暖的冒险即将展开！" tag="game" >}}
 
 因为美术风格非常独特、漫画分镜式的演出很有巧思而一直在关注的游戏。但发售后不太能坚持玩下去，现在只玩了两个半小时，每次打开又忍不住关掉。一方面是剧情有点谜，我很喜欢无厘头风格，但这部作品的笑点我Get不到，有时还觉得尴尬不适；另一方面是玩法本身不太能给我乐趣。但是风格独特真的好厉害。
 
@@ -86,11 +78,7 @@ tags: ["月记"]
 
 ## 这个座位有人坐吗
 
-<iframe src="https://store.steampowered.com/widget/3035120/" 
-        frameborder="0" 
-        width="646" 
-        height="190">
-</iframe>
+{{< book url="https://store.steampowered.com/app/3035120/_/" image="https://free-img.400040.xyz/4/2025/11/06/690c7d1745192.jpg" title="Is This Seat Taken? " brief="《这个座位有人坐吗？》是一款逻辑益智游戏，你要给一群特别有趣的角色牵线。每个角色都有自己计较的小事情，给他们安排位置既有难度，又很有趣。体验游戏的温馨、诙谐和真实，为所有角色找到最合适的位置，就能解锁新的关卡。" tag="game" >}}
 
 按摩大脑的解谜益智游戏，流程5-8小时。特别喜欢，交互的反馈感做得很好，而且相当有趣，舒缓身心。
 
@@ -98,11 +86,7 @@ tags: ["月记"]
 
 ## 小小书店
 
-<iframe src="https://store.steampowered.com/widget/2133760/" 
-        frameborder="0" 
-        width="646" 
-        height="190">
-</iframe>
+{{< book url="https://store.steampowered.com/app/2133760/_/" image="https://free-img.400040.xyz/4/2025/11/06/690c66fe23d76.jpg" title="Tiny Bookshop " brief="在这款剧情驱动的模拟经营游戏中，你将暂时放下喧嚣繁杂，在风景如画的海边开设一家属于自己的二手书店。装饰书店、推荐图书、结识邻里，一步步打造温暖人心的小小天地。" tag="game" >}}
 
 玩过Demo，后来听说简中翻译不太好，不过很想玩点休闲游戏，还是买了。流程比我想象得要长。虽然一直对这种游戏里的社群情谊和每个人克服内心问题的治愈剧情没啥兴趣，但是看看风景、半挂机卖书挺舒心的。至于里面对书的介绍和分类，我觉得就跟做菜游戏里的橄榄辣椒芝士番茄酱一样，只是个变量，不用细究。
 
@@ -110,11 +94,7 @@ tags: ["月记"]
 
 ## 纸房子
 
-<iframe src="https://store.steampowered.com/widget/3528450/" 
-        frameborder="0" 
-        width="646" 
-        height="190">
-</iframe>
+{{< book url="https://store.steampowered.com/app/3528450/_/" image="https://free-img.400040.xyz/4/2025/11/06/690c66ff1ddc2.jpg" title="纸房子 " brief="这是一部以中式校园为背景的视觉小说。离开的好友、模糊的恋情、纷乱的人际关系，以及不那么美满的家庭，是青春期的忧郁还是令人难以承受的痛苦？您将以主角赵颖的视角去体验她的高中生活，帮她做出选择，看见所有可能。" tag="game" >}}
 
 只打了无好感结局和徐敏敏全结局。我承认玩之前有过先入为主的偏见，看见中式校园+县城背景就觉得像讨巧题材吸引中国人购买和代入主角回忆青春，而且容易把剧本写得太沉溺。但是实际玩起来觉得情感很自然，台词有种浑然天成的幽默，看上去像胡闹，其实对作品很负责<small>（除了少数几个不符合时代的流行语）</small>。背景设置在2017年，估计是为了贴近现在又避开疫情，也可能是作者读高中的时间。结局有点仓促，显得流程过短，稍微差一口气。云了一些王艺菡的感情线，脑内浮现出无性恋和QPR等毛象热门词汇。不过我很喜欢这种处理，因为探索了一些少被描写的情感关系，而且“以后我老公住另一栋楼”很有才。
 
@@ -132,11 +112,7 @@ tags: ["月记"]
 
 ## 护路人
 
-<iframe src="https://store.steampowered.com/widget/1155970/" 
-        frameborder="0" 
-        width="646" 
-        height="190">
-</iframe>
+{{< book url="https://store.steampowered.com/app/1155970/Roadwarden/" image="https://free-img.400040.xyz/4/2025/11/06/690c66fe24c2d.jpg" title="Roadwarden " brief="Roadwarden is an illustrated text-based RPG that uses isometric pixel art and combines mechanics borrowed from RPGs, Visual Novels, adventure games and interactive fiction." tag="game" >}}
 
 浅玩了一下。启发是原来Ren'py能做这样的游戏。完美符合我对CRPG的大多数需求：硕大的文本框，不同倾向的对话选项，逛地图跑支线。但是似乎没有好玩的队友。
 
@@ -179,7 +155,7 @@ KP：对了，你觉得缄默祸运的船长怎么样
 
 ## 天真的人类学家
 
-{{< book url="https://book.douban.com/subject/6712255/" image="https://files.catbox.moe/s4yupg.jpg" title="《天真的人类学家》 [英]奈吉尔·巴利" brief="本书诚实但又不失风趣地记录了作为人类学家的作者在非洲喀麦隆多瓦悠人村落两次进行田野工作的经历，将人类学家如何克服乏味、灾难、生病与敌意的真实田野生活拍案叫绝地呈现在读者面前。不同于一般的人类学研究报告，这是一部令人捧腹不止的人类学笔记，透过幽默的笔调，读者看到了人类学者如何与研究对象进行互动，在互动中如何调整他的学术成见，以及田野工作上的琐事如何影响后来研究结果、研究的盲点与反思。因此不管是严肃的读者、无聊地只想打发时间或者是向往非洲原始部落的异国情调而蠢蠢欲动的旅人，巴利这本书绝对是一个有趣的选择。" tag="book" >}}
+{{< book url="https://book.douban.com/subject/6712255/" image="https://free-img.400040.xyz/4/2025/11/06/690c66ff1dd0a.jpg" title="《天真的人类学家》 [英]奈吉尔·巴利" brief="本书诚实但又不失风趣地记录了作为人类学家的作者在非洲喀麦隆多瓦悠人村落两次进行田野工作的经历，将人类学家如何克服乏味、灾难、生病与敌意的真实田野生活拍案叫绝地呈现在读者面前。不同于一般的人类学研究报告，这是一部令人捧腹不止的人类学笔记，透过幽默的笔调，读者看到了人类学者如何与研究对象进行互动，在互动中如何调整他的学术成见，以及田野工作上的琐事如何影响后来研究结果、研究的盲点与反思。因此不管是严肃的读者、无聊地只想打发时间或者是向往非洲原始部落的异国情调而蠢蠢欲动的旅人，巴利这本书绝对是一个有趣的选择。" tag="book" >}}
 
 七年前专业课老师推荐的入门书，直到现在才读，有点后悔，因为作者有一种尖刻的幽默感，如果放在考试周肯定会更爱看。
 
@@ -189,7 +165,7 @@ KP：对了，你觉得缄默祸运的船长怎么样
 
 ## 诺桑觉寺
 
-{{< book url="https://book.douban.com/subject/36440628/" image="https://files.catbox.moe/zaoxvz.jpg" title="《诺桑觉寺》  [英]简·奥斯丁" brief="天真烂漫乡村牧师之女凯瑟琳，结识了虚伪的索普兄妹，并与正直英俊的富家子弟亨利一见钟情，受亨利的父亲蒂尔尼将军盛情相邀去家里做客。在诺桑觉寺这个幽深、古老的宅子里，一向痴迷哥特小说的凯瑟琳因为脑海中的种种可怖幻影，在宅子里展开了一场荒唐的“冒险”之旅。虽然势利的蒂尔尼将军听信索普的一面之词，对凯瑟琳下了逐客令，但是亨利没有退让，经过重重曲折，终于和凯瑟琳喜结良缘。" tag="book" >}}
+{{< book url="https://book.douban.com/subject/36440628/" image="https://free-img.400040.xyz/4/2025/11/06/690c7d89f2eda.jpg" title="《诺桑觉寺》  [英]简·奥斯丁" brief="天真烂漫乡村牧师之女凯瑟琳，结识了虚伪的索普兄妹，并与正直英俊的富家子弟亨利一见钟情，受亨利的父亲蒂尔尼将军盛情相邀去家里做客。在诺桑觉寺这个幽深、古老的宅子里，一向痴迷哥特小说的凯瑟琳因为脑海中的种种可怖幻影，在宅子里展开了一场荒唐的“冒险”之旅。虽然势利的蒂尔尼将军听信索普的一面之词，对凯瑟琳下了逐客令，但是亨利没有退让，经过重重曲折，终于和凯瑟琳喜结良缘。" tag="book" >}}
 
 看简介：对哥特小说的反讽。打开书：花痴女和痞帅男的言情小说，还有不停插入作者的话——别瞧不起小说！不过，一看到男主角是黑发黑眼痞帅，我就突然有了看下去的动力，看完后感觉还不够痞帅，有一些阳光，不够飘忽洒脱。
 
@@ -199,7 +175,7 @@ KP：对了，你觉得缄默祸运的船长怎么样
 
 ## 蓝色大门
 
-{{< book url="https://movie.douban.com/subject/1308575/" image="https://files.catbox.moe/uzkk6n.jpg" title="《蓝色大门》 易智言" brief="高中生孟克柔（桂纶镁 饰）与林月珍（梁淑慧饰）是无话不谈的好友，月珍告诉克柔，说自己喜欢上了一个叫张士豪（陈柏霖 饰）的男生，便常常要求克柔帮她接近张士豪，帮忙认识他、帮忙传递情书。没想到张士豪以为喜欢自己的是孟克柔，所以也常常借故接近她，跟她在一起。传递情书的事，被张贴出来，原来林月珍是以孟克柔的名义给张士豪写信，孟克柔非常生气而从而跟林月珍的关系疏远了。另一边厢孟克柔极不愿意承认她与张士豪之间是恋人的关系，可是张士豪已深深喜欢上她。孟克柔想跟男生接吻，因为她想清楚一件事，原来她心里，喜欢的是另外一个人。" tag="film" >}}
+{{< book url="https://movie.douban.com/subject/1308575/" image="https://free-img.400040.xyz/4/2025/11/06/690c6700294bf.jpg" title="《蓝色大门》 易智言" brief="高中生孟克柔（桂纶镁 饰）与林月珍（梁淑慧饰）是无话不谈的好友，月珍告诉克柔，说自己喜欢上了一个叫张士豪（陈柏霖 饰）的男生，便常常要求克柔帮她接近张士豪，帮忙认识他、帮忙传递情书。没想到张士豪以为喜欢自己的是孟克柔，所以也常常借故接近她，跟她在一起。传递情书的事，被张贴出来，原来林月珍是以孟克柔的名义给张士豪写信，孟克柔非常生气而从而跟林月珍的关系疏远了。另一边厢孟克柔极不愿意承认她与张士豪之间是恋人的关系，可是张士豪已深深喜欢上她。孟克柔想跟男生接吻，因为她想清楚一件事，原来她心里，喜欢的是另外一个人。" tag="film" >}}
 
 很久以前对它的认知是台湾酷儿片代表，终于看了，酷儿的部分和想象中不太一样。看网友评论说“T爱直女，直女爱直男，直男爱T，最后掰直T”搞得我鬼火冒，如果真是这种套路也太不酷儿了。看完感觉网友说的什么屁话，这不是一回事吧。
 
