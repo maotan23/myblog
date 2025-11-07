@@ -77,7 +77,7 @@ tags: ["月记"]
 
 ## 陇春志异：宰牲篇
 
-<iframe height="167" frameborder="0" src="https://itch.io/embed/3794196" width="552"><a href="https://sweetsomestudio.itch.io/strange-tales-from-longchun-sacrifice">Strange Tales from Longchun: Sacrifice《陇春志异：宰牲篇》 by SweetSome Studio</a></iframe>
+{{< book url="https://sweetsomestudio.itch.io/strange-tales-from-longchun-sacrifice" image="https://free-img.400040.xyz/4/2025/11/07/690db7815a95c.jpg" title="Strange Tales from Longchun: Sacrifice《陇春志异：宰牲篇》 " brief="2004年的晚夏，在一座名为陇春的北方小城里，发生了一连串性质恶劣的连环杀人案。大多数人在提心吊胆的同时，又认为这一切与自己无关。正在享受暑假的法医系大学生许缘，原本也是这么想的。但自从她开始在这家小城里罕见的、时髦的咖啡厅打工，怪事就像草丛里的蛇一样，悄然跟上了她。" tag="game" >}}
 
 今天早上刚打完的香油出品游戏。<a href="https://sweetsomestudio.itch.io/strange-tales-from-longchun-sacrifice/devlog/1061575/-s-chinese-introduction" target="_blank">游戏介绍和下载地址在这里</a>。主界面和论坛的UI实在是做得太太太太好看了，而且整体有一种很独特的气质，喜欢结局选择去见老板时风雨欲来的演出。三首角色曲的填词都很美<small>（经提醒修正，是主题曲填词，三首角色曲很美不过歌词其实是佛经）</small>。感觉一个月做出这种精细度和完整度也太厉害了……
 
