@@ -123,6 +123,51 @@
 /* db-card -------- end */
 
 
+.swiper-container {
+    max-width: 820px;
+    margin: 2em auto;
+}
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background-color: #fff;
+    /* Center slide text vertically */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    img {
+        margin: 0 !important;
+    }
+}
+
+
+.shady {
+    color: transparent; /* 关键：让文字透明 */
+    font-weight: bold;
+    background-color: #000; /* 黑色背景遮盖文字 */
+    box-shadow: 0px -20px 0px rgba(0,0,0,1) inset; 
+    transition: all 0.3s ease;
+}
+
+.shady:hover {
+    color: #FFF; /* hover时显示白色文字 */
+    background-color: transparent; /* hover时移除背景色 */
+    box-shadow: 0px -20px 0px rgba(0,0,0,1) inset; 
+}
+
+
+.blur {
+    color: transparent;
+    text-shadow:0px 0px 8px var(--card-text-color-main)
+}
+ 
+.blur:hover {
+    color: transparent;
+    text-shadow:0px 0px 0px var(--card-text-color-main)
+   
+}
+
+
 img.emoji {
   display: inline-block !important;
   max-width: 1.2em !important;

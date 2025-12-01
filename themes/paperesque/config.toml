@@ -5,3 +5,4 @@
 [outputFormats.droplist]
 mediatype = "text/droplist"
 isPlainText = true
+enableimgloop = true

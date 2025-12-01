@@ -46,6 +46,8 @@ hidden: true
 
 <br/>🌊 <a href="https://imasugu.cc/" target="_blank">東井</a>
 
+<br/>🔮 <a href="https://writee.org/erythrina/" target="_blank">Ery的魔法大鍋</a>
+
 
 
 </center>
