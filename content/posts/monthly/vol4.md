@@ -10,7 +10,7 @@ tags: ["月记"]
 
 <br/><blockquote>博客开头不放猫就像吃豌杂面不加豌豆，所以来吧，看板猫：</blockquote><br/>
 
-<center><img src="https://free-img.400040.xyz/4/2025/11/26/69268d7b83dfa.jpg" ></center><br/><br/>
+<center><img src="https://s3.bmp.ovh/imgs/2025/12/02/4d7c0f7ea153a92f.jpg" ></center><br/><br/>
 
 <br/>
 
@@ -64,7 +64,7 @@ tags: ["月记"]
 
 ## 黄金像凶杀案再起
 
-{{< book url="https://store.steampowered.com/app/2716400/The_Rise_of_the_Golden_Idol/" image="https://free-img.400040.xyz/4/2025/11/07/690de90506e71.jpg" title="The Rise of the Golden Idol " brief="获奖侦探系列游戏回归，独立续作《黄金像凶杀案》风云再起。20 世纪 70 年代发生了 20 起与犯罪、死亡和堕落相关的奇异案件，背后的真相等待你来揭开。虽然世界已经发生了巨大的变化——但人类的罪恶性从没变过。" tag="game" >}}
+{{< book url="https://store.steampowered.com/app/2716400/The_Rise_of_the_Golden_Idol/" image="https://s3.bmp.ovh/imgs/2025/12/02/21ae8a9d7dfc7d5c.jpg" title="The Rise of the Golden Idol " brief="获奖侦探系列游戏回归，独立续作《黄金像凶杀案》风云再起。20 世纪 70 年代发生了 20 起与犯罪、死亡和堕落相关的奇异案件，背后的真相等待你来揭开。虽然世界已经发生了巨大的变化——但人类的罪恶性从没变过。" tag="game" >}}
 
 还是觉得很好玩啊！类金偶像游戏越多越好，真的很喜欢这种一张（或者几张）图片看完全部线索的完形填空玩法，既风格独特，又能用简洁巧妙的方式交待信息，反正我是真的不喜欢在3d建模场景里四处探索（于是搁置了蓝途王子……抱歉）。
 
@@ -78,7 +78,7 @@ DLC还没有买，主线剧情感觉<span class="shady">疯狂科学家臭脸ner
 
 ## 天使计划
 
-{{< book url="https://bgm.tv/subject/117890" image="https://free-img.400040.xyz/4/2025/11/10/6911e4a8516bc.jpg" title="Angel Profile " brief="曾经有一条七头龙为害天界、人界及魔界，即使天使与恶魔联手也无法与它对敌。神可怜苍生，将自己的灵魂化为两把剑，由天界与魔界各执一把。这两把天剑与魔剑将龙斩成七部分，封印在人界各地。但是某天，被封印了的龙的其中一部分突然出现，在一个小国肆虐。一位骑士出现，拿着两把传说中的剑与龙作战。骑士战胜了龙，但却受到龙的诅咒，变为如同一张白纸一般的小孩。而玩家扮演的就是抚育这个小孩成人的父亲/母亲，通过为小男孩安排上课打工等行程，用八年的时光，培养小男孩的各种能力。游戏中有部分的行程必须通过触发事件才能选择，随着养育方针的不同，会影响小男孩的个性及最后的结局。小男孩长大后要重复相同的命运，再度成为众人景仰的勇者，或是归于平凡淳朴的田园生活，五十种以上的基本结局就看玩家决定怎么养育。" tag="game" >}}
+{{< book url="https://bgm.tv/subject/117890" image="https://s3.bmp.ovh/imgs/2025/12/02/28639a86338012d2.jpg" title="Angel Profile " brief="曾经有一条七头龙为害天界、人界及魔界，即使天使与恶魔联手也无法与它对敌。神可怜苍生，将自己的灵魂化为两把剑，由天界与魔界各执一把。这两把天剑与魔剑将龙斩成七部分，封印在人界各地。但是某天，被封印了的龙的其中一部分突然出现，在一个小国肆虐。一位骑士出现，拿着两把传说中的剑与龙作战。骑士战胜了龙，但却受到龙的诅咒，变为如同一张白纸一般的小孩。而玩家扮演的就是抚育这个小孩成人的父亲/母亲，通过为小男孩安排上课打工等行程，用八年的时光，培养小男孩的各种能力。游戏中有部分的行程必须通过触发事件才能选择，随着养育方针的不同，会影响小男孩的个性及最后的结局。小男孩长大后要重复相同的命运，再度成为众人景仰的勇者，或是归于平凡淳朴的田园生活，五十种以上的基本结局就看玩家决定怎么养育。" tag="game" >}}
 
 读小学的时候，特别沉迷类美少女梦工厂养成游戏，当时很想玩这个，但是没搞懂怎么注册翼梦（直到现在也不懂）没能成功。前几天突然刷到盗版资源（……），于是玩了一下。印象最深的就是有俩天使恶魔管家，一边搞基一边担任着这个家的两个小妈，还有互动CG。这次终于看到了记忆里的CG，结果是买道具攒点数送的图，没有任何相关剧情，没有提到照片是怎么来的，只有图。我感觉受到了诈骗。但是画得很萌也行吧。
 
@@ -88,7 +88,7 @@ DLC还没有买，主线剧情感觉<span class="shady">疯狂科学家臭脸ner
 
 ## Z.A.T.O.
 
-{{< book url="https://store.steampowered.com/app/4122860/ZATO__I_Love_the_World_and_Everything_In_It/" image="https://free-img.400040.xyz/4/2025/11/21/691fcfed3f887.jpg" title="Z.A.T.O. // I Love the World and Everything In It" brief="USSR, 1986. When Ira Grachevskaya goes missing in the closed city of Vorkuta-5, not a soul seems to be concerned – except for the quiet outcast Asya Shubina, that is. Uncover the mystery behind Ira’s disappearance, transmit your radio signal to the universe and learn why a bird flies past the window." tag="game" >}}
+{{< book url="https://store.steampowered.com/app/4122860/ZATO__I_Love_the_World_and_Everything_In_It/" image="https://s3.bmp.ovh/imgs/2025/12/02/088f1be5461281cf.jpg" title="Z.A.T.O. // I Love the World and Everything In It" brief="USSR, 1986. When Ira Grachevskaya goes missing in the closed city of Vorkuta-5, not a soul seems to be concerned – except for the quiet outcast Asya Shubina, that is. Uncover the mystery behind Ira’s disappearance, transmit your radio signal to the universe and learn why a bird flies past the window." tag="game" >}}
 
 这个在长毛象写过repo，稍微整合删改了一下搬过来吧。我觉得比较加分的地方，一是启动游戏时，启动速度很快（…），默认全屏+播放PV，我觉得默认全屏有一种将人立刻拉入世界的感觉，PV本身的风格简洁而富有冲击力，所以给人第一印象非常好，能拽住人去读相对来说节奏较慢、心理深描内容较多的第一章。二是美术风格非常出效果，立绘的表情很生动，能让人迅速读取出很多微妙的情绪，而且容易被萌到，对人物产生好感。三是选取的音乐很能表现出北方宁静的氛围。UI其实做得很简洁，就是几个框，还有Ren'py游戏那经典的默认UI位置。背景应该是免费素材拉了个滤镜，音乐我看到有标明出处，可能也是免费素材？另外视觉小说最重要的剧本，结构也做得比较完整，三个最核心的角色，每人各自有一个作为中心的章节，感觉这个结构是挺简洁稳妥的，切入点、以及最后一切的归处，也是ASYA的内心，一切都是发生在内心的叙事。
 
@@ -98,7 +98,7 @@ DLC还没有买，主线剧情感觉<span class="shady">疯狂科学家臭脸ner
 
 ## 愚人船
 
-{{< book url="https://store.steampowered.com/app/2521400/_NARRENSCHIFF/" image="https://free-img.400040.xyz/4/2025/11/07/690de9236f54e.jpg" title="愚人船 NARRENSCHIFF" brief="80年代东欧小国，环境局员工韦德·欧斯曼在一座空无一人的精神病院醒来，失去了大部分记忆。面对尸体，奇怪的雕像，身临其境的幻觉，他想要弄清自己的过去和这里酝酿的巨大阴谋。" tag="game" >}}
+{{< book url="https://store.steampowered.com/app/2521400/_NARRENSCHIFF/" image="https://s3.bmp.ovh/imgs/2025/12/02/9eca45be0e2e337b.jpg" title="愚人船 NARRENSCHIFF" brief="80年代东欧小国，环境局员工韦德·欧斯曼在一座空无一人的精神病院醒来，失去了大部分记忆。面对尸体，奇怪的雕像，身临其境的幻觉，他想要弄清自己的过去和这里酝酿的巨大阴谋。" tag="game" >}}
 
 打完了第一章和第二章开头的部分，以后通完第二章（目前更新内容）就直接补充在这里好了。画得实在是很美，非常有个人风格，游戏内的指引也比较明确，不会产生迷茫的感觉。大部分解谜的难度适中，博物馆解谜比较复杂，所以这部分我直接看攻略了（忏悔…
 
@@ -112,7 +112,7 @@ DLC还没有买，主线剧情感觉<span class="shady">疯狂科学家臭脸ner
 
 ## 土星照命
 
-{{< book url="https://book.douban.com/subject/27122359/" image="https://free-img.400040.xyz/4/2025/11/07/690df342aa3da.jpg" title="《土星照命》 [美]苏珊·桑塔格" brief="照本雅明的说法，土星是“一颗充满迂回曲折、耽搁停留的行星”、桑塔格遂用“土星气质”来描述以本雅明为代表的这类思想家的精神风貌。除本雅明外，本文集还深入评论阿尔托、巴特、卡内蒂等她本人引为榜样和同道的思想家、艺术家的作品、鲜明地描画出他们的精神肖像，桑塔格对他人的评论由是亦成为她本人的一种精神自传。" tag="book" >}}
+{{< book url="https://book.douban.com/subject/27122359/" image="https://s3.bmp.ovh/imgs/2025/12/02/de5285ab06d88cca.jpg" title="《土星照命》 [美]苏珊·桑塔格" brief="照本雅明的说法，土星是“一颗充满迂回曲折、耽搁停留的行星”、桑塔格遂用“土星气质”来描述以本雅明为代表的这类思想家的精神风貌。除本雅明外，本文集还深入评论阿尔托、巴特、卡内蒂等她本人引为榜样和同道的思想家、艺术家的作品、鲜明地描画出他们的精神肖像，桑塔格对他人的评论由是亦成为她本人的一种精神自传。" tag="book" >}}
 
 其实是为了阿尔托的章节去读，打算当一个导言，再去找来桑塔格编辑的阿尔托全集慢慢看。预定还有一本传记要读，但因为后来生活变得兵荒马乱，就这么搁置了。
 
