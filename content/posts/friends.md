@@ -48,6 +48,7 @@ hidden: true
 
 <br/>🔮 <a href="https://writee.org/erythrina/" target="_blank">Ery的魔法大鍋</a>
 
+<br/>🪴 <a href="https://kujira-tiku.vercel.app/" target="_blank">清熱鯨騰草</a>
 
 
 </center>
