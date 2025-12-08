@@ -1,6 +1,6 @@
 ---
 date: 2019-09-10
-title: "Violin"
+title: "我的朋友 Violin"
 description: "在医院门口，一条狗向我狂吠，我等待着我的朋友。"
 tags: ["原创"]
 categories: "短篇小说"

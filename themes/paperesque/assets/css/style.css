@@ -34,7 +34,7 @@
   */
   --color-header-brand-primary: #00223E;
   --color-header-brand-secondary-ddopacity: #00223EDD;
-  --color-header-brand-secondary: #FFA17F;
+  --color-header-brand-secondary: #00223E;
 
   /* this color comes from reboot.css */
   --color-link-text: #007bff;
@@ -178,20 +178,36 @@ img.emoji {
 
 @font-face {
   font-family: 'Huiwen-ZhengKai';
-  src: url('/fonts/Huiwen-ZhengKai.woff') format('woff'),
-       url('/fonts/Huiwen-ZhengKai.ttf') format('truetype');
+  src: url('/fonts/Huiwen-ZhengKai.woff2') format('woff2'),
+       url('/fonts/Huiwen-ZhengKai.woff') format('woff');
   font-weight: normal;
   font-style: normal;
-  font-display: swap; 
+  font-display: fallback; 
 }
 
 @font-face {
   font-family: 'Huiwen-FangSong';
-  src: url('/fonts/Huiwen-FangSong.woff') format('woff'),
-       url('/fonts/Huiwen-FangSong.ttf') format('truetype');
+  src: url('/fonts/Huiwen-FangSong.woff2') format('woff2'),
+       url('/fonts/Huiwen-FangSong.woff') format('woff');
   font-weight: normal;
   font-style: normal;
-  font-display: swap;
+  font-display: fallback;
+}
+
+@font-face {
+  font-family: 'LantingHei';
+  src: url('/fonts/LantingHei.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+  font-display: fallback; 
+}
+
+@font-face {
+  font-family: 'PingSong';
+  src: url('/fonts/PingSong.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+  font-display: fallback; 
 }
 
 body {
@@ -1015,3 +1031,4 @@ article table th {
     left: 20px;
   }
 }
+
