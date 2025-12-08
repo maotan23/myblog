@@ -1,7 +1,6 @@
 ---
-date: 2025-12-07
+date: 2025-12-08
 title: "迷恋琥珀"
-description: "骑士、处刑人和垂泪的魔鬼。"
 tags: ["原创"]
 categories: "短篇小说"
 ---
