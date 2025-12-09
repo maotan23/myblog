@@ -47,82 +47,6 @@
 }
 
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --color-text: #B1AFA7;
-    --color-fg-darken: #B1AFA722;
-    --color-code-inline-bg: #060A0D;
-
-    --color-text-for-darkbg: #CDC9B9;
-    --color-border-generic: #53524E;
-
-    --color-boxshadow: #222222;
-    --color-quote-border: #53524E;
-
-    /* I modified these but the lightmode ones come from chroma CSS */
-    --color-pre-text: #E6E6E0;
-    --color-pre-bg: #272822;
-
-    --color-sheet-bg: #17232D;
-    --color-desktop-bg: #17232D;
-
-    --color-meta-text: #807E78;
-    --color-caption-text: #807E78;
-
-    --color-kbd-bg: #333;
-    --color-hr: var(--color-text);
-
-    --color-btn-border: #777;
-    --color-btn-hover-bg: #082D4D;
-
-    --color-draft-bg-stripe: #403629;
-
-    /*
-      keep in sync with theme color in:
-        - layouts/partials/meta.html
-        - main.js
-    */
-    --color-header-brand-primary: #08151E;
-    --color-header-brand-secondary-ddopacity: #08151EDD;
-    --color-header-brand-secondary: #754A3A;
-
-    --color-link-text: #526e8d;
-    --color-link-hover: #6086ad;
-
-    --color-nav-text: #CDC9B9;
-
-    --color-timestamp-bkg-primary: #1D6BBF;
-    --color-timestamp-bkg-secondary: var(--color-link-text);
-    --color-timestamp-text: var(--color-text-for-darkbg);
-  }
-
-  html {
-    color-scheme: dark;
-  }
-}
-
-/* db-card -------- start*/
-.db-card{margin:2.5rem 3rem;background:var(--card-background);border-radius: 7px;box-shadow: 0 6px 10px 0 #00000053;}
-.db-card-subject{display: flex;align-items:flex-start;line-height:1.6;padding:12px;position:relative;}
-.dark .db-card{background:var(--card-background);}
-.db-card-content {flex:1 1 auto;}
-.db-card-post {width: 100px;margin-right: 15px;display: flex;flex: 0 0 auto;}
-.db-card-title {margin-bottom: 3px;font-size: 14px;color: var(--card-text-color-main);;}
-.db-card-title a{text-decoration: none!important}
-.db-card-abstract,.db-card-comment{font-size:14px;overflow: auto;max-height:10rem;color: var(--card-text-color-main);;}
-.db-card-cate{position: absolute;top:0;right:0;background:#7f91ad;padding:1px 8px;font-size:small;font-style:italic;border-radius:0 8px 0 8px;text-transform:capitalize;}
-.db-card-post img{width: 100px!important;height: 150px!important;border-radius: 4px;-o-object-fit: cover;object-fit: cover;}
-.rating{margin: 0 0 5px;font-size:13px;line-height: 1;display: flex;align-items: center;}
-.rating .allstardark{position:relative;color: #7f91ad;height: 16px;width: 80px;background-size: auto 100%;margin-right: 8px;background-repeat: repeat;background-image: url(data:image/svg+xml;base64,PHN2ZyBjbGFzcz0iaWNvbiIgdmlld0JveD0iMCAwIDEwMjQgMTAyNCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB3aWR0aD0iMzIiIGhlaWdodD0iMzIiPjxwYXRoIGQ9Ik05MDguMSAzNTMuMWwtMjUzLjktMzYuOUw1NDAuNyA4Ni4xYy0zLjEtNi4zLTguMi0xMS40LTE0LjUtMTQuNS0xNS44LTcuOC0zNS0xLjMtNDIuOSAxNC41TDM2OS44IDMxNi4ybC0yNTMuOSAzNi45Yy03IDEtMTMuNCA0LjMtMTguMyA5LjMtMTIuMyAxMi43LTEyLjEgMzIuOS42IDQ1LjNsMTgzLjcgMTc5LjEtNDMuNCAyNTIuOWMtMS4yIDYuOS0uMSAxNC4xIDMuMiAyMC4zIDguMiAxNS42IDI3LjYgMjEuNyA0My4yIDEzLjRMNTEyIDc1NGwyMjcuMSAxMTkuNGM2LjIgMy4zIDEzLjQgNC40IDIwLjMgMy4yIDE3LjQtMyAyOS4xLTE5LjUgMjYuMS0zNi45bC00My40LTI1Mi45IDE4My43LTE3OS4xYzUtNC45IDguMy0xMS4zIDkuMy0xOC4zIDIuNy0xNy41LTkuNS0zMy43LTI3LTM2LjN6TTY2NC44IDU2MS42bDM2LjEgMjEwLjNMNTEyIDY3Mi43IDMyMy4xIDc3MmwzNi4xLTIxMC4zLTE1Mi44LTE0OUw0MTcuNiAzODIgNTEyIDE5MC43IDYwNi40IDM4MmwyMTEuMiAzMC43LTE1Mi44IDE0OC45eiIgZmlsbD0iI2Y5OWIwMSIvPjwvc3ZnPg==);
-}
-.rating .allstarlight{position: absolute;left: 0;color: #7f91ad;height:16px;overflow: hidden;background-size: auto 100%;background-repeat: repeat;background-image: url(data:image/svg+xml;base64,PHN2ZyBjbGFzcz0iaWNvbiIgdmlld0JveD0iMCAwIDEwMjQgMTAyNCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB3aWR0aD0iMzIiIGhlaWdodD0iMzIiPjxwYXRoIGQ9Ik05MDguMSAzNTMuMWwtMjUzLjktMzYuOUw1NDAuNyA4Ni4xYy0zLjEtNi4zLTguMi0xMS40LTE0LjUtMTQuNS0xNS44LTcuOC0zNS0xLjMtNDIuOSAxNC41TDM2OS44IDMxNi4ybC0yNTMuOSAzNi45Yy03IDEtMTMuNCA0LjMtMTguMyA5LjMtMTIuMyAxMi43LTEyLjEgMzIuOS42IDQ1LjNsMTgzLjcgMTc5LjEtNDMuNCAyNTIuOWMtMS4yIDYuOS0uMSAxNC4xIDMuMiAyMC4zIDguMiAxNS42IDI3LjYgMjEuNyA0My4yIDEzLjRMNTEyIDc1NGwyMjcuMSAxMTkuNGM2LjIgMy4zIDEzLjQgNC40IDIwLjMgMy4yIDE3LjQtMyAyOS4xLTE5LjUgMjYuMS0zNi45bC00My40LTI1Mi45IDE4My43LTE3OS4xYzUtNC45IDguMy0xMS4zIDkuMy0xOC4zIDIuNy0xNy41LTkuNS0zMy43LTI3LTM2LjN6IiBmaWxsPSIjZjk5YjAxIi8+PC9zdmc+);}
-@media (max-width:550px) {
-	.db-card{margin:0.8rem 1rem;}
-	.db-card-comment{display: none;}
-}
-/* db-card -------- end */
-
-
 .swiper-container {
     max-width: 820px;
     margin: 2em auto;
@@ -138,42 +62,6 @@
     img {
         margin: 0 !important;
     }
-}
-
-
-.shady {
-    color: transparent; /* 关键：让文字透明 */
-    font-weight: bold;
-    background-color: #000; /* 黑色背景遮盖文字 */
-    box-shadow: 0px -20px 0px rgba(0,0,0,1) inset; 
-    transition: all 0.3s ease;
-}
-
-.shady:hover {
-    color: #FFF; /* hover时显示白色文字 */
-    background-color: transparent; /* hover时移除背景色 */
-    box-shadow: 0px -20px 0px rgba(0,0,0,1) inset; 
-}
-
-
-.blur {
-    color: transparent;
-    text-shadow:0px 0px 8px var(--card-text-color-main)
-}
- 
-.blur:hover {
-    color: transparent;
-    text-shadow:0px 0px 0px var(--card-text-color-main)
-   
-}
-
-
-img.emoji {
-  display: inline-block !important;
-  max-width: 1.2em !important;
-  height: 1.2em !important;
-  margin: 0 0.05em !important;
-  vertical-align: -0.1em !important;
 }
 
 @font-face {
@@ -192,22 +80,6 @@ img.emoji {
   font-weight: normal;
   font-style: normal;
   font-display: fallback;
-}
-
-@font-face {
-  font-family: 'LantingHei';
-  src: url('/fonts/LantingHei.woff2') format('woff2');
-  font-weight: normal;
-  font-style: normal;
-  font-display: fallback; 
-}
-
-@font-face {
-  font-family: 'PingSong';
-  src: url('/fonts/PingSong.woff2') format('woff2');
-  font-weight: normal;
-  font-style: normal;
-  font-display: fallback; 
 }
 
 body {
@@ -1032,3 +904,58 @@ article table th {
   }
 }
 
+/* db-card -------- start*/
+.db-card{margin:2.5rem 3rem;background:var(--card-background);border-radius: 7px;box-shadow: 0 6px 10px 0 #00000053;}
+.db-card-subject{display: flex;align-items:flex-start;line-height:1.6;padding:12px;position:relative;}
+.dark .db-card{background:var(--card-background);}
+.db-card-content {flex:1 1 auto;}
+.db-card-post {width: 100px;margin-right: 15px;display: flex;flex: 0 0 auto;}
+.db-card-title {margin-bottom: 3px;font-size: 14px;color: var(--card-text-color-main);;}
+.db-card-title a{text-decoration: none!important}
+.db-card-abstract,.db-card-comment{font-size:14px;overflow: auto;max-height:10rem;color: var(--card-text-color-main);;}
+.db-card-cate{position: absolute;top:0;right:0;background:#7f91ad;padding:1px 8px;font-size:small;font-style:italic;border-radius:0 8px 0 8px;text-transform:capitalize;}
+.db-card-post img{width: 100px!important;height: 150px!important;border-radius: 4px;-o-object-fit: cover;object-fit: cover;}
+.rating{margin: 0 0 5px;font-size:13px;line-height: 1;display: flex;align-items: center;}
+.rating .allstardark{position:relative;color: #7f91ad;height: 16px;width: 80px;background-size: auto 100%;margin-right: 8px;background-repeat: repeat;background-image: url(data:image/svg+xml;base64,PHN2ZyBjbGFzcz0iaWNvbiIgdmlld0JveD0iMCAwIDEwMjQgMTAyNCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB3aWR0aD0iMzIiIGhlaWdodD0iMzIiPjxwYXRoIGQ9Ik05MDguMSAzNTMuMWwtMjUzLjktMzYuOUw1NDAuNyA4Ni4xYy0zLjEtNi4zLTguMi0xMS40LTE0LjUtMTQuNS0xNS44LTcuOC0zNS0xLjMtNDIuOSAxNC41TDM2OS44IDMxNi4ybC0yNTMuOSAzNi45Yy03IDEtMTMuNCA0LjMtMTguMyA5LjMtMTIuMyAxMi43LTEyLjEgMzIuOS42IDQ1LjNsMTgzLjcgMTc5LjEtNDMuNCAyNTIuOWMtMS4yIDYuOS0uMSAxNC4xIDMuMiAyMC4zIDguMiAxNS42IDI3LjYgMjEuNyA0My4yIDEzLjRMNTEyIDc1NGwyMjcuMSAxMTkuNGM2LjIgMy4zIDEzLjQgNC40IDIwLjMgMy4yIDE3LjQtMyAyOS4xLTE5LjUgMjYuMS0zNi45bC00My40LTI1Mi45IDE4My43LTE3OS4xYzUtNC45IDguMy0xMS4zIDkuMy0xOC4zIDIuNy0xNy41LTkuNS0zMy43LTI3LTM2LjN6TTY2NC44IDU2MS42bDM2LjEgMjEwLjNMNTEyIDY3Mi43IDMyMy4xIDc3MmwzNi4xLTIxMC4zLTE1Mi44LTE0OUw0MTcuNiAzODIgNTEyIDE5MC43IDYwNi40IDM4MmwyMTEuMiAzMC43LTE1Mi44IDE0OC45eiIgZmlsbD0iI2Y5OWIwMSIvPjwvc3ZnPg==);
+}
+.rating .allstarlight{position: absolute;left: 0;color: #7f91ad;height:16px;overflow: hidden;background-size: auto 100%;background-repeat: repeat;background-image: url(data:image/svg+xml;base64,PHN2ZyBjbGFzcz0iaWNvbiIgdmlld0JveD0iMCAwIDEwMjQgMTAyNCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB3aWR0aD0iMzIiIGhlaWdodD0iMzIiPjxwYXRoIGQ9Ik05MDguMSAzNTMuMWwtMjUzLjktMzYuOUw1NDAuNyA4Ni4xYy0zLjEtNi4zLTguMi0xMS40LTE0LjUtMTQuNS0xNS44LTcuOC0zNS0xLjMtNDIuOSAxNC41TDM2OS44IDMxNi4ybC0yNTMuOSAzNi45Yy03IDEtMTMuNCA0LjMtMTguMyA5LjMtMTIuMyAxMi43LTEyLjEgMzIuOS42IDQ1LjNsMTgzLjcgMTc5LjEtNDMuNCAyNTIuOWMtMS4yIDYuOS0uMSAxNC4xIDMuMiAyMC4zIDguMiAxNS42IDI3LjYgMjEuNyA0My4yIDEzLjRMNTEyIDc1NGwyMjcuMSAxMTkuNGM2LjIgMy4zIDEzLjQgNC40IDIwLjMgMy4yIDE3LjQtMyAyOS4xLTE5LjUgMjYuMS0zNi45bC00My40LTI1Mi45IDE4My43LTE3OS4xYzUtNC45IDguMy0xMS4zIDkuMy0xOC4zIDIuNy0xNy41LTkuNS0zMy43LTI3LTM2LjN6IiBmaWxsPSIjZjk5YjAxIi8+PC9zdmc+);}
+@media (max-width:550px) {
+	.db-card{margin:0.8rem 1rem;}
+	.db-card-comment{display: none;}
+}
+/* db-card -------- end */
+
+.shady {
+    color: transparent; /* 关键：让文字透明 */
+    font-weight: bold;
+    background-color: #000; /* 黑色背景遮盖文字 */
+    box-shadow: 0px -20px 0px rgba(0,0,0,1) inset; 
+    transition: all 0.3s ease;
+}
+
+.shady:hover {
+    color: #FFF; /* hover时显示白色文字 */
+    background-color: transparent; /* hover时移除背景色 */
+    box-shadow: 0px -20px 0px rgba(0,0,0,1) inset; 
+}
+
+
+.blur {
+    color: transparent;
+    text-shadow:0px 0px 8px var(--card-text-color-main)
+}
+ 
+.blur:hover {
+    color: transparent;
+    text-shadow:0px 0px 0px var(--card-text-color-main)
+   
+}
+
+
+img.emoji {
+  display: inline-block !important;
+  max-width: 1.2em !important;
+  height: 1.2em !important;
+  margin: 0 0.05em !important;
+  vertical-align: -0.1em !important;
+}

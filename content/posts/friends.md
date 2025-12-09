@@ -50,6 +50,9 @@ hidden: true
 
 <br/>🪴 <a href="https://kujira-tiku.vercel.app/" target="_blank">清熱鯨騰草</a>
 
+<br/>*每一次重新造访，*
+
+<br/>*房屋的分布都会发生变化。*
 
 </center>
 

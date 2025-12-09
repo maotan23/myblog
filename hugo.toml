@@ -19,7 +19,7 @@ theme = "paperesque"
 [markup.goldmark.renderer]
   unsafe = true
 
-
+enableRobotsTXT = true
 
 # I can't remember if this is required for syntax highlighting or not.
 pygmentsUseClasses = true

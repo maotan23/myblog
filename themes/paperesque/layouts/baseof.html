@@ -11,18 +11,18 @@
     <title>{{ .Title }}{{ if not .IsHome }} || {{ $.Site.Title }}{{ end }}</title>
     <link rel="canonical" href="{{ .Permalink }}" />
 
-    {{ with .Site.Params.RSSCanonicalLink }}
-      <link rel="alternate" type="application/rss+xml" href="{{ . | absURL }}" title="{{$.Site.Title}}" />
-    {{ else }}
-      {{- with .OutputFormats.Get "rss" -}}
-        {{ printf `<link rel="%s" type="%s" href="%s" title="%s" />` .Rel .MediaType.Type .Permalink $.Site.Title | safeHTML }}
-      {{- end -}}
-    {{ end }}
-
     {{ partial "head_includes.html" . }}
     {{ partial "head-customisation.html" . }}
     <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
     <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+
+    {{- if .Site.Params.preloadFonts -}}
+    <link rel="preload" href="{{ "fonts/Huiwen-ZhengKai.woff2" | absURL }}" as="font" type="font/woff2" crossorigin="anonymous">
+    <link rel="preload" href="{{ "fonts/Huiwen-FangSong.woff2" | absURL }}" as="font" type="font/woff2" crossorigin="anonymous">
+    {{- end -}}
+
+    <link rel="preload" href="https://s3.bmp.ovh/imgs/2025/12/07/692e75c797fca362.webp" as="image" media="(max-width: 400px)" type="image/webp" crossorigin="anonymous">
+
   </head>
   <body
   class="{{ block "body-classes" . }}{{ end }}"

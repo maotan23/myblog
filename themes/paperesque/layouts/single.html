@@ -21,27 +21,82 @@
 {{ define "footer" }}
   {{- partial "single-footer-customisation" . -}}
 
-  {{ $filteredPages := where .CurrentSection.Pages "Params.mostlyHidden" "ne" true }}
-  {{ $prev := $filteredPages.Prev . }}
-  {{ $next := $filteredPages.Next . }}
-  {{if (and (not .Parent.IsHome) (or $prev $next)) }}
-    <div class="nav-bkg-50 content-container-narrow-pad bottom-links text-0p75 drop-shadow">
-      <nav class="flex-row">
-      {{with $prev }}
-      <a href="{{.Permalink}}" class="flex-row v-center no-underline"  style="max-width:45%;">
-        <span class="text-1p5">←</span>&nbsp;<span class="re-underline">Previous: {{ .Title }}</span>
-      </a>
-      {{else}}
-        <span class="flex-row v-center"></span>
-      {{end}}
-      {{with $next }}
-        <a href="{{.Permalink}}" class="flex-row v-center no-underline" style="max-width: 45%;">
-        <span class="re-underline">Next: {{.Title}}</span>&nbsp;<span class="text-1p5">→</span>
+  {{/* 获取当前文章的所有标签 */}}
+  {{ $currentTags := .Params.tags }}
+  
+  {{/* 如果没有标签，就使用原始的分节导航 */}}
+  {{ if not $currentTags }}
+    {{ $filteredPages := where .CurrentSection.Pages "Params.mostlyHidden" "ne" true }}
+    {{ $prev := $filteredPages.Prev . }}
+    {{ $next := $filteredPages.Next . }}
+    {{if (and (not .Parent.IsHome) (or $prev $next)) }}
+      <div class="nav-bkg-50 content-container-narrow-pad bottom-links text-0p75 drop-shadow">
+        <nav class="flex-row">
+        {{with $prev }}
+        <a href="{{.Permalink}}" class="flex-row v-center no-underline"  style="max-width:45%;">
+          <span class="text-1p5">←</span>&nbsp;<span class="re-underline">Previous: {{ .Title }}</span>
         </a>
-      {{else}}
-        <span class="flex-row v-center"></span>
-      {{end}}
-      </nav>
-    </div>
+        {{else}}
+          <span class="flex-row v-center"></span>
+        {{end}}
+        {{with $next }}
+          <a href="{{.Permalink}}" class="flex-row v-center no-underline" style="max-width: 45%;">
+          <span class="re-underline">Next: {{.Title}}</span>&nbsp;<span class="text-1p5">→</span>
+          </a>
+        {{else}}
+          <span class="flex-row v-center"></span>
+        {{end}}
+        </nav>
+      </div>
+    {{ end }}
+  {{ else }}
+    {{/* 有标签的情况：获取全站所有文章，过滤出有相同标签的文章 */}}
+    {{ $allPages := where .Site.RegularPages "Params.tags" "intersect" $currentTags }}
+    {{ $allPages = where $allPages "Params.mostlyHidden" "ne" true }}
+    
+    {{/* 按日期排序 */}}
+    {{ $sortedPages := $allPages.ByDate }}
+    
+    {{/* 找到当前文章在排序列表中的位置 */}}
+    {{ $currentPage := . }}
+    {{ $index := -1 }}
+    {{ range $i, $page := $sortedPages }}
+      {{ if eq $page $currentPage }}
+        {{ $index = $i }}
+      {{ end }}
+    {{ end }}
+    
+    {{/* 获取上一篇和下一篇 */}}
+    {{ $prev := false }}
+    {{ $next := false }}
+    
+    {{ if gt $index 0 }}
+      {{ $prev = index $sortedPages (sub $index 1) }}
+    {{ end }}
+    
+    {{ if lt $index (sub (len $sortedPages) 1) }}
+      {{ $next = index $sortedPages (add $index 1) }}
+    {{ end }}
+    
+    {{if (or $prev $next) }}
+      <div class="nav-bkg-50 content-container-narrow-pad bottom-links text-0p75 drop-shadow">
+        <nav class="flex-row">
+        {{with $prev }}
+        <a href="{{.Permalink}}" class="flex-row v-center no-underline"  style="max-width:45%;">
+          <span class="text-1p5">←</span>&nbsp;<span class="re-underline">上一篇：{{ .Title }}</span>
+        </a>
+        {{else}}
+          <span class="flex-row v-center"></span>
+        {{end}}
+        {{with $next }}
+          <a href="{{.Permalink}}" class="flex-row v-center no-underline" style="max-width: 45%;">
+          <span class="re-underline">下一篇：{{.Title}}</span>&nbsp;<span class="text-1p5">→</span>
+          </a>
+        {{else}}
+          <span class="flex-row v-center"></span>
+        {{end}}
+        </nav>
+      </div>
+    {{ end }}
   {{ end }}
 {{ end }}
