@@ -1,5 +1,5 @@
 ---
-date: 2025-12-31
+date: 2025-12-11
 title: "Vol.5 一年泡365杯雀巢咖啡"
 tags: ["月记"]
 ---
@@ -27,7 +27,22 @@ tags: ["月记"]
 <br/>
 
 ## 铁肺
-## No, Thank You
+
+
+
+<br/>
+
+## 异域镇魂曲
+
+
+
+<br/>
+
+## No, Thank You!!!
+
+{{< book url="https://neodb.social/game/2865vRG9yUmwXmOzxgLnHt" image="https://free-img.400040.xyz/4/2025/11/07/690deab47b1f7.jpg" title="No, Thank You!!!" brief="故事背景主要是在說主人公因為被暴走族攻擊所以失去了記憶。然後在熱鬧街頭上有家叫做「sotano」的酒吧雇用了這個主人公，還幫他隨意取了個名字「ハル」。不過「sotano」可沒有那麼簡單…實施上是家不能曝光幫警方解決問題的暗中偵探社……" tag="game" >}}
+
+
 
 <br/><br/>
 
@@ -36,8 +51,6 @@ tags: ["月记"]
 <br/>
 
 ## 城防十六计
-## 开刃
-## 宜昌鬼事
 
 <br/><br/>
 
@@ -46,6 +59,5 @@ tags: ["月记"]
 <br/>
 
 ## 强大九人
-## 海边的曼彻斯特
 
 <br/><br/>
