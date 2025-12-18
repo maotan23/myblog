@@ -21,7 +21,6 @@ hidden: true
     <div class="friend">😰 <a href="https://ryihuan.github.io/" target="_blank">某人的小窝</a></div>
     <div class="friend">😈 <a href="https://www.asecarc.top/" target="_blank">你留下点希望的影像吧</a></div>
     <div class="friend">🦋 <a href="https://indigo-coconut-a6e.notion.site/Roaring-Roaming-9592a7fadd054c269d5109f49fb56229" target="_blank">Roaring, Roaming</a></div>
-    <div class="friend">🍬 <a href="https://writee.org/wu-tang-ying-tang/" target="_blank">无糖硬糖</a></div>
     <div class="friend">🫧 <a href="https://blog.gulugulurave.com/" target="_blank">咕噜咕庐</a></div>
     <div class="friend">🌌 <a href="https://kageji.blog/" target="_blank">晷影空间站</a></div>
     <div class="friend">✈️ <a href="https://banshou-air.netlify.app/" target="_blank">夜航南飞</a></div>
