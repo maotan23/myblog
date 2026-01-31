@@ -43,19 +43,11 @@ pygmentsUseClasses = true
 # And your top-right menu links here.
 
 [[params.topmenu]]
-  name = "博客"
+  name = "月记"
   url = "tags/月记/"
 
 [[params.topmenu]]
-  name = "连载"
-  url = "tags/疮海无穷谭/"
-
-[[params.topmenu]]
-  name = "短篇"
-  url = "tags/原创/"
-
-[[params.topmenu]]
-  name = "关于本站"
+  name = "关于"
   url = "posts/about/"
 
 [[params.topmenu]]
